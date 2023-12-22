@@ -1,24 +1,17 @@
 <?php
 
-function custom_theme_support()
-{
-    add_theme_support('html5', ['menus', 'title-tag', 'caption']);
-    add_theme_support('title-tag');
-    add_theme_support('responsive-embeds'); //管理画面からメディアがレスポンシブ対応になる
-    //メニュー
-    add_theme_support('automatic-feed-links');
-    register_nav_menus([
-        'gmenu' => 'メインメニュー',
-    ]);
-    add_theme_support('html5', ['menus', 'title-tag', 'caption']);
-    add_theme_support('title-tag');
-    add_theme_support('responsive-embeds'); //管理画面からメディアがレスポンシブ対応になる
-    //メニュー
-    register_nav_menus([
-        'gmenu' => 'メインメニュー',
-    ]);
-}
-add_action('after_setup_theme', 'custom_theme_support');
+// 'gmenu' は register_nav_menus で登録したメニューの識別子
+$menu_args = array(
+    'theme_location' => 'gmenu',
+    'container'      => 'nav',
+    'container_class'=> 'menu-class', // メニューをラップする要素のクラス
+    'menu_class'     => 'menu-list', // メニューのul要素のクラス
+);
+
+wp_nav_menu($menu_args);
+
+/*add_action('after_setup_theme', 'custom_theme_support');*/
+
 
 add_action('after_setup_theme', 'my_theme_setup');
 function my_theme_setup()
