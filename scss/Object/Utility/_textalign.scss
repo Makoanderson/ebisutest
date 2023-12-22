@@ -1,0 +1,17 @@
+@use "../Foundation/mixin";
+@use "../Foundation/variable";
+
+.u-text {
+    &-l {
+        text-align: left;
+    }
+    &-r {
+        text-align: right;
+    }
+    &-c {
+        text-align: center;
+    }
+    &-justify {
+        text-align: justify;
+    }
+}

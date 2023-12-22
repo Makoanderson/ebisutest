@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/*Foundation*/
+@use "Foundation/index";
+
+/*Layout*/
+@use "Layout/l-index";
+
+/*Object*/
+
+/*Component*/
+@use "Object/Component/c-index";
+
+/*Project*/
+@use "Object/Project/p-index";
+
+/*Utility*/
+@use "Object/Utility/u-index";

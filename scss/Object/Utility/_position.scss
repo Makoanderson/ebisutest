@@ -1,0 +1,20 @@
+@use "../Foundation/mixin";
+@use "../Foundation/variable";
+
+.u-posi {
+    &-stat {
+        position: static;
+    } 
+    &-fix {
+        position: fixed;
+    }
+    &-abso {
+        position: absolute;
+    }
+    &-rela {
+        position: relative;
+    }
+    &-stic {
+        position: static;
+    }
+}

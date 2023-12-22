@@ -1,0 +1,20 @@
+@use "../Foundation/mixin";
+@use "../Foundation/variable";
+
+.u-disp {
+    &-block {
+        display: block;
+    }
+    &-inlinebk {
+        display: inline-block;
+    }
+    &-inline {
+        display: inline;
+    }
+    &-flex {
+        display: flex;
+    }
+    &-hidden {
+        display: none;
+    }
+}
