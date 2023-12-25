@@ -10,9 +10,11 @@
 <header>
     <ul>
         <li>
-            <?php wp_nav_menu(array(
-                
-            ))
+        <?php wp_nav_menu(
+            array('theme_location' => 'main-menu')
+        );
+        ?>
         </li>
     </ul>
-</header>    
+</header> 
+<body>   
