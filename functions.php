@@ -1,25 +1,27 @@
 <?php
 
 // 'gmenu' は register_nav_menus で登録したメニューの識別子
-$menu_args = array(
+/*$menu_args = array(
     'theme_location' => 'gmenu',
     'container'      => 'nav',
     'container_class'=> 'menu-class', // メニューをラップする要素のクラス
     'menu_class'     => 'menu-list', // メニューのul要素のクラス
 );
 
-wp_nav_menu($menu_args);
+wp_nav_menu($menu_args);*/
 
-/*add_action('after_setup_theme', 'custom_theme_support');*/
-
-
-add_action('after_setup_theme', 'my_theme_setup');
-function my_theme_setup()
-{
+/*ヘッダーとフッターのメニュー追加、言語設定*/
+function my_theme_setup() {
+    register_nav_menus(array(
+        'main-menu' => 'メインメニュー',
+        'footer-menu' => 'フッターメニュー'
+    ));
     load_theme_textdomain('ebisu', get_template_directory() . '/languages');
 }
 
+add_action('after_setup_theme', 'my_theme_setup');
 
+/*フォント設定、CSSファイル読込*/
 function readScript()
 {
     wp_enqueue_style(
