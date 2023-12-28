@@ -48,3 +48,12 @@ function readScript()
     );
 }
 add_action('wp_enqueue_scripts', 'readScript');
+
+/*ウィジェット機能追加*/
+function my_theme_widgets_init() {
+    register_sidebar( array(
+      'name' => 'Main Sidebar',
+      'id' => 'main-sidebar',
+    ) );
+  }
+  add_action( 'widgets_init', 'my_theme_widgets_init' );
