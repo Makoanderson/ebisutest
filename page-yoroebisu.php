@@ -12,10 +12,22 @@
                 </h1>
             </div>
         </div>
+        <nav>
+            <ul>
+                <li>
+                    <?php wp_nav_menu(
+                        array('theme_location' => 'yoroebisu-menu')
+                    );
+                    ?>
+                </li>
+        </ul>
+        </nav>
         <section>
             <?php the_content(); ?>
         </section>    
         <?php endwhile; else: ?>
         <?php endif; ?>
     </main>
+    <!--sidebar-->
+    <?php get_sidebar('shisetsu'); ?>
 <?php get_footer(); ?>

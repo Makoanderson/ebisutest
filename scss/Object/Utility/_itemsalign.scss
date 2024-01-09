@@ -1,0 +1,19 @@
+@use "../../Foundation/mixin";
+
+.u-items {
+    &-stretch {
+        align-items: stretch;
+    }
+    &-start {
+        align-items: flex-start;
+    }
+    &-center {
+        align-items: center;
+    }
+    &-end {
+        align-items: flex-end;
+    }
+    &-baseline {
+        align-items: baseline;
+    }
+}

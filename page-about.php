@@ -137,4 +137,6 @@
         <?php endwhile; else: ?>
         <?php endif; ?>
     </main>
+    <!--sidebar-->
+    <?php get_sidebar('about'); ?>
 <?php get_footer(); ?>

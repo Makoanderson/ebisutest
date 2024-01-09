@@ -10,11 +10,16 @@
 
 wp_nav_menu($menu_args);*/
 
-/*ヘッダーとフッターのメニュー追加、言語設定*/
+/*ヘッダーとフッターおよびその他のメニュー追加、言語設定*/
 function my_theme_setup() {
     register_nav_menus(array(
         'main-menu' => 'メインメニュー',
-        'footer-menu' => 'フッターメニュー'
+        'footer-menu' => 'フッターメニュー',
+        'homeebisu-menu' => '老人ホーム笑びすメニュー',
+        'yoroebisu-menu' => '宅幼老所笑びすメニュー',
+        'dayebisu-menu' => 'デイサービス笑びすメニュー',
+        'daykutsuku-menu' => 'デイサービス久津具メニュー',
+        'school-menu' => 'スクールメニュー'
     ));
     load_theme_textdomain('ebisu', get_template_directory() . '/languages');
 }

@@ -18,4 +18,6 @@
         <?php endwhile; else: ?>
         <?php endif; ?>
     </main>
+    <!--sidebar-->
+    <?php get_sidebar('volunteer'); ?>
 <?php get_footer(); ?>
