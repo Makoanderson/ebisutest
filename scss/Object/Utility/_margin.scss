@@ -1,2 +1,11 @@
-@use "../Foundation/mixin";
-@use "../Foundation/variable";
+@use "../../Foundation/mixin";
+@use "../../Foundation/variable";
+
+.u-margin {
+    &-mxa {
+        margin-inline: auto;
+    }
+    &-mya {
+        margin-block: auto;
+    }
+}
