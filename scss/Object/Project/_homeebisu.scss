@@ -1,0 +1,40 @@
+@use "../../Foundation/mixin";
+@use "../../Foundation/variable";
+
+.p-homeebisu {
+    &_menu {     //老人ホーム笑びすnavメニュー
+        display:flex;
+        justify-content: space-between;
+        width: 70%;
+        align-items: center;
+        font-size: 1.6rem;
+
+        li {
+            //padding: 25px 5px;
+            border: 1px solid #333;
+            border-radius: 6px;
+            width: 120px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+
+//老人ホーム笑びすに関するWordPress自動付与クラス名分スタイル
+.menu-item-186,
+.menu-item-189 {
+    padding: 16px 5px; 
+
+    a {
+        width: 65px;
+    }
+}
+
+.menu-item-184,
+.menu-item-185,
+.menu-item-187,
+.menu-item-188,
+.menu-item-190 {
+    padding: 25px 5px;
+}
