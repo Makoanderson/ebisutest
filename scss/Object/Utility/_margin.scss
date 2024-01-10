@@ -1,11 +1,14 @@
 @use "../../Foundation/mixin";
 @use "../../Foundation/variable";
 
-.u-margin {
+.u-mar {
     &-mxa {
         margin-inline: auto;
     }
     &-mya {
         margin-block: auto;
+    }
+    &-b45 {
+        margin-bottom: 45px;
     }
 }

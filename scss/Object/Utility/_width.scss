@@ -1,2 +1,8 @@
 @use "../../Foundation/mixin";
 @use "../../Foundation/variable";
+
+.u-w {
+    &_maxpc {
+        max-width: 1400px;
+    }
+}
