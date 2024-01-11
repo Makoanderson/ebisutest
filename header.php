@@ -8,13 +8,11 @@
     <?php wp_head(); ?>
 </head>
 <header>
-    <ul>
-        <li>
-        <?php wp_nav_menu(
-            array('theme_location' => 'main-menu')
-        );
-        ?>
-        </li>
-    </ul>
+    <?php wp_nav_menu(array(
+        'theme_location' => 'main-menu',
+        'menu_class' => 'l-header_menu',
+        'container' => '',
+        ));
+    ?>
 </header> 
 <body>   

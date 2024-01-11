@@ -5,7 +5,7 @@
     &_menu {     //老人ホーム笑びすnavメニュー
         display:flex;
         justify-content: space-between;
-        width: 70%;
+        //width: 70%;
         align-items: center;
         font-size: 1.6rem;
 
@@ -18,6 +18,10 @@
             justify-content: center;
         }
     }
+
+    &_main {
+        flex-direction: row-reverse;
+    }
 }
 
 
@@ -28,6 +32,7 @@
 
     a {
         width: 65px;
+        text-align: center;
     }
 }
 
