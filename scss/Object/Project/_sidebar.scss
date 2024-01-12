@@ -3,15 +3,28 @@
 
 .p-sidebar {
 
-    //&-shisetsu {
+    &-wrap {
+        width: 100%;
+        //height: 325px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 2%;
 
-    //}
+        @include mixin.mq(lpc) {
+            height: 265px;
+        }
+    }
     &-title {
-        font-size: 32px;
+        font-size: 2rem;
     }
     &-btn {
         border: 1px solid #333;
         border-radius: 6px;
-        //width: 55%;
+        height: 148px;
+
+        @include mixin.mq(lpc) {
+            margin-inline: auto;
+            height: 110px;
+        }
     }
 }

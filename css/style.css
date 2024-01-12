@@ -296,12 +296,30 @@ th {
   }
 }
 
+.p-sidebar-wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 2%;
+}
+@media screen and (max-width: 1024px) {
+  .p-sidebar-wrap {
+    height: 265px;
+  }
+}
 .p-sidebar-title {
-  font-size: 32px;
+  font-size: 2rem;
 }
 .p-sidebar-btn {
   border: 1px solid #333;
   border-radius: 6px;
+  height: 148px;
+}
+@media screen and (max-width: 1024px) {
+  .p-sidebar-btn {
+    margin-inline: auto;
+    height: 110px;
+  }
 }
 
 .p-homeebisu_main {
@@ -1172,8 +1190,21 @@ th {
 .u-w_55p {
   width: 55%;
 }
-.u-w_72p {
+.u-w_30p85p {
+  width: 30%;
+}
+@media screen and (max-width: 1024px) {
+  .u-w_30p85p {
+    width: 85%;
+  }
+}
+.u-w_72p40p {
   width: 72%;
+}
+@media screen and (max-width: 1024px) {
+  .u-w_72p40p {
+    width: 40%;
+  }
 }
 .u-w_100p70p {
   width: 70%;

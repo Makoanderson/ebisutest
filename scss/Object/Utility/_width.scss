@@ -22,8 +22,18 @@
         width: 55%;
     }
 
-    &_72p {
+    &_30p85p {
+        width: 30%;
+        @include mixin.mq(lpc) {
+            width: 85%;
+        }
+    }
+
+    &_72p40p {
         width: 72%;
+        @include mixin.mq(lpc) {
+            width: 40%;
+        }
     }
 
     &_100p70p {
