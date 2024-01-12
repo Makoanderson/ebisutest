@@ -1,6 +1,8 @@
 $breakpoint: (
     sp: 'screen and (max-width: 428px)',
-    tab: 'screen and (max-width: 1024px)',
+    tab: 'screen and (min-width: 429px)',
+    lpc: 'screen and (max-width: 1024px)',
+    pc: 'screen and (max-width: 1200px)',
     max: 'screen and (max-width: 1980px)'
 );
 

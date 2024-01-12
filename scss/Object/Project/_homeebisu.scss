@@ -2,20 +2,19 @@
 @use "../../Foundation/variable";
 
 .p-homeebisu {
-    &_menu {     //老人ホーム笑びすnavメニュー
-        display:flex;
-        justify-content: space-between;
-        width: 70%;
-        align-items: center;
-        font-size: 1.6rem;
+    &_main {
+        display: flex;
+        flex-direction: row-reverse;
 
-        li {
-            //padding: 25px 5px;
-            border: 1px solid #333;
-            border-radius: 6px;
-            width: 120px;
-            display: flex;
-            justify-content: center;
+        @include mixin.mq(lpc) {
+            display: block;
+            flex-direction: unset;
+        }
+    }
+
+    &_content {
+        @include mixin.mq(lpc) {
+            width: 100%;
         }
     }
 }
@@ -28,6 +27,10 @@
 
     a {
         width: 65px;
+        text-align: center;
+        @include mixin.mq(lpc) {
+            text-align: initial;
+        }
     }
 }
 

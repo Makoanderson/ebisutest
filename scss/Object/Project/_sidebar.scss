@@ -1,2 +1,17 @@
 @use "../../Foundation/mixin";
 @use "../../Foundation/variable";
+
+.p-sidebar {
+
+    //&-shisetsu {
+
+    //}
+    &-title {
+        font-size: 32px;
+    }
+    &-btn {
+        border: 1px solid #333;
+        border-radius: 6px;
+        //width: 55%;
+    }
+}

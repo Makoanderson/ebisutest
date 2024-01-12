@@ -229,6 +229,9 @@ th {
 .l-header {
   max-width: 100vw;
 }
+.l-header_menu {
+  display: flex;
+}
 
 .test {
   max-height: 100%;
@@ -248,19 +251,73 @@ th {
   font-size: 16px;
 }
 
-.p-homeebisu_menu {
+@media screen and (max-width: 1024px) {
+  .p-nav-wrap {
+    width: 85%;
+    margin-inline: auto;
+    background-color: pink;
+  }
+}
+.p-nav-home {
   display: flex;
   justify-content: space-between;
-  width: 70%;
   align-items: center;
   font-size: 1.6rem;
 }
-.p-homeebisu_menu li {
+@media screen and (max-width: 1200px) {
+  .p-nav-home {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .p-nav-home {
+    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: auto;
+    padding-left: 10%;
+    padding-bottom: 10px;
+    justify-content: flex-start;
+  }
+}
+.p-nav-home li {
   border: 1px solid #333;
   border-radius: 6px;
   width: 120px;
   display: flex;
   justify-content: center;
+  height: 65px;
+}
+@media screen and (max-width: 1024px) {
+  .p-nav-home li {
+    border: initial;
+    border-radius: initial;
+    height: 45px;
+  }
+}
+
+.p-sidebar-title {
+  font-size: 32px;
+}
+.p-sidebar-btn {
+  border: 1px solid #333;
+  border-radius: 6px;
+}
+
+.p-homeebisu_main {
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 1024px) {
+  .p-homeebisu_main {
+    display: block;
+    flex-direction: unset;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .p-homeebisu_content {
+    width: 100%;
+  }
 }
 
 .menu-item-186,
@@ -270,6 +327,13 @@ th {
 .menu-item-186 a,
 .menu-item-189 a {
   width: 65px;
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .menu-item-186 a,
+.menu-item-189 a {
+    text-align: initial;
+  }
 }
 
 .menu-item-184,
@@ -1086,9 +1150,38 @@ th {
 .u-mar-b45 {
   margin-bottom: 45px;
 }
+.u-mar-b21 {
+  margin-bottom: 21px;
+}
+.u-mar-mx1p {
+  margin-inline: 1%;
+}
 
 .u-w_maxpc {
   max-width: 1400px;
+}
+.u-w_100p {
+  width: 100%;
+}
+.u-w_70p {
+  width: 70%;
+}
+.u-w_30p {
+  width: 30%;
+}
+.u-w_55p {
+  width: 55%;
+}
+.u-w_72p {
+  width: 72%;
+}
+.u-w_100p70p {
+  width: 70%;
+}
+@media screen and (max-width: 1024px) {
+  .u-w_100p70p {
+    width: 100%;
+  }
 }
 
 .u-posi-stat {
@@ -1176,6 +1269,12 @@ th {
 }
 .u-h_70 {
   height: 70px;
+}
+.u-h_127 {
+  height: 127px;
+}
+.u-h_148 {
+  height: 148px;
 }
 
 /*Foundation*/

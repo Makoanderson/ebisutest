@@ -3,6 +3,10 @@
 
 .l-header {
     max-width: 100vw;
+
+    &_menu {
+        display: flex;
+    }
 }
 
 .test {
