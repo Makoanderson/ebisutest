@@ -16,14 +16,14 @@
 
            
             <!--コンテンツ-->
-            <div class="p-homeebisu_main u-disp-flex u-mar-mx1p">
+            <div class="p-homeebisu_main u-mar-mx1p">
 
-                <div class="p-homeebisu_content u-w_70p">
+                <div class="p-homeebisu_content u-w_100p70p">
                     <!--ページ内リンク用サブメニュー-->
-                    <nav class="u-h_70">
+                    <nav class="p-nav-wrap u-h_100p">
                         <?php wp_nav_menu(array(
                             'theme_location' => 'homeebisu-menu',
-                            'menu_class' => 'p-homeebisu_menu',
+                            'menu_class' => 'p-nav-home',
                             'container' => '',
                             ));?>
                     </nav>

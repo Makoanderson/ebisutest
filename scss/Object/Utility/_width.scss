@@ -6,6 +6,10 @@
         max-width: 1400px;
     }
 
+    &_100p {
+        width: 100%;
+    }
+
     &_70p {
         width: 70%;
     }
@@ -16,5 +20,16 @@
 
     &_55p {
         width: 55%;
+    }
+
+    &_72p {
+        width: 72%;
+    }
+
+    &_100p70p {
+        width: 70%;
+        @include mixin.mq(lpc) {
+            width: 100%;
+        }
     }
 }

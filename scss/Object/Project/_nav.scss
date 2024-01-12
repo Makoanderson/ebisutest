@@ -1,2 +1,50 @@
 @use "../../Foundation/mixin";
 @use "../../Foundation/variable";
+
+.p-nav {
+    &-wrap {
+        @include mixin.mq(lpc) {
+            width: 85%;
+            margin-inline: auto;
+            color: pink;
+        }
+    }
+
+    &-home {        //老人ホーム笑びすnavメニュー
+        display:flex;
+        justify-content: space-between;
+        //width: 70%;
+        align-items: center;
+        font-size: 1.6rem;
+
+        @include mixin.mq(pc) {
+           font-size: 1.4rem;
+          }
+
+        @include mixin.mq(lpc) {
+            font-size: 1.2rem;
+            display: flex;
+            flex-wrap: wrap;
+            margin-inline: auto;
+            padding-left: 10%;
+            padding-bottom: 10px;
+            justify-content: start;
+        }
+
+        li {
+            //padding: 25px 5px;
+            border: 1px solid #333;
+            border-radius: 6px;
+            width: 120px;
+            display: flex;
+            justify-content: center;
+            height: 65px;
+
+            @include mixin.mq(lpc) {
+                border: initial;
+                border-radius: 0;
+                height: 45px;
+            }
+        }
+    }
+}
