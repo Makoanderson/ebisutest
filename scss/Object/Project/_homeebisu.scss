@@ -8,7 +8,7 @@
 
         @include mixin.mq(lpc) {
             display: block;
-            //flex-direction: unset;
+            flex-direction: unset;
         }
     }
 

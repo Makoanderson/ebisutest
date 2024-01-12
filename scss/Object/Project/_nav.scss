@@ -6,7 +6,7 @@
         @include mixin.mq(lpc) {
             width: 85%;
             margin-inline: auto;
-            color: pink;
+            background-color: pink;
         }
     }
 
@@ -28,7 +28,7 @@
             margin-inline: auto;
             padding-left: 10%;
             padding-bottom: 10px;
-            justify-content: start;
+            justify-content: flex-start;
         }
 
         li {
@@ -42,7 +42,7 @@
 
             @include mixin.mq(lpc) {
                 border: initial;
-                border-radius: 0;
+                border-radius: initial;
                 height: 45px;
             }
         }

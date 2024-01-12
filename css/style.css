@@ -251,6 +251,13 @@ th {
   font-size: 16px;
 }
 
+@media screen and (max-width: 1024px) {
+  .p-nav-wrap {
+    width: 85%;
+    margin-inline: auto;
+    background-color: pink;
+  }
+}
 .p-nav-home {
   display: flex;
   justify-content: space-between;
@@ -267,6 +274,10 @@ th {
     font-size: 1.2rem;
     display: flex;
     flex-wrap: wrap;
+    margin-inline: auto;
+    padding-left: 10%;
+    padding-bottom: 10px;
+    justify-content: flex-start;
   }
 }
 .p-nav-home li {
@@ -279,8 +290,8 @@ th {
 }
 @media screen and (max-width: 1024px) {
   .p-nav-home li {
-    border: unset;
-    border-radius: unset;
+    border: initial;
+    border-radius: initial;
     height: 45px;
   }
 }
@@ -317,6 +328,12 @@ th {
 .menu-item-189 a {
   width: 65px;
   text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .menu-item-186 a,
+.menu-item-189 a {
+    text-align: initial;
+  }
 }
 
 .menu-item-184,
