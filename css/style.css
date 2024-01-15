@@ -243,7 +243,12 @@ th {
 }
 
 .c-title_mv {
-  top: 0;
+  top: 140px;
+  font-size: 20px;
+  text-align: center;
+}
+.c-title_mv span {
+  font-size: 32px;
 }
 
 .test {
@@ -271,13 +276,13 @@ th {
 }
 @media screen and (max-width: 1024px) {
   .p-nav-home {
-    font-size: 1.2rem;
-    display: flex;
-    flex-wrap: wrap;
+    font-size: 1.6rem;
+    font-weight: bold;
     margin-inline: auto;
+    padding-top: 10px;
     padding-left: 10%;
     padding-bottom: 10px;
-    justify-content: flex-start;
+    display: block;
   }
 }
 .p-nav-home li {
@@ -287,12 +292,19 @@ th {
   display: flex;
   justify-content: center;
   height: 65px;
+  align-items: center;
 }
 @media screen and (max-width: 1024px) {
   .p-nav-home li {
     border: initial;
-    border-radius: initial;
-    height: 45px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    height: 30px;
+    width: 85%;
+    height: 30px;
+    display: block;
+    text-align: center;
+    margin: 10px 0;
   }
 }
 
@@ -314,12 +326,25 @@ th {
   border: 1px solid #333;
   border-radius: 6px;
   height: 148px;
+  position: relative;
 }
 @media screen and (max-width: 1024px) {
   .p-sidebar-btn {
     margin-inline: auto;
     height: 110px;
   }
+}
+.p-sidebar-icon1::after {
+  position: absolute;
+  content: "";
+  top: 10;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-image: url("../../../img/bar-shisetsu_icon1.png");
+}
+.p-sidebar-bk {
+  background: url("../../../img/bar-shisetsu_bk1.png");
 }
 
 .p-homeebisu_main {
@@ -340,7 +365,7 @@ th {
 
 .menu-item-186,
 .menu-item-189 {
-  padding: 16px 5px;
+  padding: 10px 5px;
 }
 .menu-item-186 a,
 .menu-item-189 a {
@@ -359,7 +384,7 @@ th {
 .menu-item-187,
 .menu-item-188,
 .menu-item-190 {
-  padding: 25px 5px;
+  padding: 10px 5px;
 }
 
 .u-pad-p0 {

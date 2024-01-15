@@ -21,10 +21,23 @@
         border: 1px solid #333;
         border-radius: 6px;
         height: 148px;
+        position: relative;
 
         @include mixin.mq(lpc) {
             margin-inline: auto;
             height: 110px;
         }
+    }
+    &-icon1::after {
+            position: absolute;
+            content: "";
+            top: 10;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background-image: url('../../../img/bar-shisetsu_icon1.png');
+    }
+    &-bk {
+        background: url('../../../img/bar-shisetsu_bk1.png');
     }
 }
