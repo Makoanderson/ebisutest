@@ -1,7 +1,23 @@
 @use "../../Foundation/mixin";
 @use "../../Foundation/variable";
 
-.test {
-    background-color: #333;
-    background-repeat: no-repeat;
+.c-bk {
+    &_sidebar {
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    &_sidebar1 {
+        background: url('../img/bar-shisetsu_bk1.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    &_sidebar2 {
+        background: url('../img/bar-shisetsu_bk1.png');
+    }
+    &_sidebar3 {
+        background: url('../img/bar-shisetsu_bk1.png');
+    }
+    &_sidebar4 {
+        background: url('../img/bar-shisetsu_bk1.png');
+    }
 }

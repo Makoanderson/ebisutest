@@ -237,9 +237,37 @@ th {
   max-height: 100%;
 }
 
-.test {
-  background-color: #333;
+.c-bk_sidebar {
   background-repeat: no-repeat;
+  background-size: contain;
+}
+.c-bk_sidebar1 {
+  background: url("../img/bar-shisetsu_bk1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.c-bk_sidebar2 {
+  background: url("../img/bar-shisetsu_bk1.png");
+}
+.c-bk_sidebar3 {
+  background: url("../img/bar-shisetsu_bk1.png");
+}
+.c-bk_sidebar4 {
+  background: url("../img/bar-shisetsu_bk1.png");
+}
+
+.c-btn_barfont {
+  font-size: 1.6rem;
+  margin: auto;
+  text-align: center;
+  height: 100%;
+  padding: 50px 0;
+}
+.c-btn_barfont a {
+  margin: auto;
+}
+.c-btn_barfont a span {
+  font-size: 3rem;
 }
 
 .c-title_mv {
@@ -337,14 +365,13 @@ th {
 .p-sidebar-icon1::after {
   position: absolute;
   content: "";
-  top: 10;
-  left: 0;
+  top: 50px;
+  left: -20px;
   width: 100px;
   height: 100px;
-  background-image: url("../../../img/bar-shisetsu_icon1.png");
-}
-.p-sidebar-bk {
-  background: url("../../../img/bar-shisetsu_bk1.png");
+  background-image: url("../img/bar-shisetsu_icon1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .p-homeebisu_main {
