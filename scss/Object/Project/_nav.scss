@@ -6,7 +6,8 @@
         @include mixin.mq(lpc) {
             width: 85%;
             margin-inline: auto;
-            background-color: pink;
+            background-color: rgba(249,233,234,1);
+            border-radius: 10px;
         }
     }
 
@@ -16,6 +17,8 @@
         //width: 70%;
         align-items: center;
         font-size: 1.6rem;
+        font-family: variable.$catch;
+        font-weight: 700;
 
         @include mixin.mq(pc) {
            font-size: 1.4rem;
@@ -38,13 +41,14 @@
 
         li {
             //padding: 25px 5px;
-            border: 1px solid #333;
+            //border: 1px solid #333;
             border-radius: 6px;
             width: 120px;
             display: flex;
             justify-content: center;
             height: 65px;
             align-items: center;
+            background-color: rgba(249,233,234,1);
 
             @include mixin.mq(lpc) {
                 border: initial;

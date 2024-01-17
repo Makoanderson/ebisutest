@@ -32,6 +32,10 @@
             text-align: initial;
         }
     }
+
+    @include mixin.mq(lpc) {
+        padding: 5px;
+    }
 }
 
 .menu-item-184,
@@ -41,4 +45,8 @@
 .menu-item-190 {
     //padding: 25px 5px;
     padding: 10px 5px;
+
+    @include mixin.mq(lpc) {
+        padding: 5px;
+    }
 }

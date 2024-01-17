@@ -29,10 +29,13 @@
         }
     }
 
-    &_72p40p {
+    &_sbar {
         width: 72%;
         @include mixin.mq(lpc) {
             width: 40%;
+        }
+        @include mixin.mq(md) {
+            width: 200px;
         }
     }
 

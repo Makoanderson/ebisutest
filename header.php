@@ -7,12 +7,15 @@
     <meta name="description" content="特定非営利活動法人みつわのWebサイト">
     <?php wp_head(); ?>
 </head>
-<header>
-    <?php wp_nav_menu(array(
-        'theme_location' => 'main-menu',
-        'menu_class' => 'l-header_menu',
-        'container' => '',
-        ));
-    ?>
-</header> 
-<body>   
+
+<body>
+    <div class="l-header">
+    <header class="l-header-menu">
+        <?php wp_nav_menu(array(
+            'theme_location' => 'main-menu',
+            'menu_class' => 'l-header_menu',
+            'container' => '',
+            ));
+        ?>
+    </header> 
+   

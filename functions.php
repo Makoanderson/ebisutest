@@ -35,6 +35,11 @@ function readScript()
         []
     );
     wp_enqueue_style(
+      'Zen Maru Gothic',
+      '//fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Zen+Maru+Gothic:wght@500;700&display=swap',
+      []
+    );
+    wp_enqueue_style(
         'M plus 1',
         '//fonts.googleapis.com/css2?family=M+PLUS+1:wght@300;400;500&display=swap',
         []
