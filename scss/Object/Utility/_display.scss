@@ -17,4 +17,10 @@
     &-hidden {
         display: none;
     }
+    &-flexblock {
+        display: flex;
+        @include mixin.mq(md) {
+            display: block;
+        }
+    }
 }

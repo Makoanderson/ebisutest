@@ -10,7 +10,7 @@
 
 <body>
     <div class="l-header">
-    <header class="l-header-menu">
+    <header class="l-header_menu c-bk_header p-com_fontfam c-txt_16">
         <?php wp_nav_menu(array(
             'theme_location' => 'main-menu',
             'menu_class' => 'l-header_menu',

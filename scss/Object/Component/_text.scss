@@ -1,2 +1,21 @@
 @use "../../Foundation/mixin";
 @use "../../Foundation/variable";
+
+.c-txt {
+    &_12 {
+        font-size: 1.2rem;
+    }
+    &_16{
+        font-size: 1.6rem;
+    }
+
+    &_color1 {
+        color: #b3c1a0;
+    }
+    &_color2 {
+        color: #E7977e;
+    }
+    &_color3 {
+        color: #ffffff;
+    }
+}

@@ -26,4 +26,19 @@
         background-repeat: no-repeat;
         background-size: contain;
     }
+
+    &_mainbtm {
+        background: url('../img/bk-mainbtm.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &_footer {
+        background-color: #6b6b6b;
+    }
+
+    &_header {
+        background-color: #ffffff;
+        opacity: 0.5;
+    }
 }

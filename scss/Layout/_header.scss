@@ -3,9 +3,11 @@
 
 .l-header {
     max-width: 100vw;
+    position: relative;
 
     &_menu {
         display: flex;
+        position: absolute;
     }
 }
 

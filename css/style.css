@@ -228,13 +228,25 @@ th {
 
 .l-header {
   max-width: 100vw;
+  position: relative;
 }
 .l-header_menu {
   display: flex;
+  position: absolute;
 }
 
 .test {
   max-height: 100%;
+}
+
+.l-main_info {
+  margin-inline: 15%;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+.l-main_map {
+  margin-top: 50px;
+  width: 100vw;
 }
 
 .c-bk_sidebar {
@@ -260,6 +272,18 @@ th {
   background: url("../img/bar-shisetsu_bk4.png");
   background-repeat: no-repeat;
   background-size: contain;
+}
+.c-bk_mainbtm {
+  background: url("../img/bk-mainbtm.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.c-bk_footer {
+  background-color: #6b6b6b;
+}
+.c-bk_header {
+  background-color: #ffffff;
+  opacity: 0.5;
 }
 
 .c-btn_barfont {
@@ -288,6 +312,22 @@ th {
     margin-inline: 35px;
     padding-right: 0;
   }
+}
+
+.c-txt_12 {
+  font-size: 1.2rem;
+}
+.c-txt_16 {
+  font-size: 1.6rem;
+}
+.c-txt_color1 {
+  color: #b3c1a0;
+}
+.c-txt_color2 {
+  color: #E7977e;
+}
+.c-txt_color3 {
+  color: #ffffff;
 }
 
 .c-title_mv {
@@ -336,10 +376,23 @@ th {
     top: 12px;
   }
 }
+.c-title_16 {
+  font-size: 1.6rem;
+}
 
 .test {
   color: #333;
   font-size: 16px;
+}
+
+.p-com_hr1 {
+  margin-top: 50px;
+  border-top: 2px double rgb(249, 233, 234);
+  height: 5px;
+  border-top-width: 8px;
+}
+.p-com_fontfam {
+  font-family: "Zen Maru Gothic", sans-serif;
 }
 
 @media screen and (max-width: 1024px) {
@@ -484,6 +537,9 @@ th {
   .p-homeebisu_content {
     width: 100%;
   }
+}
+.p-homeebisu_btminfo img {
+  width: 100px;
 }
 
 .menu-item-186,
@@ -1413,6 +1469,14 @@ th {
 }
 .u-disp-hidden {
   display: none;
+}
+.u-disp-flexblock {
+  display: flex;
+}
+@media screen and (max-width: 769px) {
+  .u-disp-flexblock {
+    display: block;
+  }
 }
 
 .u-text-l {

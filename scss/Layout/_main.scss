@@ -1,2 +1,16 @@
 @use "../Foundation/mixin.scss";
 @use "../Foundation/variable";
+
+.l-main {
+    &_info {
+        margin-inline: 15%;
+        justify-content: space-around;
+        padding-top: 50px;
+    }
+
+    &_map {
+        margin-top: 50px;
+        width: 100vw;
+    }
+
+}
