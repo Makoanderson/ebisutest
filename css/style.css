@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  margin-top: 0 !important;
 }
 
 a {
@@ -233,10 +234,29 @@ th {
 .l-header_menu {
   display: flex;
   position: absolute;
+  height: 90px;
+}
+.l-header_nav {
+  display: flex;
+  position: absolute;
+  right: 0;
+  color: #56772c;
 }
 
 .test {
   max-height: 100%;
+}
+
+.l-inner_header {
+  width: clamp(102.4rem, 0rem + 100vw, 140rem);
+  margin-inline: clamp(0rem, -70rem + 50vw, 55rem);
+  position: relative;
+  display: flex;
+}
+@media screen and (max-width: 1024px) {
+  .l-inner_header {
+    width: 100vw;
+  }
 }
 
 .l-main_info {
@@ -245,8 +265,16 @@ th {
   padding-top: 50px;
 }
 .l-main_map {
-  margin-top: 50px;
-  width: 100vw;
+  margin-block: 50px;
+  width: 90vw;
+  margin-inline: 5%;
+  border-radius: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .l-main_map {
+    width: 80vw;
+    margin-inline: 7%;
+  }
 }
 
 .c-bk_sidebar {
@@ -283,7 +311,8 @@ th {
 }
 .c-bk_header {
   background-color: #ffffff;
-  opacity: 0.5;
+  opacity: 0.8;
+  z-index: 999;
 }
 
 .c-btn_barfont {
@@ -300,6 +329,7 @@ th {
 }
 .c-btn_barfont a span {
   font-size: 3rem;
+  font-family: "Zen Maru Gothic", sans-serif;
 }
 @media screen and (max-width: 1024px) {
   .c-btn_barfont {
@@ -328,6 +358,12 @@ th {
 }
 .c-txt_color3 {
   color: #ffffff;
+}
+.c-txt_color4 {
+  color: #56772c;
+}
+.c-txt_color5 {
+  color: #b85d1d;
 }
 
 .c-title_mv {
@@ -390,6 +426,11 @@ th {
   border-top: 2px double rgb(249, 233, 234);
   height: 5px;
   border-top-width: 8px;
+}
+@media screen and (max-width: 769px) {
+  .p-com_hr1 {
+    margin-top: 300px;
+  }
 }
 .p-com_fontfam {
   font-family: "Zen Maru Gothic", sans-serif;
@@ -1438,6 +1479,9 @@ th {
     width: 100%;
   }
 }
+.u-w_tabmv {
+  width: 100vw;
+}
 
 .u-posi-stat {
   position: static;
@@ -1538,6 +1582,14 @@ th {
 }
 .u-h_148 {
   height: 148px;
+}
+.u-h_maxpc {
+  height: clamp(45.9rem, 40.6818rem + 3.7273vw, 50rem);
+}
+@media screen and (max-width: 1400px) {
+  .u-h_maxpc {
+    height: initial;
+  }
 }
 
 /*Foundation*/

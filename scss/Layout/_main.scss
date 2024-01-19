@@ -9,8 +9,15 @@
     }
 
     &_map {
-        margin-top: 50px;
-        width: 100vw;
+        margin-block: 50px;
+        width: 90vw;
+        margin-inline: 5%;
+        border-radius: 30px;
+
+        @include mixin.mq(lpc) {
+            width: 80vw;
+            margin-inline: 7%;
+        }
     }
 
 }

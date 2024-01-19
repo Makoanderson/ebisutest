@@ -45,4 +45,12 @@
             width: 100%;
         }
     }
+    
+    &_tabmv {
+        width: 100vw;
+
+        //@include mixin.mq(pc) {
+            //width: 100vw;
+        //}
+    }
 }

@@ -8,7 +8,17 @@
     &_menu {
         display: flex;
         position: absolute;
+        height: 90px;
+        
     }
+
+    &_nav {
+        display: flex;
+        position: absolute;
+        right: 0;
+        color: #56772c;
+    }
+
 }
 
 .test {

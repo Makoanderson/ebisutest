@@ -14,4 +14,11 @@
     &_148 {
         height: 148px;
     }
+    &_maxpc {
+        height: clamp(45.9rem, 40.6818rem + 3.7273vw, 50rem);
+
+        @media screen and (max-width: 1400px) {
+            height: initial;
+        }
+    }
 }
