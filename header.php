@@ -13,9 +13,9 @@
     <header class="l-header_menu c-bk_header p-com_fontfam c-txt_16">
         <div class="l-inner_header">
             <h1 class="u-disp-flex">
-                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_titleimg1.png">
-                <div>
-                    <p class="c-txt_color5">特定非営利活動法人&nbsp;みつわ</p>
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_titleimg1.png" class="u-mar-mt10">
+                <div class="u-pad-py10">
+                    <p class="c-txt_color5 u-mar-mb5">特定非営利活動法人&nbsp;みつわ</p>
                     <p class="c-txt_color5">株式会社&nbsp;みつわ</p>
                 </div>
             </h1>    

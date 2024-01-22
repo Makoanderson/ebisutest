@@ -799,4 +799,10 @@
     padding-left: 1px;
   }
   
+  &-px20p0tab {
+    @include mixin.mq(md) {
+      padding-inline: clamp(0rem, -13.5123rem + 31.5707vw, 10.7656rem);
+    }
+  }
+  
   }

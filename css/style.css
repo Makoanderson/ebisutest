@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 62.5%;
   margin-top: 0 !important;
@@ -241,10 +242,26 @@ th {
   position: absolute;
   right: 0;
   color: #56772c;
+  padding-block: 35px;
+}
+.l-header_nav li + li {
+  position: relative;
+}
+.l-header_nav li + li::before {
+  content: "";
+  display: block;
+  height: 1em;
+  border-left: 1px solid #56772c;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -5px;
+  margin: auto;
 }
 
-.test {
-  max-height: 100%;
+/*WordPressにて自動付与されたclass、idのスタイルcss*/
+.menu-item {
+  margin-inline: 5px;
 }
 
 .l-inner_header {
@@ -1418,6 +1435,11 @@ th {
 .u-pad-plpx {
   padding-left: 1px;
 }
+@media screen and (max-width: 769px) {
+  .u-pad-px20p0tab {
+    padding-inline: clamp(0rem, -13.5123rem + 31.5707vw, 10.7656rem);
+  }
+}
 
 .u-mar-mxa {
   margin-inline: auto;
@@ -1433,6 +1455,20 @@ th {
 }
 .u-mar-mx1p {
   margin-inline: 1%;
+}
+.u-mar-mt10 {
+  margin-top: 10px;
+}
+.u-mar-mb5 {
+  margin-bottom: 5px;
+}
+.u-mar-mt15 {
+  margin-top: 15px;
+}
+@media screen and (max-width: 769px) {
+  .u-mar-mt25tab {
+    margin-top: 25px;
+  }
 }
 
 .u-w_maxpc {

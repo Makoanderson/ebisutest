@@ -48,36 +48,36 @@
         <hr class="p-com_hr1">
         <div class="l-main-btm p-homeebisu_btminfo c-bk_mainbtm">
             <div class="l-main_info p-com_fontfam c-txt_12 u-disp-flexblock">
-                <article class="l-main-info1">
+                <article class="l-main-info1 u-pad-px20p0tab">
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icon-ebisu1.png" alt="えびす様アイコン">
-                    <address>
+                    <address class="u-mar-mt15">
                         <h3 class="c-title_16 c-txt_color4">特定非営利活動法人&nbsp&nbspみつわ</h3>
                         <div class="u-disp-flexblock">
-                            <p class="">〒849-2204&nbsp佐賀県武雄市北方町大字大崎753番地</p>
+                            <p class="">〒849-2204&nbsp;佐賀県武雄市北方町大字大崎753番地&nbsp;</p>
                             <p class="">TEL&FAX:0954-36-4936</p>
                         </div>
                     </address>
-                    <address>
+                    <address class="u-mar-mt15">
                         <h3 class="c-title_16 c-txt_color4">株式会社&nbsp&nbspみつわ</h3>
                         <div class="u-disp-flexblock">
-                            <p class="">〒849-2204&nbsp佐賀県武雄市北方町大字大崎753番地</p>
+                            <p class="">〒849-2204&nbsp;佐賀県武雄市北方町大字大崎753番地&nbsp;</p>
                             <p class="">TEL&FAX:0954-36-4936</p>
                         </div>
                     </address>
                 </article>
-                <article class="l-main-info2">
+                <article class="l-main-info2 u-mar-mt25tab u-pad-px20p0tab">
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icon-daikoku1.png" alt="大黒様アイコン">
-                <address>
+                    <address class="u-mar-mt15">
                         <h3 class="c-title_16 c-txt_color5">特定非営利活動法人&nbsp&nbspみつわ</h3>
                         <div class="u-disp-flexblock">
-                            <p class="">〒849-2204&nbsp佐賀県武雄市北方町大字大崎753番地</p>
+                            <p class="">〒849-2204&nbsp;佐賀県武雄市北方町大字大崎753番地&nbsp;</p>
                             <p class="">TEL&FAX:0954-36-4936</p>
                         </div>
                     </address>
-                    <address>
+                    <address class="u-mar-mt15">
                         <h3 class="c-title_16 c-txt_color5">株式会社&nbsp&nbspみつわ</h3>
                         <div class="u-disp-flexblock">
-                            <p class="">〒849-2204&nbsp佐賀県武雄市北方町大字大崎753番地</p>
+                            <p class="">〒849-2204&nbsp;佐賀県武雄市北方町大字大崎753番地&nbsp;</p>
                             <p class="">TEL&FAX:0954-36-4936</p>
                         </div>
                     </address>

@@ -17,10 +17,31 @@
         position: absolute;
         right: 0;
         color: #56772c;
+        padding-block: 35px;
     }
 
+    &_nav li+li{
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            height: 1em;
+            border-left: 1px solid #56772c;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -5px;
+            margin: auto;
+            //color: #56772c;
+        }
+    }
+   
 }
 
-.test {
-    max-height: 100%;
+
+
+/*WordPressにて自動付与されたclass、idのスタイルcss*/
+.menu-item {
+    margin-inline: 5px;
 }
