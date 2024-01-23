@@ -59,6 +59,14 @@ function readScript()
 }
 add_action('wp_enqueue_scripts', 'readScript');
 
+/*jsファイルの読み込み*/
+function my_theme_enqueue_scripts() {
+  // main.jsを登録
+  wp_enqueue_script('my-custom-script', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0', true);
+}
+// wp_enqueue_scripts フックに登録したスクリプトを追加
+add_action('wp_enqueue_scripts', 'my_theme_enqueue_scripts');
+
 /*ウィジェット機能追加*/
 function my_theme_widgets_init() {
     register_sidebar( array(

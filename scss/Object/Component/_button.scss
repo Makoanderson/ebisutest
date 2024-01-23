@@ -30,4 +30,60 @@
             padding-right: 0;
         }
     }
+
+    &_ham {
+        position: relative;
+        width: inherit;
+        height: inherit;
+        margin: 0;
+        border: 1px solid lightblue;
+        background: lightblue;
+        cursor: pointer;
+
+        span {
+            display: block;
+            position: relative;
+            left: 50%;
+            width: 30px;
+            height: 2px;
+            transform: translateX(-50%);
+            background: #fff;
+            transition: all 0.4s;
+        }
+
+        span:nth-of-type(1) {
+            top: -4px;
+        }
+        span:nth-of-type(2) {
+            top: 1px;
+        }
+        span:nth-of-type(3) {
+            top: 6px;
+        }
+        
+        &_hamtxt {
+            display: block;
+            top: 12px;
+            background: transparent;
+            color: #fff;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+        .is-active span:nth-of-type(1) {
+            top: 0;
+            transform: translateX(-50%)rotate(225deg);
+        }
+
+        .is-active span:nth-of-type(2) {
+            opacity: 0;
+        }
+
+        .is-active span:nth-of-type(1) {
+            top: -4px;
+            transform: translateX(-50%)rotate(-225deg);
+        }
+    }
 }

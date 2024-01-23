@@ -18,13 +18,26 @@
                     <p class="c-txt_color5 u-mar-mb5">特定非営利活動法人&nbsp;みつわ</p>
                     <p class="c-txt_color5">株式会社&nbsp;みつわ</p>
                 </div>
-            </h1>    
-            <?php wp_nav_menu(array(
-                'theme_location' => 'main-menu',
-                'menu_class' => 'l-header_nav',
-                'container' => '',
-                ));
-            ?>
+            </h1>
+            <div class="p-header_ham">
+                <button class="c-btn_ham">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="c-btn_hamtxt">MENU</span>
+                </button>
+            </div>
+            <nav class="p-header_nav p-nav_header" id="js-nav">
+                <div class="p-nav_inner">
+                    <?php wp_nav_menu(array(
+                        'theme_location' => 'main-menu',
+                        'menu_class' => 'l-header_nav',
+                        'container' => '',
+                        ));
+                    ?>
+                </div>
+            </nav>    
+            
         </div>
     </header> 
    

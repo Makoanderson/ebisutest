@@ -66,4 +66,14 @@
             }
         }
     }
+
+    &_header {
+        padding-top: 0;
+        padding-bottom: 0;
+
+        @include mixin.mq(lpc) {
+            padding-top: 72px;
+            padding-bottom: 72px
+        }
+    }
 }

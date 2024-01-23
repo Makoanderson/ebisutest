@@ -48,7 +48,7 @@
         <hr class="p-com_hr1">
         <div class="l-main-btm p-homeebisu_btminfo c-bk_mainbtm">
             <div class="l-main_info p-com_fontfam c-txt_12 u-disp-flexblock">
-                <article class="l-main-info1 u-pad-px20p0tab">
+                <article class="l-main-info1 u-pad-px20p0tab u-text-c">
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icon-ebisu1.png" alt="えびす様アイコン">
                     <address class="u-mar-mt15">
                         <h3 class="c-title_16 c-txt_color4">特定非営利活動法人&nbsp&nbspみつわ</h3>
@@ -65,7 +65,7 @@
                         </div>
                     </address>
                 </article>
-                <article class="l-main-info2 u-mar-mt25tab u-pad-px20p0tab">
+                <article class="l-main-info2 u-mar-mt25tab u-pad-px20p0tab u-text-c">
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icon-daikoku1.png" alt="大黒様アイコン">
                     <address class="u-mar-mt15">
                         <h3 class="c-title_16 c-txt_color5">特定非営利活動法人&nbsp&nbspみつわ</h3>
