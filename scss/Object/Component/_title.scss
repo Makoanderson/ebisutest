@@ -12,9 +12,22 @@
         border-radius: 6px;
         width: 250px;
         padding: 5px 10px;
+
+        @include mixin.mq(lpc) {
+            top: clamp(7rem, 1.8205rem + 17.2652vw, 19.5rem);
+        }
+
+        @include mixin.mq(md) {
+            //top: clamp(7rem, -0.9957rem + 26.6525vw, 19.5rem);
+            font-size: clamp(1rem, 1.3442rem + 0.8529vw, 2rem);
+        }
         
         span {
             font-size: 32px;
+
+            @include mixin.mq(md) {
+                font-size: clamp(2rem, 1.2325rem + 2.5586vw, 2rem);
+            }
         }
     }
     &_sidebar {

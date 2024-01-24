@@ -14,7 +14,7 @@
         <div class="l-inner_header">
             <h1 class="u-disp-flex">
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_titleimg1.png" class="u-mar-mt10">
-                <div class="u-pad-py10">
+                <div class="u-pad-pyhdtxt c-txt_14tab">
                     <p class="c-txt_color5 u-mar-mb5">特定非営利活動法人&nbsp;みつわ</p>
                     <p class="c-txt_color5">株式会社&nbsp;みつわ</p>
                 </div>
@@ -24,7 +24,7 @@
                     <span></span>
                     <span></span>
                     <span></span>
-                    <span class="c-btn_hamtxt">MENU</span>
+                    <p class="c-btn_hamtxt">MENU</p>
                 </button>
             </div>
             <nav class="p-header_nav p-nav_header" id="js-nav">

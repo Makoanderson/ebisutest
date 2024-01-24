@@ -804,5 +804,14 @@
       padding-inline: clamp(0rem, -13.5123rem + 31.5707vw, 10.7656rem);
     }
   }
-  
+
+  &-pyhdtxt {
+    padding-block: 20px;
+
+    @include mixin.mq(md) {
+      padding-top: 10px;
+      padding-bottom: 5px;
+    }
   }
+  
+}

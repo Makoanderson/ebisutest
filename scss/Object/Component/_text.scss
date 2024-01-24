@@ -5,9 +5,18 @@
     &_12 {
         font-size: 1.2rem;
     }
-    &_16{
+    &_16 {
         font-size: 1.6rem;
     }
+    &_14 {
+        font-size: 1.4rem;
+    }
+    &_14tab {
+        @include mixin.mq(md) {
+            font-size: 1.4rem;
+        }
+    }
+
 
     &_color1 {
         color: #b3c1a0;

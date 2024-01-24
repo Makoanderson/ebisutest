@@ -31,4 +31,9 @@
             margin-top: 25px;
         }
     }
+    &-mt55tab {
+        @include mixin.mq(md) {
+            margin-top: 55px;
+        }
+    }
 }

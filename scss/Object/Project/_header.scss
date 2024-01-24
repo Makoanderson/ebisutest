@@ -55,13 +55,13 @@
     }
 }
 
-.p-header_nav .is-active {
+.is-active {
     @include mixin.mq(lpc){
         position: fixed;
-    top: 0;
-    right: 0;
-    background: lightblue;
-    opacity: 1;
-    transition: 0.6s;
+        top: 0;
+        right: 0;
+        background: #f7931e;
+        opacity: 1;
+        transition: 0.6s;
     }
 }
