@@ -1,2 +1,19 @@
 @use "../../Foundation/mixin";
 @use "../../Foundation/variable";
+
+.p-com {
+    &_hr1 {
+        margin-top: 50px;
+        border-top: 2px double rgba(249,233,234,1);
+        height: 5px;
+        border-top-width: 8px;
+
+        @include mixin.mq(md) {
+            margin-top: 300px;
+        }
+    }
+
+    &_fontfam {
+        font-family: variable.$catch;
+    }
+}

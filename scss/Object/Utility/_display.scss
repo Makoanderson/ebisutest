@@ -17,4 +17,16 @@
     &-hidden {
         display: none;
     }
+    &-flexblock {
+        display: flex;
+        @include mixin.mq(md) {
+            display: block;
+        }
+    }
+    &-flexnone {
+        display: flex;
+        @include mixin.mq(md) {
+            display: none;
+        }
+    }
 }

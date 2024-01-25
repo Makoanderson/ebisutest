@@ -17,20 +17,30 @@
             width: 100%;
         }
     }
+
+    &_btminfo {
+        img {
+            width: 100px;
+        }
+    }
 }
 
 
 //老人ホーム笑びすに関するWordPress自動付与クラス名分スタイル
 .menu-item-186,
 .menu-item-189 {
-    padding: 16px 5px; 
-
+    //padding: 16px 5px; 
+    padding: 10px 5px;
     a {
         width: 65px;
         text-align: center;
         @include mixin.mq(lpc) {
             text-align: initial;
         }
+    }
+
+    @include mixin.mq(lpc) {
+        padding: 5px;
     }
 }
 
@@ -39,5 +49,10 @@
 .menu-item-187,
 .menu-item-188,
 .menu-item-190 {
-    padding: 25px 5px;
+    //padding: 25px 5px;
+    padding: 10px 5px;
+
+    @include mixin.mq(lpc) {
+        padding: 5px;
+    }
 }

@@ -17,4 +17,26 @@
     &-mx1p {
         margin-inline: 1%;
     }
+    &-mt10 {
+        margin-top: 10px;
+    }
+    &-mb5 {
+        margin-bottom: 5px;
+    }
+    &-mb10 {
+        margin-bottom: 10px;
+    }
+    &-mt15 {
+        margin-top: 15px;
+    }
+    &-mt25tab {
+        @include mixin.mq(md) {
+            margin-top: 25px;
+        }
+    }
+    &-mt55tab {
+        @include mixin.mq(md) {
+            margin-top: 55px;
+        }
+    }
 }

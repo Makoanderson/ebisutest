@@ -22,8 +22,21 @@
         width: 55%;
     }
 
-    &_72p {
+    &_30p85p {
+        width: 30%;
+        @include mixin.mq(lpc) {
+            width: 85%;
+        }
+    }
+
+    &_sbar {
         width: 72%;
+        @include mixin.mq(lpc) {
+            width: 40%;
+        }
+        @include mixin.mq(md) {
+            width: 200px;
+        }
     }
 
     &_100p70p {
@@ -31,5 +44,13 @@
         @include mixin.mq(lpc) {
             width: 100%;
         }
+    }
+    
+    &_tabmv {
+        width: 100vw;
+
+        //@include mixin.mq(pc) {
+            //width: 100vw;
+        //}
     }
 }

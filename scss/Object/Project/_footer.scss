@@ -1,2 +1,22 @@
 @use "../../Foundation/mixin";
 @use "../../Foundation/variable";
+
+.p-footer {
+    &_sub li+li{
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            height: 0.5em;
+            border-left: 1px solid #ffffff;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            //color: #56772c;
+            transform: rotate(90deg);
+        }
+    }
+}

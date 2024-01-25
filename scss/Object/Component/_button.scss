@@ -1,2 +1,99 @@
 @use "../../Foundation/mixin";
 @use "../../Foundation/variable";
+
+.c-btn {
+    &_barfont {
+        font-size: 1.6rem;
+        margin: auto;
+        text-align: center;
+        height: 100%;
+        padding-block: clamp(3.3rem, 1.5163rem + 1.7418vw, 5rem);
+        font-family: variable.$catch;
+
+        a {
+            margin: auto;
+            font-family: variable.$catch;
+
+            span {
+                font-size: 3rem;
+                font-family: variable.$catch;
+            }
+        }
+
+        @include mixin.mq(lpc) {
+            padding-top: 30px;
+            padding-right: clamp(3.3rem, -10.8738rem + 18.4314vw, 8rem);
+        }
+
+        @include mixin.mq(md) {
+            margin-inline: 35px;
+            padding-right: 0;
+        }
+    }
+
+    &_ham {
+        position: relative;
+        width: inherit;
+        height: 90px;
+        margin: 0;
+        //border: 1px solid lightblue;
+        background: lightblue;
+        cursor: pointer;
+        text-align: center;
+        padding-top: 10px;
+
+        @include mixin.mq(md) {
+            height: 56px;
+        }
+
+        span {
+            display: block;
+            position: relative;
+            left: 50%;
+            width: 30px;
+            height: 2px;
+            transform: translateX(-50%);
+            background: #fff;
+            transition: all 0.4s;
+        }
+
+        span:nth-of-type(1) {
+            top: -4px;
+        }
+        span:nth-of-type(2) {
+            top: 1px;
+        }
+        span:nth-of-type(3) {
+            top: 6px;
+            margin-bottom: 10px;
+        }
+        
+        &_hamtxt {
+            display: block;
+            top: 12px;
+            background: transparent;
+            color: #fff;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 1;
+            text-transform: uppercase;
+            
+        }
+
+        
+    }
+}
+
+.is-active span:nth-of-type(1) {
+    top: 0;
+    transform: translateX(-50%)rotate(225deg);
+}
+
+.is-active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.is-active span:nth-of-type(3) {
+    top: -4px;
+    transform: translateX(-50%)rotate(-225deg);
+}

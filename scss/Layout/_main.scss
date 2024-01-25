@@ -1,2 +1,27 @@
 @use "../Foundation/mixin.scss";
 @use "../Foundation/variable";
+
+.l-main {
+    &_info {
+        margin-inline: 15%;
+        justify-content: space-around;
+        padding-top: 50px;
+    }
+
+    &_map {
+        margin-block: 50px;
+        width: 90vw;
+        margin-inline: 5%;
+        border-radius: 30px;
+
+        @include mixin.mq(lpc) {
+            width: 80vw;
+            margin-inline: 7%;
+        }
+    }
+
+}
+
+.is-open {
+    opacity: 0.4;
+}

@@ -1,2 +1,15 @@
 @use "../Foundation/mixin";
 @use "../Foundation/variable";
+
+.l-inner {
+    &_header {
+        width: clamp(102.4rem, 0rem + 100vw, 140.0rem);
+        margin-inline: clamp(0rem, -70rem + 50vw, 55.0rem);
+        position: relative;
+        display: flex;
+
+        @include mixin.mq(lpc) {
+            width: 100vw;
+        }
+    }
+}

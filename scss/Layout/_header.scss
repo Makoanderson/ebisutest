@@ -3,12 +3,100 @@
 
 .l-header {
     max-width: 100vw;
+    position: relative;
 
     &_menu {
         display: flex;
+        position: absolute;
+        height: 90px;
+        
+        @include mixin.mq(md) {
+            height: 55px;
+        }
+    }
+
+    &_nav {
+        display: flex;
+        position: absolute;
+        right: 0;
+        color: #56772c;
+        padding-block: 35px;
+        font-size: clamp(1.4rem, 0.2363rem + 1.1364vw, 1.6rem);
+
+        @include mixin.mq(lpc) {
+            display: block;
+            width: 100%;
+            padding-right: 20px;
+            padding-left: 20px;
+            //background: #56772c;
+            line-height: 4.5rem;
+            top: 60px;
+            text-align: center;
+            color: #333;
+            font-size: 1.6rem;
+        }
+    }
+
+    &_nav li+li{
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            height: 1em;
+            border-left: 1px solid #56772c;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -5px;
+            margin: auto;
+            //color: #56772c;
+
+            @include mixin.mq(lpc) {
+                display: none;
+            }
+        }
     }
 }
 
-.test {
-    max-height: 100%;
+
+/*WordPress自動付与のクラス名を使用したスタイルscss*/
+.menu-item-25,
+.menu-item-26,
+.menu-item-27,
+.menu-item-28,
+.menu-item-29,
+.menu-item-30,
+.menu-item-31,
+.menu-item-32,
+.menu-item-33 {
+    position: relative;
+    //width: 100%;
+    margin-inline: 5px;
+
+    @include mixin.mq(lpc) {
+        border-bottom: 2px solid #333;
+        width: 100%;
+    }
+    
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        //padding: 10px;
+        text-align: center;
+        
+        @include mixin.mq(lpc) {
+            padding: 10px;
+        }
+    }
 }
+
+
+//.menu-item {
+//    margin-inline: 5px;
+
+//    @include mixin.mq(lpc) {
+//        border-bottom: 2px solid #333;
+//    }
+//}
