@@ -21,6 +21,7 @@
         right: 0;
         color: #56772c;
         padding-block: 35px;
+        font-size: clamp(1.4rem, 0.2363rem + 1.1364vw, 1.6rem);
 
         @include mixin.mq(lpc) {
             display: block;
@@ -32,6 +33,7 @@
             top: 60px;
             text-align: center;
             color: #333;
+            font-size: 1.6rem;
         }
     }
 

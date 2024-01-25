@@ -248,6 +248,7 @@ th {
   right: 0;
   color: #56772c;
   padding-block: 35px;
+  font-size: clamp(1.4rem, 0.2363rem + 1.1364vw, 1.6rem);
 }
 @media screen and (max-width: 1024px) {
   .l-header_nav {
@@ -259,6 +260,7 @@ th {
     top: 60px;
     text-align: center;
     color: #333;
+    font-size: 1.6rem;
   }
 }
 .l-header_nav li + li {
@@ -368,6 +370,25 @@ th {
 
 .is-open {
   opacity: 0.4;
+}
+
+.l-footer_nav {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 20px;
+  justify-content: center;
+}
+
+/*WordPress自動付与のクラス名を使用したスタイルscss*/
+.menu-item-34,
+.menu-item-35,
+.menu-item-36,
+.menu-item-37,
+.menu-item-38,
+.menu-item-39,
+.menu-item-40,
+.menu-item-41 {
+  padding-inline: 10px;
 }
 
 .c-bk_sidebar {
@@ -609,6 +630,22 @@ th {
 }
 .p-com_fontfam {
   font-family: "Zen Maru Gothic", sans-serif;
+}
+
+.p-footer_sub li + li {
+  position: relative;
+}
+.p-footer_sub li + li::before {
+  content: "";
+  display: block;
+  height: 0.5em;
+  border-left: 1px solid #ffffff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  transform: rotate(90deg);
 }
 
 @media screen and (max-width: 1024px) {
@@ -1682,6 +1719,9 @@ th {
 }
 .u-mar-mb5 {
   margin-bottom: 5px;
+}
+.u-mar-mb10 {
+  margin-bottom: 10px;
 }
 .u-mar-mt15 {
   margin-top: 15px;

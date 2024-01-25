@@ -1,0 +1,25 @@
+@use "../Foundation/mixin";
+@use "../Foundation/variable";
+
+.l-footer {
+    &_nav {
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 20px;
+        justify-content: center;
+    }
+}
+
+
+
+/*WordPress自動付与のクラス名を使用したスタイルscss*/
+.menu-item-34,
+.menu-item-35,
+.menu-item-36,
+.menu-item-37,
+.menu-item-38,
+.menu-item-39,
+.menu-item-40,
+.menu-item-41 {
+    padding-inline: 10px;
+} 
