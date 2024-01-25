@@ -17,9 +17,15 @@
     &-hidden {
         display: none;
     }
-    &-flexblock {
+    &-flexblocktab {
         display: flex;
         @include mixin.mq(md) {
+            display: block;
+        }
+    }
+    &-flexblocklpc {
+        display: flex;
+        @include mixin.mq(lpc) {
             display: block;
         }
     }

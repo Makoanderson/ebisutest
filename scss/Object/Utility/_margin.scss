@@ -29,6 +29,9 @@
     &-mt15 {
         margin-top: 15px;
     }
+    &-my30 {
+        margin-block: 30px;
+    }
     &-mt25tab {
         @include mixin.mq(md) {
             margin-top: 25px;

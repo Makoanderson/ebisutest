@@ -28,11 +28,17 @@
                     </nav>
 
                     <!--メインコンテンツ-->
-                    <section class="u-w_70p">
+                    <section class="u-w_100p85p u-mar-mxa p-homeebisu_post">
                         <?php if( have_posts()) : while( have_posts()) : the_post(); ?>
-                            <article>
-                                <h2><?php the_title(); ?></h2>
-                                <?php the_content(); ?>
+                            <article class="c-card_post c-bk_post1 u-mar-my30 u-pad-p40">
+                                <h2 class="c-title_post u-disp-flex">
+                                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_titleimg1.png" class="u-w_56">
+                                    <p class="u-pad-pt3 u-pad-pl3"><?php the_title(); ?></p>
+                                </h2>
+                                <div class="u-disp-flex">
+                                    <?php the_content(); ?>
+                                </div>
+                                
                             </article>
                         <?php endwhile; else : ?>
                             <p>記事はありません。</p>
@@ -46,20 +52,22 @@
             </div>
         </div> 
         <hr class="p-com_hr1">
+
+        <!--フッター上部会社情報-->
         <div class="l-main-btm p-homeebisu_btminfo c-bk_mainbtm">
-            <div class="l-main_info p-com_fontfam c-txt_12 u-disp-flexblock">
+            <div class="l-main_info p-com_fontfam c-txt_12 u-disp-flexblocktab">
                 <article class="l-main-info1 u-pad-px20p0tab u-text-c">
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icon-ebisu1.png" alt="えびす様アイコン">
                     <address class="u-mar-mt15">
                         <h3 class="c-title_16 c-txt_color4">特定非営利活動法人&nbsp&nbspみつわ</h3>
-                        <div class="u-disp-flexblock">
+                        <div class="u-disp-flexblocklpc">
                             <p class="">〒849-2204&nbsp;佐賀県武雄市北方町大字大崎753番地&nbsp;</p>
                             <p class="">TEL&FAX:0954-36-4936</p>
                         </div>
                     </address>
                     <address class="u-mar-mt15">
                         <h3 class="c-title_16 c-txt_color4">株式会社&nbsp&nbspみつわ</h3>
-                        <div class="u-disp-flexblock">
+                        <div class="u-disp-flexblocklpc">
                             <p class="">〒849-2204&nbsp;佐賀県武雄市北方町大字大崎753番地&nbsp;</p>
                             <p class="">TEL&FAX:0954-36-4936</p>
                         </div>
@@ -69,14 +77,14 @@
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icon-daikoku1.png" alt="大黒様アイコン">
                     <address class="u-mar-mt15">
                         <h3 class="c-title_16 c-txt_color5">特定非営利活動法人&nbsp&nbspみつわ</h3>
-                        <div class="u-disp-flexblock">
+                        <div class="u-disp-flexblocklpc">
                             <p class="">〒849-2204&nbsp;佐賀県武雄市北方町大字大崎753番地&nbsp;</p>
                             <p class="">TEL&FAX:0954-36-4936</p>
                         </div>
                     </address>
                     <address class="u-mar-mt15">
                         <h3 class="c-title_16 c-txt_color5">株式会社&nbsp&nbspみつわ</h3>
-                        <div class="u-disp-flexblock">
+                        <div class="u-disp-flexblocklpc">
                             <p class="">〒849-2204&nbsp;佐賀県武雄市北方町大字大崎753番地&nbsp;</p>
                             <p class="">TEL&FAX:0954-36-4936</p>
                         </div>

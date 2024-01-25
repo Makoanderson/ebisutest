@@ -377,6 +377,7 @@ th {
   flex-wrap: wrap;
   line-height: 20px;
   justify-content: center;
+  font-size: 1.3rem;
 }
 
 /*WordPress自動付与のクラス名を使用したスタイルscss*/
@@ -427,6 +428,9 @@ th {
   background-color: #ffffff;
   opacity: 0.8;
   z-index: 999;
+}
+.c-bk_post1 {
+  background-color: #ffe9ea;
 }
 
 .c-btn_barfont {
@@ -515,6 +519,16 @@ th {
 .is-active span:nth-of-type(3) {
   top: -4px;
   transform: translateX(-50%) rotate(-225deg);
+}
+
+.c-card_post {
+  border-radius: 10px;
+}
+.c-card_psec {
+  font-size: 1.6rem;
+  margin-top: 20px;
+  line-height: 26px;
+  width: 60%;
 }
 
 .c-txt_12 {
@@ -610,6 +624,12 @@ th {
 }
 .c-title_16 {
   font-size: 1.6rem;
+}
+.c-title_post {
+  font-size: 3.2rem;
+  border-bottom: 1px solid #b85d1d;
+  font-family: "Zen Maru Gothic", sans-serif;
+  padding-bottom: 5px;
 }
 
 .test {
@@ -847,6 +867,9 @@ th {
 }
 .p-homeebisu_btminfo img {
   width: 100px;
+}
+.p-homeebisu_post {
+  font-family: "M plus 1", san-serif;
 }
 
 .menu-item-186,
@@ -1726,6 +1749,9 @@ th {
 .u-mar-mt15 {
   margin-top: 15px;
 }
+.u-mar-my30 {
+  margin-block: 30px;
+}
 @media screen and (max-width: 769px) {
   .u-mar-mt25tab {
     margin-top: 25px;
@@ -1739,6 +1765,9 @@ th {
 
 .u-w_maxpc {
   max-width: 1400px;
+}
+.u-w_56 {
+  width: 56px;
 }
 .u-w_100p {
   width: 100%;
@@ -1781,6 +1810,14 @@ th {
     width: 100%;
   }
 }
+.u-w_100p85p {
+  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .u-w_100p85p {
+    width: 85%;
+  }
+}
 .u-w_tabmv {
   width: 100vw;
 }
@@ -1816,11 +1853,19 @@ th {
 .u-disp-hidden {
   display: none;
 }
-.u-disp-flexblock {
+.u-disp-flexblocktab {
   display: flex;
 }
 @media screen and (max-width: 769px) {
-  .u-disp-flexblock {
+  .u-disp-flexblocktab {
+    display: block;
+  }
+}
+.u-disp-flexblocklpc {
+  display: flex;
+}
+@media screen and (max-width: 1024px) {
+  .u-disp-flexblocklpc {
     display: block;
   }
 }

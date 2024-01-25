@@ -1,2 +1,15 @@
 @use "../../Foundation/mixin";
 @use "../../Foundation/variable";
+
+.c-card {
+    &_post {
+        border-radius: 10px;
+    }
+
+    &_psec {
+        font-size: 1.6rem;
+        margin-top: 20px;
+        line-height: 26px;
+        width: 60%;
+    }
+}

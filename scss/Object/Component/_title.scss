@@ -67,4 +67,11 @@
     &_16 {
         font-size: 1.6rem;
     }
+
+    &_post {
+        font-size: 3.2rem;
+        border-bottom: 1px solid #b85d1d;
+        font-family: variable.$catch;
+        padding-bottom: 5px;
+    }
 }
