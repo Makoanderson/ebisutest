@@ -12,4 +12,23 @@
         line-height: 26px;
         width: 60%;
     }
+
+    &_table {
+        th {
+            background-color:darkcyan;
+            color: #ffffff;
+            font-weight: 400;
+            border: solid 1px #333;
+        }
+
+        td {
+            background-color: #ffffff;
+        }
+    }
+
+    &_infotxt {
+        padding-right: 100px;
+        line-height: 50px;
+        font-size: 1.6rem;
+    }
 }

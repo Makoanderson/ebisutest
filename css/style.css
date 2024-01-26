@@ -530,6 +530,20 @@ th {
   line-height: 26px;
   width: 60%;
 }
+.c-card_table th {
+  background-color: darkcyan;
+  color: #ffffff;
+  font-weight: 400;
+  border: solid 1px #333;
+}
+.c-card_table td {
+  background-color: #ffffff;
+}
+.c-card_infotxt {
+  padding-right: 100px;
+  line-height: 50px;
+  font-size: 1.6rem;
+}
 
 .c-txt_12 {
   font-size: 1.2rem;
@@ -1749,6 +1763,9 @@ th {
 .u-mar-mt15 {
   margin-top: 15px;
 }
+.u-mar-mt25 {
+  margin-top: 25px;
+}
 .u-mar-my30 {
   margin-block: 30px;
 }
@@ -1761,6 +1778,12 @@ th {
   .u-mar-mt55tab {
     margin-top: 55px;
   }
+}
+.u-mar-mt5mb10 {
+  margin: 5px 0 10px;
+}
+.u-mar-my15 {
+  margin-block: 15px;
 }
 
 .u-w_maxpc {
@@ -1817,6 +1840,9 @@ th {
   .u-w_100p85p {
     width: 85%;
   }
+}
+.u-w_130p {
+  width: 130%;
 }
 .u-w_tabmv {
   width: 100vw;

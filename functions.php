@@ -249,5 +249,35 @@ function create_post_type() {
     )
   );
 
+  register_taxonomy(
+    'news-cat',
+    'news',
+    array(
+      'label' => 'カテゴリー',
+      'hierarchical' => true,
+      'public' => true,
+      'show_in_rest' => true,
+    )
+  );
+
+  register_taxonomy(
+    'news-tag',
+    'news',
+    array(
+      'label' => 'タグ',
+      'hierarchical' => false,
+      'public' => true,
+      'show_in_rest' => true,
+      'update_count_callback' => '_update_post_term_count',
+    )
+  );
+
+  function sortpost_rand($query) {
+    if(is_admin() || !$query->is_main_query()){
+        return;
+    }
+    $query->set('orderby', 'menu_order');
+  }
+  add_action('pre_get_posts', 'sortpost_rand');
 }
 
