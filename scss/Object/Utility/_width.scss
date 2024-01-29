@@ -6,6 +6,10 @@
         max-width: 1400px;
     }
 
+    &_56 {
+        width: 56px;
+    }
+
     &_100p {
         width: 100%;
     }
@@ -44,6 +48,17 @@
         @include mixin.mq(lpc) {
             width: 100%;
         }
+    }
+
+    &_100p85p {
+        width: 100%;
+        @include mixin.mq(lpc) {
+            width: 85%;
+        }
+    }
+
+    &_130p {
+        width: 130%;
     }
     
     &_tabmv {

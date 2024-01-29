@@ -29,6 +29,12 @@
     &-mt15 {
         margin-top: 15px;
     }
+    &-mt25 {
+        margin-top: 25px;
+    }
+    &-my30 {
+        margin-block: 30px;
+    }
     &-mt25tab {
         @include mixin.mq(md) {
             margin-top: 25px;
@@ -38,5 +44,11 @@
         @include mixin.mq(md) {
             margin-top: 55px;
         }
+    }
+    &-mt5mb10 {
+        margin: 5px 0 10px;
+    }
+    &-my15 {
+        margin-block: 15px;
     }
 }
