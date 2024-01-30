@@ -73,5 +73,9 @@
         border-bottom: 1px solid #b85d1d;
         font-family: variable.$catch;
         padding-bottom: 5px;
+
+        @include mixin.mq(md) {
+            font-size: 2.4rem;
+        }
     }
 }

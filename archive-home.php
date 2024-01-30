@@ -35,7 +35,7 @@
                                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_titleimg1.png" class="u-w_56">
                                     <p class="u-pad-pt3 u-pad-pl3"><?php the_title(); ?></p>
                                 </h2>
-                                <div class="u-disp-flex">
+                                <div class="u-disp-flexblocktab">
                                     <?php the_content(); ?>
                                 </div>
                                 
