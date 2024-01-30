@@ -11,6 +11,10 @@
         margin-top: 20px;
         line-height: 26px;
         width: 60%;
+
+        @include mixin.mq(md) {
+            width: 100%;
+        }
     }
 
     &_table {
@@ -27,8 +31,22 @@
     }
 
     &_infotxt {
-        padding-right: 100px;
+        padding-right: 70px;
         line-height: 50px;
         font-size: 1.6rem;
+
+        @include mixin.mq(md) {
+            padding-right: 0;
+            line-height: 36px;
+        }
+    }
+}
+
+/*WordPress自動付与クラス名分スタイル*/
+/*老人ホームコンテンツ*/
+.wp-container-core-group-layout-3 {
+    @include mixin.mq(md) {
+        flex-wrap: unset !important;
+        display: block !important;
     }
 }

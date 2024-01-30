@@ -51,4 +51,8 @@
     &-my15 {
         margin-block: 15px;
     }
+    &-mt15mla {
+        margin-top: 15px;
+        margin-left: clamp(0rem, -6.8571rem + 6.6964vw, 6rem);
+    }
 }

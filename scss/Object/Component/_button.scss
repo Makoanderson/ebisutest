@@ -79,8 +79,12 @@
             text-transform: uppercase;
             
         }
+    }
 
-        
+    &_homemap {
+        padding-block: 15px;
+        font-size: 13px;
+        line-height: 24px;
     }
 }
 

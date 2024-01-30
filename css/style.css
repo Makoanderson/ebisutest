@@ -506,6 +506,11 @@ th {
   line-height: 1;
   text-transform: uppercase;
 }
+.c-btn_homemap {
+  padding-block: 15px;
+  font-size: 13px;
+  line-height: 24px;
+}
 
 .is-active span:nth-of-type(1) {
   top: 0;
@@ -530,6 +535,11 @@ th {
   line-height: 26px;
   width: 60%;
 }
+@media screen and (max-width: 769px) {
+  .c-card_psec {
+    width: 100%;
+  }
+}
 .c-card_table th {
   background-color: darkcyan;
   color: #ffffff;
@@ -540,9 +550,24 @@ th {
   background-color: #ffffff;
 }
 .c-card_infotxt {
-  padding-right: 100px;
+  padding-right: 70px;
   line-height: 50px;
   font-size: 1.6rem;
+}
+@media screen and (max-width: 769px) {
+  .c-card_infotxt {
+    padding-right: 0;
+    line-height: 36px;
+  }
+}
+
+/*WordPress自動付与クラス名分スタイル*/
+/*老人ホームコンテンツ*/
+@media screen and (max-width: 769px) {
+  .wp-container-core-group-layout-3 {
+    flex-wrap: unset !important;
+    display: block !important;
+  }
 }
 
 .c-txt_12 {
@@ -644,6 +669,11 @@ th {
   border-bottom: 1px solid #b85d1d;
   font-family: "Zen Maru Gothic", sans-serif;
   padding-bottom: 5px;
+}
+@media screen and (max-width: 769px) {
+  .c-title_post {
+    font-size: 2.4rem;
+  }
 }
 
 .test {
@@ -1784,6 +1814,10 @@ th {
 }
 .u-mar-my15 {
   margin-block: 15px;
+}
+.u-mar-mt15mla {
+  margin-top: 15px;
+  margin-left: clamp(0rem, -6.8571rem + 6.6964vw, 6rem);
 }
 
 .u-w_maxpc {
