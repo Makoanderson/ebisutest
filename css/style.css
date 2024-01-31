@@ -607,8 +607,9 @@ th {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 6px;
-  width: 250px;
+  width: 390px;
   padding: 5px 10px;
+  color: #656565;
 }
 @media screen and (max-width: 1024px) {
   .c-title_mv {
@@ -621,7 +622,15 @@ th {
   }
 }
 .c-title_mv span {
-  font-size: 32px;
+  font-size: 4.8rem;
+  border-bottom: 1px solid #333;
+  /*&::after {
+      border-bottom: 1px solid #333;
+      position: absolute;
+      contain: "";
+      display: block;
+      bottom: 0;
+  }*/
 }
 @media screen and (max-width: 769px) {
   .c-title_mv span {
@@ -795,7 +804,7 @@ th {
   justify-content: center;
   height: 65px;
   align-items: center;
-  background-color: rgb(249, 233, 234);
+  background-color: rgb(255, 197, 201);
 }
 @media screen and (max-width: 1024px) {
   .p-nav-home li {

@@ -8,7 +8,8 @@
                     <picture class="u-posi-rela u-disp-flex u-justify-center">
                         <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_mv.png" media="(min-width: 200px)" >
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_mv.png" class="u-w_tabmv u-h_maxpc u-mar-mt55tab" alt="">
-                        <p class="u-posi-abso c-title_mv">有料老人ホーム<br><span>笑びすについて</span></p>
+                        <p class="u-posi-abso c-title_mv">有料老人ホーム<br><span>笑びすについて</span><br><br>可能な限り希望に沿った対応を・・・</p>
+                        <!--<p>可能な限り希望に沿った対応を・・・</p>-->
                     </picture>
                 </h1>
             </div>
