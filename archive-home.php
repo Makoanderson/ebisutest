@@ -14,7 +14,12 @@
                 </h1>
             </div>
 
-           
+            <!--トップへ戻る追従ボタン-->
+            <a class="c-btn-pagetop u-disp-block" href="/home/#head">
+                <div class="c-btn-pagetop__arrow"></div>
+                <p>Top</p>
+            </a>
+
             <!--コンテンツ-->
             <div class="p-homeebisu_main u-mar-mx1p">
 

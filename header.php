@@ -9,8 +9,8 @@
 </head>
 
 <body>
-    <div class="l-header">
-    <header class="l-header_menu c-bk_header p-com_fontfam c-txt_16">
+    <div class="l-header" id="head">
+    <header class="l-header_menu l-header_posi c-bk_header p-com_fontfam c-txt_16">
         <div class="l-inner_header">
             <h1 class="u-disp-flex">
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_titleimg1.png" class="u-mar-mt10">
