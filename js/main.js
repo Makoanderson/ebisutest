@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         window.scrollTo({
           behavior:'smooth',
-          top: h2_positionY,
+          top: h2_positionY - window.innerHeight / 5,
           left: 0,
         });
       });

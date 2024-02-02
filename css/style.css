@@ -422,6 +422,9 @@ th {
   background-repeat: no-repeat;
   background-size: contain;
 }
+.c-bk_sidebar5 {
+  background-color: rgb(255, 197, 201);
+}
 .c-bk_mainbtm {
   background: url("../img/bk-mainbtm.png");
   background-repeat: no-repeat;
@@ -804,7 +807,7 @@ th {
     border-radius: 10px;
   }
 }
-.p-nav-home {
+.p-nav-home, .p-nav-dkutsuku, .p-nav-debisu, .p-nav-yoro {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -813,12 +816,12 @@ th {
   font-weight: 700;
 }
 @media screen and (max-width: 1200px) {
-  .p-nav-home {
+  .p-nav-home, .p-nav-dkutsuku, .p-nav-debisu, .p-nav-yoro {
     font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 1024px) {
-  .p-nav-home {
+  .p-nav-home, .p-nav-dkutsuku, .p-nav-debisu, .p-nav-yoro {
     font-size: 1.6rem;
     font-weight: bold;
     margin-inline: auto;
@@ -828,7 +831,7 @@ th {
     display: block;
   }
 }
-.p-nav-home li {
+.p-nav-home li, .p-nav-dkutsuku li, .p-nav-debisu li, .p-nav-yoro li {
   border-radius: 6px;
   width: 120px;
   display: flex;
@@ -838,7 +841,7 @@ th {
   background-color: rgb(255, 197, 201);
 }
 @media screen and (max-width: 1024px) {
-  .p-nav-home li {
+  .p-nav-home li, .p-nav-dkutsuku li, .p-nav-debisu li, .p-nav-yoro li {
     border: initial;
     border-radius: 50px;
     background-color: #ffffff;
@@ -932,6 +935,9 @@ th {
   background-image: url("../img/bar-shisetsu_icon4.png");
   background-size: contain;
   background-repeat: no-repeat;
+}
+.p-sidebar_btnline {
+  border-radius: 6px;
 }
 
 .p-homeebisu_main {

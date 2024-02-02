@@ -16,24 +16,27 @@
         
 
             <!--トップへ戻る追従ボタン-->
-            <a class="c-btn-pagetop u-disp-block" href="/home/#head">
+            <a class="c-btn-pagetop u-disp-block" href="/mitsuwa/#head">
                 <div class="c-btn-pagetop__arrow"></div>
                 <p>Top</p>
             </a>
 
             <!--コンテンツ-->
-            <div class="p-homeebisu_main u-mar-mx1p">
+            <div class="u-disp-flexblocklpc u-mar-mx1p">
+
+                <!--サイドバー-->
+                <?php get_sidebar('about'); ?>
 
                 <div class="p-homeebisu_content u-w_100p70p">
                     <!--ページ内リンク用サブメニュー-->
-                    <nav class="p-nav-wrap u-h_100p">
-                        <?php wp_nav_menu(array(
+                    <!--<nav class="p-nav-wrap u-h_100p">-->
+                        <?php /*wp_nav_menu(array(
                             'theme_location' => 'yoroebisu-menu',
                             'menu_class' => 'p-nav-yoro',
                             'container' => '',
-                            ));?>
+                            ));*/?>
                     </nav>
-
+                    
                     <!--メインコンテンツ-->
                     <section class="u-w_100p85p u-mar-mxa p-homeebisu_post">
                         <?php if( have_posts()) : while( have_posts()) : the_post(); ?>
@@ -53,8 +56,6 @@
                     </section> 
                 </div>
                 
-                <!--サイドバー-->
-                <?php get_sidebar('shisetsu'); ?>
                 
             </div>
         </div> 

@@ -15,7 +15,7 @@
             </div>
 
             <!--トップへ戻る追従ボタン-->
-            <a class="c-btn-pagetop u-disp-block" href="/home/#head">
+            <a class="c-btn-pagetop u-disp-block" href="/dayebisu/#head">
                 <div class="c-btn-pagetop__arrow"></div>
                 <p>Top</p>
             </a>
