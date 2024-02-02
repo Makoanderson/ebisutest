@@ -8,7 +8,7 @@
                     <picture class="u-posi-rela u-disp-flex u-justify-center">
                         <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_mv.png" media="(min-width: 200px)" >
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_mv.png" class="u-w_tabmv u-h_maxpc u-mar-mt55tab" alt="">
-                        <p class="u-posi-abso c-title_mv"><span>お知らせ</span><br><br>可能な限り希望に沿った対応を・・・</p>
+                        <p class="u-posi-abso c-title_mv">デイサービス<br><span>久津具について</span><br><br>高齢者と地域のふれあいの日々を</p>
                         <!--<p>可能な限り希望に沿った対応を・・・</p>-->
                     </picture>
                 </h1>
@@ -27,8 +27,8 @@
                     <!--ページ内リンク用サブメニュー-->
                     <nav class="p-nav-wrap u-h_100p">
                         <?php wp_nav_menu(array(
-                            'theme_location' => 'homeebisu-menu',
-                            'menu_class' => 'p-nav-home',
+                            'theme_location' => 'daykutsuku-menu',
+                            'menu_class' => 'p-nav-dkutsuku',
                             'container' => '',
                             ));?>
                     </nav>
