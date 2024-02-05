@@ -43,6 +43,20 @@
         }
     }
 
+    &_sbar2 {
+        width: 72%;
+        @include mixin.mq(lpc) {
+            width: 85%;
+        }
+    }
+
+    &_80p100p {
+        width: 80%;
+        @include mixin.mq(lpc) {
+            width: 100%;
+        }
+    }
+
     &_100p70p {
         width: 70%;
         @include mixin.mq(lpc) {

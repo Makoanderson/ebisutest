@@ -29,6 +29,16 @@
 
     &_sidebar5 {
         background-color: rgba(255,197,201,1);
+        @include mixin.mq(lpc) {
+            background-color: #ffffff;
+        }
+    }
+
+    &_sidebk {
+        @include mixin.mq(lpc) {
+            background-color: rgb(249,233,234);
+            border-radius: 10px;
+        }
     }
 
     &_mainbtm {

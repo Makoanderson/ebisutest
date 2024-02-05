@@ -15,6 +15,36 @@
         @include mixin.mq(md) {
             width: 100%;
         }
+
+        @include mixin.mq(sp) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &_psec2 {
+        font-size: 1.6rem;
+        margin-top: 20px;
+        line-height: 26px;
+        width: 90%;
+
+        @include mixin.mq(md) {
+            width: 100%;
+        }
+
+        @include mixin.mq(sp) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &_psec3 {
+        font-size: 1.6rem;
+        margin-top: 20px;
+        line-height: 26px;
+        width: 100%;
+
+        @include mixin.mq(sp) {
+            font-size: 1.4rem;
+        }
     }
 
     &_table {
@@ -43,8 +73,8 @@
 }
 
 /*WordPress自動付与クラス名分スタイル*/
-/*老人ホームコンテンツ*/
-.wp-container-core-group-layout-3 {
+/*老人ホームコンテンツ, みつわについてコンテンツ*/
+.wp-container-core-group-layout-3,.wp-container-core-group-layout-2 {
     @include mixin.mq(md) {
         flex-wrap: unset !important;
         display: block !important;

@@ -31,6 +31,36 @@
         }
     }
 
+    &_barfont2 {
+        font-size: 1.6rem;
+        margin: auto;
+        text-align: center;
+        height: 100%;
+        padding-block: clamp(3.3rem, 1.5163rem + 1.7418vw, 5rem);
+        font-family: variable.$catch;
+
+        a {
+            margin: auto;
+            font-family: variable.$catch;
+
+            /*span {
+                font-size: 3rem;
+                font-family: variable.$catch;
+            }*/
+        }
+
+        @include mixin.mq(lpc) {
+            //padding-top: 30px;
+            //padding-right: clamp(3.3rem, -10.8738rem + 18.4314vw, 8rem);
+            padding-block: 5px;
+        }
+
+        @include mixin.mq(md) {
+            //margin-inline: 35px;
+            //padding-right: 0;
+        }
+    }
+
     &_ham {
         position: relative;
         width: inherit;

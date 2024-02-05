@@ -29,6 +29,9 @@
     &-mt15 {
         margin-top: 15px;
     }
+    &-mt20 {
+        margin-top: 20px;
+    }
     &-mt25 {
         margin-top: 25px;
     }
@@ -55,4 +58,17 @@
         margin-top: 15px;
         margin-left: clamp(0rem, -6.8571rem + 6.6964vw, 6rem);
     }
+    &-b21bk10 {
+        margin-bottom: 21px;
+        @include mixin.mq(lpc) {
+            margin: 10px 0;
+        }
+    }
+}
+
+
+/*WordPress自動付与クラス名分スタイル*/
+.wp-block-group__inner-container {
+    margin-right: 0 !important;
+    margin-right: 0 !important;
 }

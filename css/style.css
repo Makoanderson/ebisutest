@@ -425,6 +425,17 @@ th {
 .c-bk_sidebar5 {
   background-color: rgb(255, 197, 201);
 }
+@media screen and (max-width: 1024px) {
+  .c-bk_sidebar5 {
+    background-color: #ffffff;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .c-bk_sidebk {
+    background-color: rgb(249, 233, 234);
+    border-radius: 10px;
+  }
+}
 .c-bk_mainbtm {
   background: url("../img/bk-mainbtm.png");
   background-repeat: no-repeat;
@@ -468,6 +479,27 @@ th {
   .c-btn_barfont {
     margin-inline: 35px;
     padding-right: 0;
+  }
+}
+.c-btn_barfont2 {
+  font-size: 1.6rem;
+  margin: auto;
+  text-align: center;
+  height: 100%;
+  padding-block: clamp(3.3rem, 1.5163rem + 1.7418vw, 5rem);
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+.c-btn_barfont2 a {
+  margin: auto;
+  font-family: "Zen Maru Gothic", sans-serif;
+  /*span {
+      font-size: 3rem;
+      font-family: variable.$catch;
+  }*/
+}
+@media screen and (max-width: 1024px) {
+  .c-btn_barfont2 {
+    padding-block: 5px;
   }
 }
 .c-btn_ham {
@@ -574,6 +606,38 @@ th {
     width: 100%;
   }
 }
+@media screen and (max-width: 428px) {
+  .c-card_psec {
+    font-size: 1.4rem;
+  }
+}
+.c-card_psec2 {
+  font-size: 1.6rem;
+  margin-top: 20px;
+  line-height: 26px;
+  width: 90%;
+}
+@media screen and (max-width: 769px) {
+  .c-card_psec2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 428px) {
+  .c-card_psec2 {
+    font-size: 1.4rem;
+  }
+}
+.c-card_psec3 {
+  font-size: 1.6rem;
+  margin-top: 20px;
+  line-height: 26px;
+  width: 100%;
+}
+@media screen and (max-width: 428px) {
+  .c-card_psec3 {
+    font-size: 1.4rem;
+  }
+}
 .c-card_table th {
   background-color: darkcyan;
   color: #ffffff;
@@ -596,9 +660,9 @@ th {
 }
 
 /*WordPress自動付与クラス名分スタイル*/
-/*老人ホームコンテンツ*/
+/*老人ホームコンテンツ, みつわについてコンテンツ*/
 @media screen and (max-width: 769px) {
-  .wp-container-core-group-layout-3 {
+  .wp-container-core-group-layout-3, .wp-container-core-group-layout-2 {
     flex-wrap: unset !important;
     display: block !important;
   }
@@ -938,6 +1002,29 @@ th {
 }
 .p-sidebar_btnline {
   border-radius: 6px;
+}
+@media screen and (max-width: 1024px) {
+  .p-sidebar_btnline {
+    border-radius: 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .p-sidebar_about {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-inline: auto;
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-bottom: 10px;
+    display: block;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .p-sidebar_about li {
+    height: 30px;
+    display: block;
+    text-align: center;
+  }
 }
 
 .p-homeebisu_main {
@@ -1569,8 +1656,13 @@ th {
 .u-pad-pl11 {
   padding-left: 2.75rem;
 }
-.u-pad-pt12 {
+.u-pad-pt12pt0 {
   padding-top: 3rem; /*48px*/
+}
+@media screen and (max-width: 1024px) {
+  .u-pad-pt12pt0 {
+    padding-top: 0;
+  }
 }
 .u-pad-pr12 {
   padding-right: 3rem;
@@ -1839,6 +1931,9 @@ th {
 .u-mar-mt15 {
   margin-top: 15px;
 }
+.u-mar-mt20 {
+  margin-top: 20px;
+}
 .u-mar-mt25 {
   margin-top: 25px;
 }
@@ -1864,6 +1959,20 @@ th {
 .u-mar-mt15mla {
   margin-top: 15px;
   margin-left: clamp(0rem, -6.8571rem + 6.6964vw, 6rem);
+}
+.u-mar-b21bk10 {
+  margin-bottom: 21px;
+}
+@media screen and (max-width: 1024px) {
+  .u-mar-b21bk10 {
+    margin: 10px 0;
+  }
+}
+
+/*WordPress自動付与クラス名分スタイル*/
+.wp-block-group__inner-container {
+  margin-right: 0 !important;
+  margin-right: 0 !important;
 }
 
 .u-w_maxpc {
@@ -1903,6 +2012,22 @@ th {
 @media screen and (max-width: 769px) {
   .u-w_sbar {
     width: 200px;
+  }
+}
+.u-w_sbar2 {
+  width: 72%;
+}
+@media screen and (max-width: 1024px) {
+  .u-w_sbar2 {
+    width: 85%;
+  }
+}
+.u-w_80p100p {
+  width: 80%;
+}
+@media screen and (max-width: 1024px) {
+  .u-w_80p100p {
+    width: 100%;
   }
 }
 .u-w_100p70p {
@@ -1982,6 +2107,9 @@ th {
   .u-disp-flexnone {
     display: none;
   }
+}
+.u-disp-contents {
+  display: contents;
 }
 
 .u-text-l {
