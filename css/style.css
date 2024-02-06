@@ -482,7 +482,7 @@ th {
   }
 }
 .c-btn_barfont2 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin: auto;
   text-align: center;
   height: 100%;
@@ -500,6 +500,7 @@ th {
 @media screen and (max-width: 1024px) {
   .c-btn_barfont2 {
     padding-block: 5px;
+    font-size: 1.6rem;
   }
 }
 .c-btn_ham {
@@ -780,6 +781,18 @@ th {
 @media screen and (max-width: 769px) {
   .c-title_post {
     font-size: 2.4rem;
+  }
+}
+.c-title_clinic {
+  font-size: 2rem;
+  border-bottom: 1px solid #656565;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+@media screen and (max-width: 769px) {
+  .c-title_clinic {
+    font-size: 1.6rem;
   }
 }
 
@@ -1939,6 +1952,9 @@ th {
 }
 .u-mar-my30 {
   margin-block: 30px;
+}
+.u-mar-mt45 {
+  margin-top: 45px;
 }
 @media screen and (max-width: 769px) {
   .u-mar-mt25tab {
