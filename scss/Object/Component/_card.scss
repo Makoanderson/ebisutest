@@ -47,6 +47,53 @@
         }
     }
 
+    &_psec5 {
+        font-size: 1.6rem;
+        margin-top: 20px;
+        line-height: 26px;
+        width: 60%;
+
+        strong {
+            font-size: 2rem;
+        }
+
+        @include mixin.mq(md) {
+            width: 100%;
+
+            strong {
+                font-size: 1.6rem;
+            }
+        }
+
+        @include mixin.mq(sp) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &_psec6 {
+        font-size: 1.6rem;
+        margin-top: 20px;
+        line-height: 26px;
+        width: 100%;
+
+        strong {
+            font-size: 2rem;
+        }
+
+        @include mixin.mq(md) {
+            width: 100%;
+
+            strong {
+                font-size: 1.6rem;
+            }
+        }
+
+        @include mixin.mq(sp) {
+            font-size: 1.4rem;
+        }
+    }
+
+
     &_table {
         th {
             background-color:darkcyan;
@@ -74,7 +121,7 @@
 
 /*WordPress自動付与クラス名分スタイル*/
 /*老人ホームコンテンツ, みつわについてコンテンツ*/
-.wp-container-core-group-layout-3,.wp-container-core-group-layout-2 {
+.wp-container-core-group-layout-3,.wp-container-core-group-layout-2, .wp-container-core-group-layout-4 {
     @include mixin.mq(md) {
         flex-wrap: unset !important;
         display: block !important;

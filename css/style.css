@@ -639,6 +639,50 @@ th {
     font-size: 1.4rem;
   }
 }
+.c-card_psec5 {
+  font-size: 1.6rem;
+  margin-top: 20px;
+  line-height: 26px;
+  width: 60%;
+}
+.c-card_psec5 strong {
+  font-size: 2rem;
+}
+@media screen and (max-width: 769px) {
+  .c-card_psec5 {
+    width: 100%;
+  }
+  .c-card_psec5 strong {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 428px) {
+  .c-card_psec5 {
+    font-size: 1.4rem;
+  }
+}
+.c-card_psec6 {
+  font-size: 1.6rem;
+  margin-top: 20px;
+  line-height: 26px;
+  width: 100%;
+}
+.c-card_psec6 strong {
+  font-size: 2rem;
+}
+@media screen and (max-width: 769px) {
+  .c-card_psec6 {
+    width: 100%;
+  }
+  .c-card_psec6 strong {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 428px) {
+  .c-card_psec6 {
+    font-size: 1.4rem;
+  }
+}
 .c-card_table th {
   background-color: darkcyan;
   color: #ffffff;
@@ -663,7 +707,7 @@ th {
 /*WordPress自動付与クラス名分スタイル*/
 /*老人ホームコンテンツ, みつわについてコンテンツ*/
 @media screen and (max-width: 769px) {
-  .wp-container-core-group-layout-3, .wp-container-core-group-layout-2 {
+  .wp-container-core-group-layout-3, .wp-container-core-group-layout-2, .wp-container-core-group-layout-4 {
     flex-wrap: unset !important;
     display: block !important;
   }
@@ -794,6 +838,9 @@ th {
   .c-title_clinic {
     font-size: 1.6rem;
   }
+}
+.c-title_font {
+  font-family: "Zen Maru Gothic", sans-serif;
 }
 
 .test {
@@ -2008,6 +2055,9 @@ th {
 }
 .u-w_55p {
   width: 55%;
+}
+.u-w_80p {
+  width: 80%;
 }
 .u-w_30p85p {
   width: 30%;
