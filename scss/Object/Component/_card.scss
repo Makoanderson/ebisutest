@@ -121,7 +121,7 @@
 
 /*WordPress自動付与クラス名分スタイル*/
 /*老人ホームコンテンツ, みつわについてコンテンツ*/
-.wp-container-core-group-layout-3,.wp-container-core-group-layout-2, .wp-container-core-group-layout-4 {
+.wp-container-core-group-layout-3,.wp-container-core-group-layout-2, .wp-container-core-group-layout-4, .wp-container-core-group-layout-10 {
     @include mixin.mq(md) {
         flex-wrap: unset !important;
         display: block !important;
