@@ -30,6 +30,10 @@
         width: 80%;
     }
 
+    &_90p {
+        width: 90%;
+    }
+
     &_30p85p {
         width: 30%;
         @include mixin.mq(lpc) {
