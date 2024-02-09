@@ -53,7 +53,7 @@
                 </div>
                 
                 <!--サイドバー-->
-                <?php get_sidebar('shisetsu'); ?>
+                <?php get_sidebar('volunteer'); ?>
                 
             </div>
         </div> 
