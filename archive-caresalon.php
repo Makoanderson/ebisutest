@@ -8,29 +8,32 @@
                     <picture class="u-posi-rela u-disp-flex u-justify-center">
                         <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_mv.png" media="(min-width: 200px)" >
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_mv.png" class="u-w_tabmv u-h_maxpc u-mar-mt55tab" alt="">
-                        <p class="u-posi-abso c-title_mv">宅幼老所<br><span>笑びすについて</span><br><br>可能な限り希望に沿った対応を・・・</p>
+                        <p class="u-posi-abso c-title_mv"><span>ケアサロン笑びす</span><br><br>健康な足で快適に</p>
                         <!--<p>可能な限り希望に沿った対応を・・・</p>-->
                     </picture>
                 </h1>
             </div>
 
             <!--トップへ戻る追従ボタン-->
-            <a class="c-btn-pagetop u-disp-block" href="/home/#head">
+            <a class="c-btn-pagetop u-disp-block" href="/caresalon/#head">
                 <div class="c-btn-pagetop__arrow"></div>
                 <p>Top</p>
             </a>
 
             <!--コンテンツ-->
-            <div class="p-homeebisu_main u-mar-mx1p">
+            <div class="u-disp-flexblocklpc u-mar-mx1p">
+
+                <!--サイドバー-->
+                <?php get_sidebar('caresalon'); ?>
 
                 <div class="p-homeebisu_content u-w_100p70p">
                     <!--ページ内リンク用サブメニュー-->
-                    <nav class="p-nav-wrap u-h_100p">
-                        <?php wp_nav_menu(array(
+                    <!--<nav class="p-nav-wrap u-h_100p">-->
+                        <?php /*wp_nav_menu(array(
                             'theme_location' => 'yoroebisu-menu',
                             'menu_class' => 'p-nav-yoro',
                             'container' => '',
-                            ));?>
+                            ));*/?>
                     </nav>
 
                     <!--メインコンテンツ-->
@@ -52,8 +55,7 @@
                     </section> 
                 </div>
                 
-                <!--サイドバー-->
-                <?php get_sidebar('shisetsu'); ?>
+                
                 
             </div>
         </div> 
