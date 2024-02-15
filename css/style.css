@@ -13,6 +13,11 @@ body {
   overflow-x: hidden;
 }
 
+table {
+  width: 800px !important;
+  overflow-x: scroll;
+}
+
 /*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.min.css */
 *, ::before, ::after {
   box-sizing: border-box;
@@ -863,6 +868,24 @@ th {
   font-family: "Zen Maru Gothic", sans-serif;
 }
 
+/*wpで自動付与されたクラスのスタイル*/
+.wp-image-740 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.wp-image-737 {
+  position: absolute;
+  top: 120px;
+  right: 0;
+}
+
+.wp-image-741 {
+  position: absolute;
+  bottom: 0;
+}
+
 .p-footer_sub li + li {
   position: relative;
 }
@@ -931,7 +954,14 @@ th {
     border-radius: 10px;
   }
 }
-.p-nav-home, .p-nav-dkutsuku, .p-nav-debisu, .p-nav-yoro {
+@media screen and (max-width: 1024px) {
+  .p-nav-wrap1 {
+    width: 85%;
+    margin-inline: auto;
+    border-radius: 10px;
+  }
+}
+.p-nav-home, .p-nav-dkutsuku, .p-nav-yoro {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -940,12 +970,12 @@ th {
   font-weight: 700;
 }
 @media screen and (max-width: 1200px) {
-  .p-nav-home, .p-nav-dkutsuku, .p-nav-debisu, .p-nav-yoro {
+  .p-nav-home, .p-nav-dkutsuku, .p-nav-yoro {
     font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 1024px) {
-  .p-nav-home, .p-nav-dkutsuku, .p-nav-debisu, .p-nav-yoro {
+  .p-nav-home, .p-nav-dkutsuku, .p-nav-yoro {
     font-size: 1.6rem;
     font-weight: bold;
     margin-inline: auto;
@@ -955,7 +985,7 @@ th {
     display: block;
   }
 }
-.p-nav-home li, .p-nav-dkutsuku li, .p-nav-debisu li, .p-nav-yoro li {
+.p-nav-home li, .p-nav-dkutsuku li, .p-nav-yoro li {
   border-radius: 6px;
   width: 120px;
   display: flex;
@@ -965,7 +995,7 @@ th {
   background-color: rgb(255, 197, 201);
 }
 @media screen and (max-width: 1024px) {
-  .p-nav-home li, .p-nav-dkutsuku li, .p-nav-debisu li, .p-nav-yoro li {
+  .p-nav-home li, .p-nav-dkutsuku li, .p-nav-yoro li {
     border: initial;
     border-radius: 50px;
     background-color: #ffffff;
@@ -975,6 +1005,51 @@ th {
     display: block;
     text-align: center;
     margin: 10px 0;
+  }
+}
+.p-nav-debisu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+}
+@media screen and (max-width: 1200px) {
+  .p-nav-debisu {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .p-nav-debisu {
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: auto;
+  }
+}
+.p-nav-debisu li {
+  border-radius: 6px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  height: 65px;
+  align-items: center;
+  background-color: rgb(255, 197, 201);
+}
+@media screen and (max-width: 1024px) {
+  .p-nav-debisu li {
+    border: initial;
+    border-radius: 5px;
+    background-color: #b85d1d;
+    width: 45%;
+    height: 50px;
+    display: block;
+    text-align: center;
+    margin: 5px 0;
+    padding-block: 15px;
+    color: #ffffff;
   }
 }
 .p-nav_header {
@@ -1988,6 +2063,9 @@ th {
 .u-mar-mb10 {
   margin-bottom: 10px;
 }
+.u-mar-mb25 {
+  margin-bottom: 25px;
+}
 .u-mar-mt15 {
   margin-top: 15px;
 }
@@ -2043,6 +2121,9 @@ th {
 }
 .u-w_56 {
   width: 56px;
+}
+.u-w_500 {
+  width: 500px;
 }
 .u-w_100p {
   width: 100%;
@@ -2179,6 +2260,11 @@ th {
 }
 .u-disp-contents {
   display: contents;
+}
+@media screen and (max-width: 769px) {
+  .u-disp-blocktab {
+    display: block !important;
+  }
 }
 
 .u-text-l {

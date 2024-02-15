@@ -11,7 +11,16 @@
         }
     }
 
-    &-home,&-dkutsuku,&-debisu,&-yoro {        //老人ホーム笑びすnavメニュー
+    &-wrap1 {
+        @include mixin.mq(lpc) {
+            width: 85%;
+            margin-inline: auto;
+            //background-color: rgba(249,233,234,1);
+            border-radius: 10px;
+        }
+    }
+
+    &-home,&-dkutsuku,&-yoro {        //老人ホーム笑びすnavメニュー
         display:flex;
         justify-content: space-between;
         //width: 70%;
@@ -62,6 +71,64 @@
                 //justify-content: initial;
                 text-align: center;
                 margin: 10px 0;
+
+            }
+        }
+    }
+
+    &-debisu {        //デイサービス笑びすnavメニュー
+        display:flex;
+        justify-content: space-between;
+        //width: 70%;
+        align-items: center;
+        font-size: 1.6rem;
+        font-family: variable.$catch;
+        font-weight: 700;
+
+        @include mixin.mq(pc) {
+           font-size: 1.4rem;
+          }
+
+        @include mixin.mq(lpc) {
+            //font-size: 1.2rem;
+            font-size: 1.6rem;
+            font-weight: bold;
+            display: flex;
+            flex-wrap: wrap;
+            margin-inline: auto;
+            //padding-top: 10px;
+            //padding-left: 10%;
+            //padding-bottom: 10px;
+            //justify-content: flex-start;
+            //list-style-type: "▼";
+            //display: block;
+        }
+
+        li {
+            //padding: 25px 5px;
+            //border: 1px solid #333;
+            border-radius: 6px;
+            width: 120px;
+            display: flex;
+            justify-content: center;
+            height: 65px;
+            align-items: center;
+            background-color: rgba(255,197,201,1);
+
+            @include mixin.mq(lpc) {
+                border: initial;
+                border-radius: 5px;
+                background-color: #b85d1d;
+                //height: 45px;
+                //height: 30px;
+                width: 45%;
+                height: 50px;
+                display: block;
+                //justify-content: initial;
+                text-align: center;
+                margin: 5px 0;
+                padding-block: 15px;
+                color: #ffffff;
 
             }
         }

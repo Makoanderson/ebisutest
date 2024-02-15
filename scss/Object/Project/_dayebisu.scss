@@ -1,2 +1,20 @@
 @use "../../Foundation/mixin";
 @use "../../Foundation/variable";
+
+
+
+/*wpで自動付与されたクラスのスタイル*/
+.wp-image-740 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.wp-image-737 {
+    position: absolute;
+    top: 120px;
+    right: 0;
+}
+.wp-image-741 {
+    position: absolute;
+    bottom: 0;
+}

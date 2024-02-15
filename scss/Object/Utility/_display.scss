@@ -38,4 +38,9 @@
     &-contents {
         display: contents;
     }
+    &-blocktab {
+        @include mixin.mq(md) {
+            display: block !important;
+        }
+    }
 }

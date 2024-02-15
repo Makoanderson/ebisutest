@@ -8,14 +8,14 @@
                     <picture class="u-posi-rela u-disp-flex u-justify-center">
                         <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_mv.png" media="(min-width: 200px)" >
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_mv.png" class="u-w_tabmv u-h_maxpc u-mar-mt55tab" alt="">
-                        <p class="u-posi-abso c-title_mv">デイサービス<br><span>笑びすについて</span><br><br>高齢者と子供たちのふれあいの日常を</p>
+                        <p class="u-posi-abso c-title_mv">地域共生カフェ<br><span>笑美屋</span><br><br>子供からご高齢者まで誰もが気軽に立ち寄れる癒場</p>
                         <!--<p>可能な限り希望に沿った対応を・・・</p>-->
                     </picture>
                 </h1>
             </div>
 
             <!--トップへ戻る追従ボタン-->
-            <a class="c-btn-pagetop u-disp-block" href="/dayebisu/#head">
+            <a class="c-btn-pagetop u-disp-block" href="/emiya/#head">
                 <div class="c-btn-pagetop__arrow"></div>
                 <p>Top</p>
             </a>
@@ -23,15 +23,15 @@
             <!--コンテンツ-->
             <div class="p-homeebisu_main u-mar-mx1p">
 
-                <div class="p-homeebisu_content u-w_100p70p">
+                <!--<div class="p-homeebisu_content u-w_100p70p">-->
                     <!--ページ内リンク用サブメニュー-->
-                    <nav class="p-nav-wrap1 u-h_100p">
-                        <?php wp_nav_menu(array(
+                    <!--<nav class="p-nav-wrap1 u-h_100p">
+                        <?php /*wp_nav_menu(array(
                             'theme_location' => 'dayebisu-menu',
                             'menu_class' => 'p-nav-debisu',
                             'container' => '',
-                            ));?>
-                    </nav>
+                            ));*/?>
+                    </nav>-->
 
                     <!--メインコンテンツ-->
                     <section class="u-w_100p85p u-mar-mxa p-homeebisu_post">
@@ -53,7 +53,7 @@
                 </div>
                 
                 <!--サイドバー-->
-                <?php get_sidebar('shisetsu'); ?>
+                <?php /*get_sidebar('shisetsu'); */?>
                 
             </div>
         </div> 
