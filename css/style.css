@@ -868,22 +868,99 @@ th {
   font-family: "Zen Maru Gothic", sans-serif;
 }
 
+.timeline {
+  width: 96%;
+  max-width: 940px;
+  margin: 28px auto;
+  border: 1px solid #eeeeee;
+}
+.timeline-list {
+  padding: 40px 0;
+}
+.timeline-list-item {
+  display: flex;
+  line-height: 1.5;
+  font-size: 16px;
+}
+@media screen and (max-width: 769px) {
+  .timeline-list-item {
+    font-size: 14px;
+  }
+}
+.timeline-list-item .date {
+  width: 15%;
+  color: #888888;
+  font-weight: bold;
+}
+@media screen and (max-width: 769px) {
+  .timeline-list-item .date {
+    width: clamp(14.503rem, 24.4128rem - 23.1534vw, 6.6078rem);
+  }
+}
+.timeline-list-item .content {
+  position: relative;
+  width: 80%;
+  padding: 0 0 40px 30px;
+  border-left: 1px solid #aaaaaa;
+}
+.timeline-list-item .content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #00c2bc;
+  border-radius: 10px;
+}
+
 /*wpで自動付与されたクラスのスタイル*/
 .wp-image-740 {
   position: absolute;
   top: 0;
-  left: 50%;
+  right: 140px;
+  width: 130px;
+}
+@media screen and (max-width: 1024px) {
+  .wp-image-740 {
+    right: clamp(6.5rem, -16.23616rem + 29.5276vw, 14rem);
+  }
+}
+@media screen and (max-width: 769px) {
+  .wp-image-740 {
+    right: clamp(-2.5rem, -13.85584rem + 26.4706vw, 6.5rem);
+    width: clamp(7.5rem, 0.56032rem + 16.1765vw, 13rem);
+  }
+}
+@media screen and (max-width: 428px) {
+  .wp-image-740 {
+    top: clamp(-5rem, -16.71872rem + 39.0625vw, 0rem);
+    width: clamp(6rem, 2.48432rem + 11.7188vw, 7.5rem);
+  }
 }
 
 .wp-image-737 {
   position: absolute;
-  top: 120px;
-  right: 0;
+  top: 200px;
+  right: 40px;
+  width: 150px;
+}
+@media screen and (max-width: 428px) {
+  .wp-image-737 {
+    display: none;
+  }
 }
 
 .wp-image-741 {
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
+  right: 160px;
+  width: 150px;
+}
+@media screen and (max-width: 428px) {
+  .wp-image-741 {
+    display: none;
+  }
 }
 
 .p-footer_sub li + li {
