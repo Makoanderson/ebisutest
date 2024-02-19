@@ -62,14 +62,19 @@
 
     @include mixin.mq(lpc) {
         right: clamp(6.5rem, -16.23616rem + 29.5276vw, 14rem);
+        width: clamp(10rem, 0.95296rem + 11.7647vw, 13rem);
     }
     @include mixin.mq(md) {
-        right: clamp(-2.5rem, -13.85584rem + 26.4706vw, 6.5rem);
-        width: clamp(7.5rem, 0.56032rem + 16.1765vw, 13rem);
+        //right: clamp(-2.5rem, -13.85584rem + 26.4706vw, 6.5rem);
+        right: 0;
+        //width: clamp(7.5rem, 0.56032rem + 16.1765vw, 13rem);
+        width: clamp(5.8rem, 0.50064rem + 12.3529vw, 10rem);
+        //top: clamp(-4.0rem, -10.89648rem + 17.2414vw, -3.5rem);
+        top: -35px;
     }
     @include mixin.mq(sp) {
-        top: clamp(-5rem, -16.71872rem + 39.0625vw, 0rem);
-        width: clamp(6rem, 2.48432rem + 11.7188vw, 7.5rem);
+        //top: clamp(-5rem, -16.71872rem + 39.0625vw, 0rem);
+        //width: clamp(6rem, 2.48432rem + 11.7188vw, 7.5rem);
     }
 }
 .wp-image-737 {
@@ -77,6 +82,23 @@
     top: 200px;
     right: 40px;
     width: 150px;
+
+    @include mixin.mq(lpc) {
+        //right: clamp(6.5rem, -16.23616rem + 29.5276vw, 14rem);
+        width: clamp(13rem, 6.96864rem + 7.8431vw, 15rem);
+    }
+    @include mixin.mq(md) {
+        right: clamp(0rem, -5.02048rem + 11.7302vw, 4rem);
+        //right: 0;
+        //width: clamp(7.5rem, 0.56032rem + 16.1765vw, 13rem);
+        width: clamp(10rem, 6.23456rem + 8.7977vw, 13rem);
+        top: 215px;
+        //top: -35px;
+    }
+    @media screen and (max-width: 555px) {
+        top: 270px;
+    }
+
     @include mixin.mq(sp) {
         display: none;
     }
@@ -86,6 +108,25 @@
     bottom: 50px;
     right: 160px;
     width: 150px;
+
+    @include mixin.mq(lpc) {
+        right: clamp(0.5rem, -46.2432rem + 60.7843vw, 16rem);
+        width: clamp(13rem, 6.96864rem + 7.8431vw, 15rem);
+    }
+    @include mixin.mq(md) {
+        right: clamp(0rem, -0.63088rem + 1.4706vw, 0.5rem);
+        //right: 0;
+        //width: clamp(7.5rem, 0.56032rem + 16.1765vw, 13rem);
+        width: clamp(10rem, 6.23456rem + 8.7977vw, 13rem);
+        bottom: 25px;
+    }
+    @media screen and (max-width: 620px) {
+        bottom: -35px;
+    }
+    @media screen and (max-width: 465px) {
+        bottom: -15px;
+    }
+
     @include mixin.mq(sp) {
         display: none;
     }

@@ -924,26 +924,38 @@ th {
 @media screen and (max-width: 1024px) {
   .wp-image-740 {
     right: clamp(6.5rem, -16.23616rem + 29.5276vw, 14rem);
+    width: clamp(10rem, 0.95296rem + 11.7647vw, 13rem);
   }
 }
 @media screen and (max-width: 769px) {
   .wp-image-740 {
-    right: clamp(-2.5rem, -13.85584rem + 26.4706vw, 6.5rem);
-    width: clamp(7.5rem, 0.56032rem + 16.1765vw, 13rem);
+    right: 0;
+    width: clamp(5.8rem, 0.50064rem + 12.3529vw, 10rem);
+    top: -35px;
   }
 }
-@media screen and (max-width: 428px) {
-  .wp-image-740 {
-    top: clamp(-5rem, -16.71872rem + 39.0625vw, 0rem);
-    width: clamp(6rem, 2.48432rem + 11.7188vw, 7.5rem);
-  }
-}
-
 .wp-image-737 {
   position: absolute;
   top: 200px;
   right: 40px;
   width: 150px;
+}
+@media screen and (max-width: 1024px) {
+  .wp-image-737 {
+    width: clamp(13rem, 6.96864rem + 7.8431vw, 15rem);
+  }
+}
+@media screen and (max-width: 769px) {
+  .wp-image-737 {
+    right: clamp(0rem, -5.02048rem + 11.7302vw, 4rem);
+    width: clamp(10rem, 6.23456rem + 8.7977vw, 13rem);
+    top: 215px;
+  }
+}
+@media screen and (max-width: 555px) {
+  .wp-image-737 {
+    top: 270px;
+  }
 }
 @media screen and (max-width: 428px) {
   .wp-image-737 {
@@ -956,6 +968,29 @@ th {
   bottom: 50px;
   right: 160px;
   width: 150px;
+}
+@media screen and (max-width: 1024px) {
+  .wp-image-741 {
+    right: clamp(0.5rem, -46.2432rem + 60.7843vw, 16rem);
+    width: clamp(13rem, 6.96864rem + 7.8431vw, 15rem);
+  }
+}
+@media screen and (max-width: 769px) {
+  .wp-image-741 {
+    right: clamp(0rem, -0.63088rem + 1.4706vw, 0.5rem);
+    width: clamp(10rem, 6.23456rem + 8.7977vw, 13rem);
+    bottom: 25px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .wp-image-741 {
+    bottom: -35px;
+  }
+}
+@media screen and (max-width: 465px) {
+  .wp-image-741 {
+    bottom: -15px;
+  }
 }
 @media screen and (max-width: 428px) {
   .wp-image-741 {
@@ -1107,26 +1142,27 @@ th {
   }
 }
 .p-nav-debisu li {
-  border-radius: 6px;
+  border-radius: 50px;
   width: 120px;
   display: flex;
   justify-content: center;
   height: 65px;
   align-items: center;
-  background-color: rgb(255, 197, 201);
+  border: #b85d1d 1px solid;
 }
 @media screen and (max-width: 1024px) {
   .p-nav-debisu li {
     border: initial;
-    border-radius: 5px;
-    background-color: #b85d1d;
+    border-radius: 50px;
+    border: #b85d1d 1px solid;
+    background-color: #fff;
     width: 45%;
     height: 50px;
     display: block;
     text-align: center;
     margin: 5px 0;
     padding-block: 15px;
-    color: #ffffff;
+    color: #333;
   }
 }
 .p-nav_header {

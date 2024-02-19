@@ -107,18 +107,20 @@
         li {
             //padding: 25px 5px;
             //border: 1px solid #333;
-            border-radius: 6px;
+            border-radius: 50px;
             width: 120px;
             display: flex;
             justify-content: center;
             height: 65px;
             align-items: center;
-            background-color: rgba(255,197,201,1);
+            border: #b85d1d 1px solid;
+            //background-color: rgba(255,197,201,1);
 
             @include mixin.mq(lpc) {
                 border: initial;
-                border-radius: 5px;
-                background-color: #b85d1d;
+                border-radius: 50px;
+                border: #b85d1d 1px solid;
+                background-color: #fff;
                 //height: 45px;
                 //height: 30px;
                 width: 45%;
@@ -128,7 +130,7 @@
                 text-align: center;
                 margin: 5px 0;
                 padding-block: 15px;
-                color: #ffffff;
+                color: #333;
 
             }
         }
