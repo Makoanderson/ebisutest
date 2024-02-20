@@ -10,6 +10,11 @@
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_mv.png" class="u-w_tabmv u-h_maxpc u-mar-mt55tab" alt="">
                         <p class="u-posi-abso c-title_mv">地域共生カフェ<br><span>笑美屋</span><br><br>子供からご高齢者まで誰もが気軽に立ち寄れる癒場</p>
                         <!--<p>可能な限り希望に沿った対応を・・・</p>-->
+                        <div class="u-posi-abso c-title_mv2">
+                            <p>営業時間：10:00～17:00</p>
+                            <p>定休日：水曜日</p>
+                            <p>(不定期で日曜日が休み)</p>
+                        </div>
                     </picture>
                 </h1>
             </div>
@@ -36,11 +41,18 @@
                     <!--メインコンテンツ-->
                     <section class="u-w_100p85p u-mar-mxa p-homeebisu_post">
                         <?php if( have_posts()) : while( have_posts()) : the_post(); ?>
-                            <article class="c-card_post c-bk_post1 u-mar-my30 u-pad-p40">
-                                <h2 class="c-title_post u-disp-flex">
+                            <article class="c-card_post c-bk_post1none u-mar-my30 u-pad-p40">
+
+                            <?php
+                            $show_post_ids = array(716, 718, 720, 722, 724);
+                                
+                            if (is_archive() && in_array(get_the_ID(), $show_post_ids)) : ?>
+                                <h2 class="c-title_post u-disp-flex c-bk_title2">
                                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_titleimg1.png" class="u-w_56">
                                     <p class="u-pad-pt3 u-pad-pl3"><?php the_title(); ?></p>
                                 </h2>
+                            <?php endif; ?>
+                                
                                 <div class="u-disp-flexblocktab">
                                     <?php the_content(); ?>
                                 </div>

@@ -457,6 +457,16 @@ th {
 .c-bk_post1 {
   background-color: #ffe9ea;
 }
+.c-bk_title1 {
+  background-color: #56772c;
+  border-radius: 20px;
+  color: #ffffff;
+}
+.c-bk_title2 {
+  background-color: rgb(255, 197, 201);
+  border-radius: 20px;
+  color: #ffffff;
+}
 
 .c-btn_barfont {
   font-size: 1.6rem;
@@ -785,6 +795,43 @@ th {
     font-size: clamp(2rem, 1.2325rem + 2.5586vw, 2rem);
   }
 }
+.c-title_mv2 {
+  top: 380px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+  width: 390px;
+  padding: 5px 10px;
+  color: #656565;
+}
+@media screen and (max-width: 1024px) {
+  .c-title_mv2 {
+    top: clamp(7rem, 1.8205rem + 17.2652vw, 19.5rem);
+  }
+}
+@media screen and (max-width: 769px) {
+  .c-title_mv2 {
+    font-size: clamp(1rem, 1.3442rem + 0.8529vw, 2rem);
+  }
+}
+.c-title_mv2 span {
+  font-size: 4.8rem;
+  border-bottom: 1px solid #333;
+  /*&::after {
+      border-bottom: 1px solid #333;
+      position: absolute;
+      contain: "";
+      display: block;
+      bottom: 0;
+  }*/
+}
+@media screen and (max-width: 769px) {
+  .c-title_mv2 span {
+    font-size: clamp(2rem, 1.2325rem + 2.5586vw, 2rem);
+  }
+}
 .c-title_sidebar {
   font-family: "Zen Maru Gothic", sans-serif;
   font-size: 3rem;
@@ -823,9 +870,8 @@ th {
 }
 .c-title_post {
   font-size: 3.2rem;
-  border-bottom: 1px solid #b85d1d;
   font-family: "Zen Maru Gothic", sans-serif;
-  padding-bottom: 5px;
+  padding: 10px;
 }
 @media screen and (max-width: 769px) {
   .c-title_post {
@@ -872,7 +918,6 @@ th {
   width: 96%;
   max-width: 940px;
   margin: 28px auto;
-  border: 1px solid #eeeeee;
 }
 .timeline-list {
   padding: 40px 0;

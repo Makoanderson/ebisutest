@@ -43,6 +43,47 @@
             }
         }
     }
+    &_mv2 {
+        //top: 140px;
+        top: 380px;
+        font-family: variable.$catch;
+        font-size: 20px;
+        text-align: center;
+        background-color: rgba(255,255,255,0.5);
+        border-radius: 6px;
+        //width: 250px;
+        width: 390px;
+        padding: 5px 10px;
+        color: #656565;
+
+        @include mixin.mq(lpc) {
+            top: clamp(7rem, 1.8205rem + 17.2652vw, 19.5rem);
+        }
+
+        @include mixin.mq(md) {
+            //top: clamp(7rem, -0.9957rem + 26.6525vw, 19.5rem);
+            font-size: clamp(1rem, 1.3442rem + 0.8529vw, 2rem);
+        }
+        
+        span {
+            //font-size: 32px;
+            font-size: 4.8rem;
+            //position: relative;
+            border-bottom: 1px solid #333;
+
+            /*&::after {
+                border-bottom: 1px solid #333;
+                position: absolute;
+                contain: "";
+                display: block;
+                bottom: 0;
+            }*/
+
+            @include mixin.mq(md) {
+                font-size: clamp(2rem, 1.2325rem + 2.5586vw, 2rem);
+            }
+        }
+    }
     &_sidebar {
         font-family: variable.$catch;
         font-size: 3rem;
@@ -83,9 +124,10 @@
 
     &_post {
         font-size: 3.2rem;
-        border-bottom: 1px solid #b85d1d;
+        //border-bottom: 1px solid #b85d1d;
         font-family: variable.$catch;
-        padding-bottom: 5px;
+        //padding-bottom: 5px;
+        padding: 10px;
 
         @include mixin.mq(md) {
             font-size: 2.4rem;

@@ -36,10 +36,13 @@
                     <!--メインコンテンツ-->
                     <section class="u-w_100p85p u-mar-mxa p-homeebisu_post">
                         <?php if( have_posts()) : while( have_posts()) : the_post(); ?>
-                            <article class="c-card_post c-bk_post1 u-mar-my30 u-pad-p40">
+                            <article class="c-card_post c-bk_post1none u-mar-my30 u-pad-p40">
 
-                                <?php if (is_single() && get_the_ID() == 572) : ?>
-                                    <h2 class="c-title_post u-disp-flex">
+                                <?php
+                                $show_post_ids = array(306, 308, 310, 312, 314, 317);
+                                
+                                if (is_archive() && in_array(get_the_ID(), $show_post_ids)) : ?>
+                                    <h2 class="c-title_post u-disp-flex c-bk_title1">
                                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_titleimg1.png" class="u-w_56">
                                         <p class="u-pad-pt3 u-pad-pl3"><?php the_title(); ?></p>
                                     </h2>
