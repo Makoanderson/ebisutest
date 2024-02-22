@@ -20,7 +20,7 @@
         }
     }
 
-    &-home,&-dkutsuku,&-yoro {        //老人ホーム笑びすnavメニュー
+    /*&-home {        //老人ホーム笑びすnavメニュー
         display:flex;
         justify-content: space-between;
         //width: 70%;
@@ -74,9 +74,9 @@
 
             }
         }
-    }
+    }*/
 
-    &-debisu {        //デイサービス笑びすnavメニュー
+    &-debisu, &-yoro, &-dkutsuku, &-home {        //デイサービス笑びすnavメニュー
         display:flex;
         justify-content: space-between;
         //width: 70%;
@@ -108,7 +108,7 @@
             //padding: 25px 5px;
             //border: 1px solid #333;
             border-radius: 50px;
-            width: 120px;
+            width: 140px;
             display: flex;
             justify-content: center;
             height: 65px;

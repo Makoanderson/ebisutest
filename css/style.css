@@ -458,12 +458,17 @@ th {
   background-color: #ffe9ea;
 }
 .c-bk_title1 {
-  background-color: #56772c;
+  background-color: #8cb267;
   border-radius: 20px;
   color: #ffffff;
 }
 .c-bk_title2 {
-  background-color: rgb(255, 197, 201);
+  background-color: #f4b0cd;
+  border-radius: 20px;
+  color: #ffffff;
+}
+.c-bk_title3 {
+  background-color: #f4a584;
   border-radius: 20px;
   color: #ffffff;
 }
@@ -1103,6 +1108,63 @@ th {
   }
 }
 
+.p-nav {
+  /*&-home {        //老人ホーム笑びすnavメニュー
+      display:flex;
+      justify-content: space-between;
+      //width: 70%;
+      align-items: center;
+      font-size: 1.6rem;
+      font-family: variable.$catch;
+      font-weight: 700;
+
+      @include mixin.mq(pc) {
+         font-size: 1.4rem;
+        }
+
+      @include mixin.mq(lpc) {
+          //font-size: 1.2rem;
+          font-size: 1.6rem;
+          font-weight: bold;
+          //display: flex;
+          //flex-wrap: wrap;
+          margin-inline: auto;
+          padding-top: 10px;
+          padding-left: 10%;
+          padding-bottom: 10px;
+          //justify-content: flex-start;
+          //list-style-type: "▼";
+          display: block;
+      }
+
+      li {
+          //padding: 25px 5px;
+          //border: 1px solid #333;
+          border-radius: 6px;
+          width: 120px;
+          display: flex;
+          justify-content: center;
+          height: 65px;
+          align-items: center;
+          background-color: rgba(255,197,201,1);
+
+          @include mixin.mq(lpc) {
+              border: initial;
+              border-radius: 50px;
+              background-color: #ffffff;
+              //height: 45px;
+              height: 30px;
+              width: 85%;
+              height: 30px;
+              display: block;
+              //justify-content: initial;
+              text-align: center;
+              margin: 10px 0;
+
+          }
+      }
+  }*/
+}
 @media screen and (max-width: 1024px) {
   .p-nav-wrap {
     width: 85%;
@@ -1118,7 +1180,7 @@ th {
     border-radius: 10px;
   }
 }
-.p-nav-home, .p-nav-dkutsuku, .p-nav-yoro {
+.p-nav-debisu, .p-nav-yoro, .p-nav-dkutsuku, .p-nav-home {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1127,58 +1189,12 @@ th {
   font-weight: 700;
 }
 @media screen and (max-width: 1200px) {
-  .p-nav-home, .p-nav-dkutsuku, .p-nav-yoro {
+  .p-nav-debisu, .p-nav-yoro, .p-nav-dkutsuku, .p-nav-home {
     font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 1024px) {
-  .p-nav-home, .p-nav-dkutsuku, .p-nav-yoro {
-    font-size: 1.6rem;
-    font-weight: bold;
-    margin-inline: auto;
-    padding-top: 10px;
-    padding-left: 10%;
-    padding-bottom: 10px;
-    display: block;
-  }
-}
-.p-nav-home li, .p-nav-dkutsuku li, .p-nav-yoro li {
-  border-radius: 6px;
-  width: 120px;
-  display: flex;
-  justify-content: center;
-  height: 65px;
-  align-items: center;
-  background-color: rgb(255, 197, 201);
-}
-@media screen and (max-width: 1024px) {
-  .p-nav-home li, .p-nav-dkutsuku li, .p-nav-yoro li {
-    border: initial;
-    border-radius: 50px;
-    background-color: #ffffff;
-    height: 30px;
-    width: 85%;
-    height: 30px;
-    display: block;
-    text-align: center;
-    margin: 10px 0;
-  }
-}
-.p-nav-debisu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.6rem;
-  font-family: "Zen Maru Gothic", sans-serif;
-  font-weight: 700;
-}
-@media screen and (max-width: 1200px) {
-  .p-nav-debisu {
-    font-size: 1.4rem;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .p-nav-debisu {
+  .p-nav-debisu, .p-nav-yoro, .p-nav-dkutsuku, .p-nav-home {
     font-size: 1.6rem;
     font-weight: bold;
     display: flex;
@@ -1186,9 +1202,9 @@ th {
     margin-inline: auto;
   }
 }
-.p-nav-debisu li {
+.p-nav-debisu li, .p-nav-yoro li, .p-nav-dkutsuku li, .p-nav-home li {
   border-radius: 50px;
-  width: 120px;
+  width: 140px;
   display: flex;
   justify-content: center;
   height: 65px;
@@ -1196,7 +1212,7 @@ th {
   border: #b85d1d 1px solid;
 }
 @media screen and (max-width: 1024px) {
-  .p-nav-debisu li {
+  .p-nav-debisu li, .p-nav-yoro li, .p-nav-dkutsuku li, .p-nav-home li {
     border: initial;
     border-radius: 50px;
     border: #b85d1d 1px solid;

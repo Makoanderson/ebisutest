@@ -48,7 +48,7 @@
                                     </h2>
                                 <?php endif; ?>
                                 
-                                <div class="u-disp-flexblocktab">
+                                <div class="u-disp-block">
                                     <?php the_content(); ?>
                                 </div>
                                 

@@ -25,7 +25,7 @@
 
                 <div class="p-homeebisu_content u-w_100p70p">
                     <!--ページ内リンク用サブメニュー-->
-                    <nav class="p-nav-wrap u-h_100p">
+                    <nav class="p-nav-wrap1 u-h_100p">
                         <?php wp_nav_menu(array(
                             'theme_location' => 'yoroebisu-menu',
                             'menu_class' => 'p-nav-yoro',
@@ -36,8 +36,8 @@
                     <!--メインコンテンツ-->
                     <section class="u-w_100p85p u-mar-mxa p-homeebisu_post">
                         <?php if( have_posts()) : while( have_posts()) : the_post(); ?>
-                            <article class="c-card_post c-bk_post1 u-mar-my30 u-pad-p40">
-                                <h2 class="c-title_post u-disp-flex">
+                            <article class="c-card_post c-bk_post1none u-mar-my30 u-pad-p40">
+                                <h2 class="c-title_post u-disp-flex c-bk_title1">
                                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_titleimg1.png" class="u-w_56">
                                     <p class="u-pad-pt3 u-pad-pl3"><?php the_title(); ?></p>
                                 </h2>
