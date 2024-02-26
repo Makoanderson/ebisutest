@@ -43,4 +43,8 @@
             display: block !important;
         }
     }
+    &-flexwrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

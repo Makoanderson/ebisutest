@@ -1226,6 +1226,52 @@ th {
     color: #333;
   }
 }
+.p-nav-school {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+}
+@media screen and (max-width: 1200px) {
+  .p-nav-school {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .p-nav-school {
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: auto;
+  }
+}
+.p-nav-school li {
+  border-radius: 50px;
+  width: 210px;
+  display: flex;
+  justify-content: center;
+  height: 65px;
+  align-items: center;
+  border: #b85d1d 1px solid;
+}
+@media screen and (max-width: 1024px) {
+  .p-nav-school li {
+    border: initial;
+    border-radius: 50px;
+    border: #b85d1d 1px solid;
+    background-color: #fff;
+    width: 45%;
+    height: 50px;
+    display: block;
+    text-align: center;
+    margin: 5px 0;
+    padding-block: 15px;
+    color: #333;
+  }
+}
 .p-nav_header {
   padding-top: 0;
   padding-bottom: 0;
@@ -2439,6 +2485,10 @@ th {
   .u-disp-blocktab {
     display: block !important;
   }
+}
+.u-disp-flexwrap {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .u-text-l {
