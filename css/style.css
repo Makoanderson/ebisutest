@@ -2487,8 +2487,8 @@ th {
   }
 }
 .u-disp-flexwrap {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex !important;
+  flex-wrap: wrap !important;
 }
 
 .u-text-l {
