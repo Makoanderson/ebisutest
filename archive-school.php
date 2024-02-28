@@ -36,7 +36,7 @@
                     <!--メインコンテンツ-->
                     <section class="u-w_100p85p u-mar-mxa p-homeebisu_post">
                         <?php if( have_posts()) : while( have_posts()) : the_post(); ?>
-                            <article class="c-card_post c-bk_post1none u-mar-my30 u-pad-p40">
+                            <article class="c-card_post c-bk_post1none u-mar-my30 u-pad-p40none">
 
                             <?php
                             $show_post_ids = array(667, 669, 671, 673, 675);
@@ -60,6 +60,7 @@
                 </div>
                 
                 <!--サイドバー-->
+                <h3 class="p-sidebar-title c-title_sidebar"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_titleimg1.png" alt=""><p>ケアサロン笑びす</p></h3>
                 <?php get_sidebar('caresalon'); ?>
                 
             </div>

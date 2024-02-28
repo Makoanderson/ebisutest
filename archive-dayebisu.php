@@ -36,7 +36,7 @@
                     <!--メインコンテンツ-->
                     <section class="u-w_100p85p u-mar-mxa p-homeebisu_post">
                         <?php if( have_posts()) : while( have_posts()) : the_post(); ?>
-                            <article class="c-card_post c-bk_post1none u-mar-my30 u-pad-p40">
+                            <article class="c-card_post c-bk_post1none u-mar-my30 u-pad-p40none">
 
                                 <?php
                                 $show_post_ids = array(306, 308, 310, 312, 314, 317);

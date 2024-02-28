@@ -1,5 +1,5 @@
 <!--ケアサロン笑びす・スクール紹介ページ用sidebar-->
-<aside class="sidebar-caresalon u-w_30p85p u-mar-mxa u-pad-pl6 u-pad-pt12pt0 c-bk_sidebknone">
+<aside class="sidebar-caresalon u-w_30p85p u-mar-mxa u-pad-pl6none u-pad-pt12pt0 c-bk_sidebknone">
     <ul class="p-sidebar_care">
         <li class="sidebar-btn u-w_sbar3 u-mar-b21bk5 p-sidebar_btnline2 c-bk_sidebar5">
             <p class="info c-btn_barfont3"><a href="/caresalon/#salon-info">ケアサロン笑びす</a></p>

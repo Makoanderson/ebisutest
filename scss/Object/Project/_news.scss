@@ -1,0 +1,32 @@
+@use "../../Foundation/mixin";
+@use "../../Foundation/variable";
+
+
+
+
+//WordPress自動付与されたクラスのスタイリング
+
+.wp-pagenavi {
+    font-size: 1.6rem;
+    //margin-top: 20px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+
+    @include mixin.mq(lpc) {
+        margin-bottom: 100px;
+    }
+
+    a {
+        margin-inline: 5px;
+        padding: 5px;
+    }
+}
+
+.current {
+    background-color: #56772c;
+    color: #ffffff !important;
+    padding: 5px;
+    border-radius: 5px;
+}

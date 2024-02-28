@@ -721,6 +721,22 @@ th {
     font-size: 1.4rem;
   }
 }
+.c-card_psec7 {
+  font-size: 1.6rem;
+  margin-top: 20px;
+  line-height: 26px;
+  text-align: center;
+}
+@media screen and (max-width: 769px) {
+  .c-card_psec7 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 428px) {
+  .c-card_psec7 {
+    font-size: 1.4rem;
+  }
+}
 .c-card_table th {
   background-color: darkcyan;
   color: #ffffff;
@@ -1423,6 +1439,30 @@ th {
     height: 50px;
     text-align: center;
   }
+}
+
+.wp-pagenavi {
+  font-size: 1.6rem;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+@media screen and (max-width: 1024px) {
+  .wp-pagenavi {
+    margin-bottom: 100px;
+  }
+}
+.wp-pagenavi a {
+  margin-inline: 5px;
+  padding: 5px;
+}
+
+.current {
+  background-color: #56772c;
+  color: #ffffff !important;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .p-homeebisu_main {
