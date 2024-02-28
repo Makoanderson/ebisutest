@@ -70,6 +70,12 @@
             margin: 10px 0;
         }
     }
+    &-b21bk5 {
+        margin-bottom: 21px;
+        @include mixin.mq(lpc) {
+            margin: 5px 0;
+        }
+    }
 }
 
 

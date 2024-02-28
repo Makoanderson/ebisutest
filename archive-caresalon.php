@@ -8,7 +8,7 @@
                     <picture class="u-posi-rela u-disp-flex u-justify-center">
                         <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_mv.png" media="(min-width: 200px)" >
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_mv.png" class="u-w_tabmv u-h_maxpc u-mar-mt55tab" alt="">
-                        <p class="u-posi-abso c-title_mv"><span>ケアサロン笑びす</span><br><br>健康な足で快適に</p>
+                        <p class="u-posi-abso c-title_mv">日本フットケア協会認定<br><span>ケアサロン笑びす</span><br><br>健康な足で快適に</p>
                         <!--<p>可能な限り希望に沿った対応を・・・</p>-->
                     </picture>
                 </h1>

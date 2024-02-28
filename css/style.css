@@ -523,6 +523,24 @@ th {
     font-size: 1.6rem;
   }
 }
+.c-btn_barfont3 {
+  font-size: 2rem;
+  margin: auto;
+  text-align: center;
+  height: 100%;
+  padding-block: clamp(3.3rem, 1.5163rem + 1.7418vw, 5rem);
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+.c-btn_barfont3 a {
+  margin: auto;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+@media screen and (max-width: 1024px) {
+  .c-btn_barfont3 {
+    padding-block: 13px;
+    font-size: 1.6rem;
+  }
+}
 .c-btn_ham {
   position: relative;
   width: inherit;
@@ -1363,6 +1381,15 @@ th {
     border-radius: 50px;
   }
 }
+.p-sidebar_btnline2 {
+  border-radius: 6px;
+}
+@media screen and (max-width: 1024px) {
+  .p-sidebar_btnline2 {
+    border-radius: 50px;
+    border: 1px solid #b85d1d;
+  }
+}
 @media screen and (max-width: 1024px) {
   .p-sidebar_about {
     font-size: 1.6rem;
@@ -1378,6 +1405,22 @@ th {
   .p-sidebar_about li {
     height: 30px;
     display: block;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .p-sidebar_care {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .p-sidebar_care li {
+    height: 50px;
     text-align: center;
   }
 }
@@ -2329,6 +2372,14 @@ th {
     margin: 10px 0;
   }
 }
+.u-mar-b21bk5 {
+  margin-bottom: 21px;
+}
+@media screen and (max-width: 1024px) {
+  .u-mar-b21bk5 {
+    margin: 5px 0;
+  }
+}
 
 /*WordPress自動付与クラス名分スタイル*/
 .wp-block-group__inner-container {
@@ -2390,6 +2441,14 @@ th {
 @media screen and (max-width: 1024px) {
   .u-w_sbar2 {
     width: 85%;
+  }
+}
+.u-w_sbar3 {
+  width: 72%;
+}
+@media screen and (max-width: 1024px) {
+  .u-w_sbar3 {
+    width: 45%;
   }
 }
 .u-w_80p100p {
