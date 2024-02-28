@@ -47,4 +47,10 @@
         display: flex !important;
         flex-wrap: wrap !important;
     }
+    &-noneblock {
+        display: none;
+        @include mixin.mq(lpc) {
+            display: block;
+        }
+    }
 }

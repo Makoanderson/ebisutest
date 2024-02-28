@@ -38,11 +38,14 @@
     &-mt25 {
         margin-top: 25px;
     }
-    &-my30 {
-        margin-block: 30px;
-    }
     &-mt45 {
         margin-top: 45px;
+    }
+    &-mt70 {
+        margin-top: 70px;
+    }
+    &-my30 {
+        margin-block: 30px;
     }
     &-mt25tab {
         @include mixin.mq(md) {

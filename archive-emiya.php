@@ -11,8 +11,8 @@
                         <p class="u-posi-abso c-title_mv">地域共生カフェ<br><span>笑美屋</span><br><br>子供からご高齢者まで誰もが気軽に立ち寄れる癒場</p>
                         <!--<p>可能な限り希望に沿った対応を・・・</p>-->
                         <div class="u-posi-abso c-title_mv2">
-                            <p>営業時間：10:00～17:00</p>
-                            <p>定休日：水曜日</p>
+                            <p>営業時間&nbsp;:&nbsp;10:00～17:00</p>
+                            <p>定休日&nbsp;:&nbsp;水曜日</p>
                             <p>(不定期で日曜日が休み)</p>
                         </div>
                     </picture>
@@ -39,7 +39,7 @@
                     </nav>-->
 
                     <!--メインコンテンツ-->
-                    <section class="u-w_100p85p u-mar-mxa p-homeebisu_post">
+                    <section class="u-w_80p u-mar-mxa p-homeebisu_post">
                         <?php if( have_posts()) : while( have_posts()) : the_post(); ?>
                             <article class="c-card_post c-bk_post1none u-mar-my30 u-pad-p40none">
 

@@ -11,8 +11,9 @@
         background-color: rgba(255,255,255,0.5);
         border-radius: 6px;
         //width: 250px;
-        width: 390px;
-        padding: 5px 10px;
+        //width: 390px;
+        width: auto;
+        padding: 15px 60px;
         color: #656565;
 
         @include mixin.mq(lpc) {
@@ -52,7 +53,7 @@
         background-color: rgba(255,255,255,0.5);
         border-radius: 6px;
         //width: 250px;
-        width: 390px;
+        width: auto;
         padding: 5px 10px;
         color: #656565;
 

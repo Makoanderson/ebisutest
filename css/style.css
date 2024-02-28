@@ -804,8 +804,8 @@ th {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 6px;
-  width: 390px;
-  padding: 5px 10px;
+  width: auto;
+  padding: 15px 60px;
   color: #656565;
 }
 @media screen and (max-width: 1024px) {
@@ -841,7 +841,7 @@ th {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 6px;
-  width: 390px;
+  width: auto;
   padding: 5px 10px;
   color: #656565;
 }
@@ -1267,6 +1267,7 @@ th {
   font-size: 1.6rem;
   font-family: "Zen Maru Gothic", sans-serif;
   font-weight: 700;
+  gap: 0 20px;
 }
 @media screen and (max-width: 1200px) {
   .p-nav-school {
@@ -2378,11 +2379,14 @@ th {
 .u-mar-mt25 {
   margin-top: 25px;
 }
-.u-mar-my30 {
-  margin-block: 30px;
-}
 .u-mar-mt45 {
   margin-top: 45px;
+}
+.u-mar-mt70 {
+  margin-top: 70px;
+}
+.u-mar-my30 {
+  margin-block: 30px;
 }
 @media screen and (max-width: 769px) {
   .u-mar-mt25tab {
@@ -2588,6 +2592,14 @@ th {
 .u-disp-flexwrap {
   display: flex !important;
   flex-wrap: wrap !important;
+}
+.u-disp-noneblock {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .u-disp-noneblock {
+    display: block;
+  }
 }
 
 .u-text-l {

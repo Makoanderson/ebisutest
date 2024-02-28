@@ -60,8 +60,10 @@
                 </div>
                 
                 <!--サイドバー-->
-                <h3 class="p-sidebar-title c-title_sidebar"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_titleimg1.png" alt=""><p>ケアサロン笑びす</p></h3>
-                <?php get_sidebar('caresalon'); ?>
+                <!--<div class="u-disp-block u-w_30p85p u-mar-mxa">-->
+                    <h3 class="p-sidebar-title c-title_sidebar u-disp-noneblock u-w_30p85p u-mar-mxa u-mar-mt70"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_titleimg1.png" alt=""><p>ケアサロン笑びす</p></h3>
+                    <?php get_sidebar('caresalon'); ?>
+                <!--</div>-->
                 
             </div>
         </div> 
