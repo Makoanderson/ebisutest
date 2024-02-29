@@ -10,6 +10,10 @@
         width: 56px;
     }
 
+    &_500 {
+        width: 500px;
+    }
+
     &_100p {
         width: 100%;
     }
@@ -26,6 +30,14 @@
         width: 55%;
     }
 
+    &_80p {
+        width: 80%;
+    }
+
+    &_90p {
+        width: 90%;
+    }
+
     &_30p85p {
         width: 30%;
         @include mixin.mq(lpc) {
@@ -40,6 +52,27 @@
         }
         @include mixin.mq(md) {
             width: 200px;
+        }
+    }
+
+    &_sbar2 {
+        width: 72%;
+        @include mixin.mq(lpc) {
+            width: 85%;
+        }
+    }
+
+    &_sbar3 {
+        width: 72%;
+        @include mixin.mq(lpc) {
+            width: 45%;
+        }
+    }
+
+    &_80p100p {
+        width: 80%;
+        @include mixin.mq(lpc) {
+            width: 100%;
         }
     }
 

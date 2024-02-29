@@ -570,8 +570,11 @@
   &-pl11 {
     padding-left: 2.75rem;
   }
-  &-pt12 {
+  &-pt12pt0 {
     padding-top: 3rem;          /*48px*/
+      @include mixin.mq(lpc) {
+        padding-top: 0;
+      }
   }
   &-pr12 {
     padding-right: 3rem;

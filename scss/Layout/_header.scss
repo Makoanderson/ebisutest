@@ -15,6 +15,12 @@
         }
     }
 
+    &_posi {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
     &_nav {
         display: flex;
         position: absolute;

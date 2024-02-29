@@ -11,7 +11,16 @@
         }
     }
 
-    &-home {        //老人ホーム笑びすnavメニュー
+    &-wrap1 {
+        @include mixin.mq(lpc) {
+            width: 85%;
+            margin-inline: auto;
+            //background-color: rgba(249,233,234,1);
+            border-radius: 10px;
+        }
+    }
+
+    /*&-home {        //老人ホーム笑びすnavメニュー
         display:flex;
         justify-content: space-between;
         //width: 70%;
@@ -48,7 +57,7 @@
             justify-content: center;
             height: 65px;
             align-items: center;
-            background-color: rgba(249,233,234,1);
+            background-color: rgba(255,197,201,1);
 
             @include mixin.mq(lpc) {
                 border: initial;
@@ -62,6 +71,127 @@
                 //justify-content: initial;
                 text-align: center;
                 margin: 10px 0;
+
+            }
+        }
+    }*/
+
+    &-debisu, &-yoro, &-dkutsuku, &-home {        //デイサービス笑びすnavメニュー
+        display:flex;
+        justify-content: space-between;
+        //width: 70%;
+        align-items: center;
+        font-size: 1.6rem;
+        font-family: variable.$catch;
+        font-weight: 700;
+
+        @include mixin.mq(pc) {
+           font-size: 1.4rem;
+          }
+
+        @include mixin.mq(lpc) {
+            //font-size: 1.2rem;
+            font-size: 1.6rem;
+            font-weight: bold;
+            display: flex;
+            flex-wrap: wrap;
+            margin-inline: auto;
+            //padding-top: 10px;
+            //padding-left: 10%;
+            //padding-bottom: 10px;
+            //justify-content: flex-start;
+            //list-style-type: "▼";
+            //display: block;
+        }
+
+        li {
+            //padding: 25px 5px;
+            //border: 1px solid #333;
+            border-radius: 50px;
+            width: 140px;
+            display: flex;
+            justify-content: center;
+            height: 65px;
+            align-items: center;
+            border: #b85d1d 1px solid;
+            //background-color: rgba(255,197,201,1);
+
+            @include mixin.mq(lpc) {
+                border: initial;
+                border-radius: 50px;
+                border: #b85d1d 1px solid;
+                background-color: #fff;
+                //height: 45px;
+                //height: 30px;
+                width: 45%;
+                height: 50px;
+                display: block;
+                //justify-content: initial;
+                text-align: center;
+                margin: 5px 0;
+                padding-block: 15px;
+                color: #333;
+
+            }
+        }
+    }
+
+    &-school {        //デイサービス笑びすnavメニュー
+        display:flex;
+        justify-content: space-between;
+        //width: 70%;
+        align-items: center;
+        font-size: 1.6rem;
+        font-family: variable.$catch;
+        font-weight: 700;
+        gap: 0 20px;
+
+        @include mixin.mq(pc) {
+           font-size: 1.4rem;
+          }
+
+        @include mixin.mq(lpc) {
+            //font-size: 1.2rem;
+            font-size: 1.6rem;
+            font-weight: bold;
+            display: flex;
+            flex-wrap: wrap;
+            margin-inline: auto;
+            //padding-top: 10px;
+            //padding-left: 10%;
+            //padding-bottom: 10px;
+            //justify-content: flex-start;
+            //list-style-type: "▼";
+            //display: block;
+        }
+
+        li {
+            //padding: 25px 5px;
+            //border: 1px solid #333;
+            border-radius: 50px;
+            width: 210px;
+            display: flex;
+            justify-content: center;
+            height: 65px;
+            align-items: center;
+            border: #b85d1d 1px solid;
+            //background-color: rgba(255,197,201,1);
+
+            @include mixin.mq(lpc) {
+                border: initial;
+                border-radius: 50px;
+                border: #b85d1d 1px solid;
+                background-color: #fff;
+                //height: 45px;
+                //height: 30px;
+                width: 45%;
+                height: 50px;
+                display: block;
+                //justify-content: initial;
+                text-align: center;
+                margin: 5px 0;
+                padding-block: 15px;
+                color: #333;
 
             }
         }

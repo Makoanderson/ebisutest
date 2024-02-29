@@ -1,6 +1,7 @@
 html {
     font-size: 62.5%;
     margin-top: 0 !important;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -11,3 +12,7 @@ body {
     overflow-x: hidden;
 }
 
+table {
+    width: 800px !important;
+    overflow-x: scroll;
+}

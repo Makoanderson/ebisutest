@@ -8,14 +8,14 @@
                     <picture class="u-posi-rela u-disp-flex u-justify-center">
                         <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_mv.png" media="(min-width: 200px)" >
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_mv.png" class="u-w_tabmv u-h_maxpc u-mar-mt55tab" alt="">
-                        <p class="u-posi-abso c-title_mv"><span>お知らせ</span><br><br>News</p>
+                        <p class="u-posi-abso c-title_mv">ケアサロン笑びす<br><span>スクール紹介</span><br><br>健康な足で快適に</p>
                         <!--<p>可能な限り希望に沿った対応を・・・</p>-->
                     </picture>
                 </h1>
             </div>
 
             <!--トップへ戻る追従ボタン-->
-            <a class="c-btn-pagetop u-disp-block" href="/news/#head">
+            <a class="c-btn-pagetop u-disp-block" href="/school/#head">
                 <div class="c-btn-pagetop__arrow"></div>
                 <p>Top</p>
             </a>
@@ -25,40 +25,45 @@
 
                 <div class="p-homeebisu_content u-w_100p70p">
                     <!--ページ内リンク用サブメニュー-->
-                    <!--<nav class="p-nav-wrap u-h_100p">-->
-                        <?php /*wp_nav_menu(array(
-                            'theme_location' => 'homeebisu-menu',
-                            'menu_class' => 'p-nav-home',
+                    <nav class="p-nav-wrap1 u-h_100p">
+                        <?php wp_nav_menu(array(
+                            'theme_location' => 'school-menu',
+                            'menu_class' => 'p-nav-school',
                             'container' => '',
-                            ))*/;?>
-                    <!--</nav>-->
+                            ));?>
+                    </nav>
 
                     <!--メインコンテンツ-->
                     <section class="u-w_100p85p u-mar-mxa p-homeebisu_post">
-                    
                         <?php if( have_posts()) : while( have_posts()) : the_post(); ?>
-                            <article class="u-mar-my30 u-pad-p40none">
-                                <h2 class="c-card_post c-title_post c-bk_post1 u-disp-flex">
+                            <article class="c-card_post c-bk_post1none u-mar-my30 u-pad-p40none">
+
+                            <?php
+                            $show_post_ids = array(667, 669, 671, 673, 675);
+                                
+                            if (is_archive() && in_array(get_the_ID(), $show_post_ids)) : ?>
+                                <h2 class="c-title_post u-disp-flex c-bk_title2">
                                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_titleimg1.png" class="u-w_56">
                                     <p class="u-pad-pt3 u-pad-pl3"><?php the_title(); ?></p>
                                 </h2>
-                                <div class="u-disp-flexblock c-card_psec7">
+                            <?php endif; ?>
+
+                                <div class="u-disp-flexblock">
                                     <?php the_content(); ?>
                                 </div>
                                 
                             </article>
                         <?php endwhile; else : ?>
-                            <p>記事はありません。</p>                            
+                            <p>記事はありません。</p>
                         <?php endif; ?>
-
-                        <!-- wp-pagenaviの記述 -->
-                        <?php if ( function_exists( 'wp_pagenavi' ) ) { wp_pagenavi(); } ?>
-                        <!-- wp-pagenaviの記述ここまで -->
                     </section> 
                 </div>
                 
                 <!--サイドバー-->
-                <?php get_sidebar('shisetsu'); ?>
+                <!--<div class="u-disp-block u-w_30p85p u-mar-mxa">-->
+                    <h3 class="p-sidebar-title c-title_sidebar u-disp-noneblock u-w_30p85p u-mar-mxa u-mar-mt70"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_titleimg1.png" alt=""><p>ケアサロン笑びす</p></h3>
+                    <?php get_sidebar('caresalon'); ?>
+                <!--</div>-->
                 
             </div>
         </div> 

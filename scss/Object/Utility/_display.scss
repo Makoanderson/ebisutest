@@ -35,4 +35,22 @@
             display: none;
         }
     }
+    &-contents {
+        display: contents;
+    }
+    &-blocktab {
+        @include mixin.mq(md) {
+            display: block !important;
+        }
+    }
+    &-flexwrap {
+        display: flex !important;
+        flex-wrap: wrap !important;
+    }
+    &-noneblock {
+        display: none;
+        @include mixin.mq(lpc) {
+            display: block;
+        }
+    }
 }

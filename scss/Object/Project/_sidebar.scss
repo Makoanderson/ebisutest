@@ -93,4 +93,63 @@
     //background-repeat: no-repeat;
     //background-size: contain;
     //}
+
+    &_btnline {
+        //border: 1px solid #333;
+        border-radius: 6px;
+        @include mixin.mq(lpc) {
+            border-radius: 50px;
+        }
+    }
+
+    &_btnline2 {
+        //border: 1px solid #333;
+        border-radius: 6px;
+        @include mixin.mq(lpc) {
+            border-radius: 50px;
+            border: 1px solid #b85d1d;
+        }
+    }
+
+    &_about {
+        @include mixin.mq(lpc) {
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-inline: auto;
+            padding-top: 10px;
+            padding-left: 10%;
+            padding-bottom: 10px;
+            display: block;
+        }
+        
+        li {
+            @include mixin.mq(lpc) {
+                height: 30px;
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+
+    &_care {
+        @include mixin.mq(lpc) {
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-inline: auto;
+            //padding-top: 10px;
+            //padding-left: 10%;
+            //padding-bottom: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0 10px;
+        }
+        
+        li {
+            @include mixin.mq(lpc) {
+                height: 50px;
+                //display: block;
+                text-align: center;
+            }
+        }
+    }
 }

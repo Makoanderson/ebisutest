@@ -2,6 +2,7 @@
 html {
   font-size: 62.5%;
   margin-top: 0 !important;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -10,6 +11,11 @@ a {
 
 body {
   overflow-x: hidden;
+}
+
+table {
+  width: 800px !important;
+  overflow-x: scroll;
 }
 
 /*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.min.css */
@@ -242,6 +248,11 @@ th {
     height: 55px;
   }
 }
+.l-header_posi {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 .l-header_nav {
   display: flex;
   position: absolute;
@@ -416,6 +427,20 @@ th {
   background-repeat: no-repeat;
   background-size: contain;
 }
+.c-bk_sidebar5 {
+  background-color: rgb(255, 197, 201);
+}
+@media screen and (max-width: 1024px) {
+  .c-bk_sidebar5 {
+    background-color: #ffffff;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .c-bk_sidebk {
+    background-color: rgb(249, 233, 234);
+    border-radius: 10px;
+  }
+}
 .c-bk_mainbtm {
   background: url("../img/bk-mainbtm.png");
   background-repeat: no-repeat;
@@ -431,6 +456,21 @@ th {
 }
 .c-bk_post1 {
   background-color: #ffe9ea;
+}
+.c-bk_title1 {
+  background-color: #8cb267;
+  border-radius: 20px;
+  color: #ffffff;
+}
+.c-bk_title2 {
+  background-color: #f4b0cd;
+  border-radius: 20px;
+  color: #ffffff;
+}
+.c-bk_title3 {
+  background-color: #f4a584;
+  border-radius: 20px;
+  color: #ffffff;
 }
 
 .c-btn_barfont {
@@ -459,6 +499,46 @@ th {
   .c-btn_barfont {
     margin-inline: 35px;
     padding-right: 0;
+  }
+}
+.c-btn_barfont2 {
+  font-size: 2rem;
+  margin: auto;
+  text-align: center;
+  height: 100%;
+  padding-block: clamp(3.3rem, 1.5163rem + 1.7418vw, 5rem);
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+.c-btn_barfont2 a {
+  margin: auto;
+  font-family: "Zen Maru Gothic", sans-serif;
+  /*span {
+      font-size: 3rem;
+      font-family: variable.$catch;
+  }*/
+}
+@media screen and (max-width: 1024px) {
+  .c-btn_barfont2 {
+    padding-block: 5px;
+    font-size: 1.6rem;
+  }
+}
+.c-btn_barfont3 {
+  font-size: 2rem;
+  margin: auto;
+  text-align: center;
+  height: 100%;
+  padding-block: clamp(3.3rem, 1.5163rem + 1.7418vw, 5rem);
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+.c-btn_barfont3 a {
+  margin: auto;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+@media screen and (max-width: 1024px) {
+  .c-btn_barfont3 {
+    padding-block: 13px;
+    font-size: 1.6rem;
   }
 }
 .c-btn_ham {
@@ -511,6 +591,31 @@ th {
   font-size: 13px;
   line-height: 24px;
 }
+.c-btn-pagetop {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background: #fff;
+  border: solid 2px #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.c-btn-pagetop p {
+  font-size: 1.2rem;
+  transform: translate(13px, 8px);
+}
+.c-btn-pagetop__arrow {
+  height: 20px;
+  width: 20px;
+  border-top: 3px solid #000;
+  border-right: 3px solid #000;
+  transform: translateY(75%) translateX(65%) rotate(-45deg);
+}
 
 .is-active span:nth-of-type(1) {
   top: 0;
@@ -540,6 +645,98 @@ th {
     width: 100%;
   }
 }
+@media screen and (max-width: 428px) {
+  .c-card_psec {
+    font-size: 1.4rem;
+  }
+}
+.c-card_psec2 {
+  font-size: 1.6rem;
+  margin-top: 20px;
+  line-height: 26px;
+  width: 90%;
+}
+@media screen and (max-width: 769px) {
+  .c-card_psec2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 428px) {
+  .c-card_psec2 {
+    font-size: 1.4rem;
+  }
+}
+.c-card_psec3 {
+  font-size: 1.6rem;
+  margin-top: 20px;
+  line-height: 26px;
+  width: 100%;
+}
+@media screen and (max-width: 428px) {
+  .c-card_psec3 {
+    font-size: 1.4rem;
+  }
+}
+.c-card_psec5 {
+  font-size: 1.6rem;
+  margin-top: 20px;
+  line-height: 26px;
+  width: 60%;
+}
+.c-card_psec5 strong {
+  font-size: 2rem;
+}
+@media screen and (max-width: 769px) {
+  .c-card_psec5 {
+    width: 100%;
+  }
+  .c-card_psec5 strong {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 428px) {
+  .c-card_psec5 {
+    font-size: 1.4rem;
+  }
+}
+.c-card_psec6 {
+  font-size: 1.6rem;
+  margin-top: 20px;
+  line-height: 26px;
+  width: 100%;
+}
+.c-card_psec6 strong {
+  font-size: 2rem;
+}
+@media screen and (max-width: 769px) {
+  .c-card_psec6 {
+    width: 100%;
+  }
+  .c-card_psec6 strong {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 428px) {
+  .c-card_psec6 {
+    font-size: 1.4rem;
+  }
+}
+.c-card_psec7 {
+  font-size: 1.6rem;
+  margin-top: 20px;
+  line-height: 26px;
+  text-align: center;
+}
+@media screen and (max-width: 769px) {
+  .c-card_psec7 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 428px) {
+  .c-card_psec7 {
+    font-size: 1.4rem;
+  }
+}
 .c-card_table th {
   background-color: darkcyan;
   color: #ffffff;
@@ -562,9 +759,9 @@ th {
 }
 
 /*WordPress自動付与クラス名分スタイル*/
-/*老人ホームコンテンツ*/
+/*老人ホームコンテンツ, みつわについてコンテンツ*/
 @media screen and (max-width: 769px) {
-  .wp-container-core-group-layout-3 {
+  .wp-container-core-group-layout-3, .wp-container-core-group-layout-2, .wp-container-core-group-layout-4, .wp-container-core-group-layout-5, .wp-container-core-group-layout-7, .wp-container-core-group-layout-8, .wp-container-core-group-layout-9, .wp-container-core-group-layout-10 {
     flex-wrap: unset !important;
     display: block !important;
   }
@@ -607,8 +804,9 @@ th {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 6px;
-  width: 250px;
-  padding: 5px 10px;
+  width: auto;
+  padding: 15px 60px;
+  color: #656565;
 }
 @media screen and (max-width: 1024px) {
   .c-title_mv {
@@ -621,10 +819,55 @@ th {
   }
 }
 .c-title_mv span {
-  font-size: 32px;
+  font-size: 4.8rem;
+  border-bottom: 1px solid #333;
+  /*&::after {
+      border-bottom: 1px solid #333;
+      position: absolute;
+      contain: "";
+      display: block;
+      bottom: 0;
+  }*/
 }
 @media screen and (max-width: 769px) {
   .c-title_mv span {
+    font-size: clamp(2rem, 1.2325rem + 2.5586vw, 2rem);
+  }
+}
+.c-title_mv2 {
+  top: 380px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+  width: auto;
+  padding: 5px 10px;
+  color: #656565;
+}
+@media screen and (max-width: 1024px) {
+  .c-title_mv2 {
+    top: clamp(7rem, 1.8205rem + 17.2652vw, 19.5rem);
+  }
+}
+@media screen and (max-width: 769px) {
+  .c-title_mv2 {
+    font-size: clamp(1rem, 1.3442rem + 0.8529vw, 2rem);
+  }
+}
+.c-title_mv2 span {
+  font-size: 4.8rem;
+  border-bottom: 1px solid #333;
+  /*&::after {
+      border-bottom: 1px solid #333;
+      position: absolute;
+      contain: "";
+      display: block;
+      bottom: 0;
+  }*/
+}
+@media screen and (max-width: 769px) {
+  .c-title_mv2 span {
     font-size: clamp(2rem, 1.2325rem + 2.5586vw, 2rem);
   }
 }
@@ -666,14 +909,28 @@ th {
 }
 .c-title_post {
   font-size: 3.2rem;
-  border-bottom: 1px solid #b85d1d;
   font-family: "Zen Maru Gothic", sans-serif;
-  padding-bottom: 5px;
+  padding: 10px;
 }
 @media screen and (max-width: 769px) {
   .c-title_post {
     font-size: 2.4rem;
   }
+}
+.c-title_clinic {
+  font-size: 2rem;
+  border-bottom: 1px solid #656565;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+@media screen and (max-width: 769px) {
+  .c-title_clinic {
+    font-size: 1.6rem;
+  }
+}
+.c-title_font {
+  font-family: "Zen Maru Gothic", sans-serif;
 }
 
 .test {
@@ -694,6 +951,135 @@ th {
 }
 .p-com_fontfam {
   font-family: "Zen Maru Gothic", sans-serif;
+}
+
+.timeline {
+  width: 96%;
+  max-width: 940px;
+  margin: 28px auto;
+}
+.timeline-list {
+  padding: 40px 0;
+}
+.timeline-list-item {
+  display: flex;
+  line-height: 1.5;
+  font-size: 16px;
+}
+@media screen and (max-width: 769px) {
+  .timeline-list-item {
+    font-size: 14px;
+  }
+}
+.timeline-list-item .date {
+  width: 15%;
+  color: #888888;
+  font-weight: bold;
+}
+@media screen and (max-width: 769px) {
+  .timeline-list-item .date {
+    width: clamp(14.503rem, 24.4128rem - 23.1534vw, 6.6078rem);
+  }
+}
+.timeline-list-item .content {
+  position: relative;
+  width: 80%;
+  padding: 0 0 40px 30px;
+  border-left: 1px solid #aaaaaa;
+}
+.timeline-list-item .content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #00c2bc;
+  border-radius: 10px;
+}
+
+/*wpで自動付与されたクラスのスタイル*/
+.wp-image-740 {
+  position: absolute;
+  top: 0;
+  right: 140px;
+  width: 130px;
+}
+@media screen and (max-width: 1024px) {
+  .wp-image-740 {
+    right: clamp(6.5rem, -16.23616rem + 29.5276vw, 14rem);
+    width: clamp(10rem, 0.95296rem + 11.7647vw, 13rem);
+  }
+}
+@media screen and (max-width: 769px) {
+  .wp-image-740 {
+    right: 0;
+    width: clamp(5.8rem, 0.50064rem + 12.3529vw, 10rem);
+    top: -35px;
+  }
+}
+.wp-image-737 {
+  position: absolute;
+  top: 200px;
+  right: 40px;
+  width: 150px;
+}
+@media screen and (max-width: 1024px) {
+  .wp-image-737 {
+    width: clamp(13rem, 6.96864rem + 7.8431vw, 15rem);
+  }
+}
+@media screen and (max-width: 769px) {
+  .wp-image-737 {
+    right: clamp(0rem, -5.02048rem + 11.7302vw, 4rem);
+    width: clamp(10rem, 6.23456rem + 8.7977vw, 13rem);
+    top: 215px;
+  }
+}
+@media screen and (max-width: 555px) {
+  .wp-image-737 {
+    top: 270px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .wp-image-737 {
+    display: none;
+  }
+}
+
+.wp-image-741 {
+  position: absolute;
+  bottom: 50px;
+  right: 160px;
+  width: 150px;
+}
+@media screen and (max-width: 1024px) {
+  .wp-image-741 {
+    right: clamp(0.5rem, -46.2432rem + 60.7843vw, 16rem);
+    width: clamp(13rem, 6.96864rem + 7.8431vw, 15rem);
+  }
+}
+@media screen and (max-width: 769px) {
+  .wp-image-741 {
+    right: clamp(0rem, -0.63088rem + 1.4706vw, 0.5rem);
+    width: clamp(10rem, 6.23456rem + 8.7977vw, 13rem);
+    bottom: 25px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .wp-image-741 {
+    bottom: -35px;
+  }
+}
+@media screen and (max-width: 465px) {
+  .wp-image-741 {
+    bottom: -15px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .wp-image-741 {
+    display: none;
+  }
 }
 
 .p-footer_sub li + li {
@@ -756,6 +1142,63 @@ th {
   }
 }
 
+.p-nav {
+  /*&-home {        //老人ホーム笑びすnavメニュー
+      display:flex;
+      justify-content: space-between;
+      //width: 70%;
+      align-items: center;
+      font-size: 1.6rem;
+      font-family: variable.$catch;
+      font-weight: 700;
+
+      @include mixin.mq(pc) {
+         font-size: 1.4rem;
+        }
+
+      @include mixin.mq(lpc) {
+          //font-size: 1.2rem;
+          font-size: 1.6rem;
+          font-weight: bold;
+          //display: flex;
+          //flex-wrap: wrap;
+          margin-inline: auto;
+          padding-top: 10px;
+          padding-left: 10%;
+          padding-bottom: 10px;
+          //justify-content: flex-start;
+          //list-style-type: "▼";
+          display: block;
+      }
+
+      li {
+          //padding: 25px 5px;
+          //border: 1px solid #333;
+          border-radius: 6px;
+          width: 120px;
+          display: flex;
+          justify-content: center;
+          height: 65px;
+          align-items: center;
+          background-color: rgba(255,197,201,1);
+
+          @include mixin.mq(lpc) {
+              border: initial;
+              border-radius: 50px;
+              background-color: #ffffff;
+              //height: 45px;
+              height: 30px;
+              width: 85%;
+              height: 30px;
+              display: block;
+              //justify-content: initial;
+              text-align: center;
+              margin: 10px 0;
+
+          }
+      }
+  }*/
+}
 @media screen and (max-width: 1024px) {
   .p-nav-wrap {
     width: 85%;
@@ -764,7 +1207,14 @@ th {
     border-radius: 10px;
   }
 }
-.p-nav-home {
+@media screen and (max-width: 1024px) {
+  .p-nav-wrap1 {
+    width: 85%;
+    margin-inline: auto;
+    border-radius: 10px;
+  }
+}
+.p-nav-debisu, .p-nav-yoro, .p-nav-dkutsuku, .p-nav-home {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -773,41 +1223,88 @@ th {
   font-weight: 700;
 }
 @media screen and (max-width: 1200px) {
-  .p-nav-home {
+  .p-nav-debisu, .p-nav-yoro, .p-nav-dkutsuku, .p-nav-home {
     font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 1024px) {
-  .p-nav-home {
+  .p-nav-debisu, .p-nav-yoro, .p-nav-dkutsuku, .p-nav-home {
     font-size: 1.6rem;
     font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
     margin-inline: auto;
-    padding-top: 10px;
-    padding-left: 10%;
-    padding-bottom: 10px;
-    display: block;
   }
 }
-.p-nav-home li {
-  border-radius: 6px;
-  width: 120px;
+.p-nav-debisu li, .p-nav-yoro li, .p-nav-dkutsuku li, .p-nav-home li {
+  border-radius: 50px;
+  width: 140px;
   display: flex;
   justify-content: center;
   height: 65px;
   align-items: center;
-  background-color: rgb(249, 233, 234);
+  border: #b85d1d 1px solid;
 }
 @media screen and (max-width: 1024px) {
-  .p-nav-home li {
+  .p-nav-debisu li, .p-nav-yoro li, .p-nav-dkutsuku li, .p-nav-home li {
     border: initial;
     border-radius: 50px;
-    background-color: #ffffff;
-    height: 30px;
-    width: 85%;
-    height: 30px;
+    border: #b85d1d 1px solid;
+    background-color: #fff;
+    width: 45%;
+    height: 50px;
     display: block;
     text-align: center;
-    margin: 10px 0;
+    margin: 5px 0;
+    padding-block: 15px;
+    color: #333;
+  }
+}
+.p-nav-school {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  gap: 0 20px;
+}
+@media screen and (max-width: 1200px) {
+  .p-nav-school {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .p-nav-school {
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: auto;
+  }
+}
+.p-nav-school li {
+  border-radius: 50px;
+  width: 210px;
+  display: flex;
+  justify-content: center;
+  height: 65px;
+  align-items: center;
+  border: #b85d1d 1px solid;
+}
+@media screen and (max-width: 1024px) {
+  .p-nav-school li {
+    border: initial;
+    border-radius: 50px;
+    border: #b85d1d 1px solid;
+    background-color: #fff;
+    width: 45%;
+    height: 50px;
+    display: block;
+    text-align: center;
+    margin: 5px 0;
+    padding-block: 15px;
+    color: #333;
   }
 }
 .p-nav_header {
@@ -892,6 +1389,81 @@ th {
   background-image: url("../img/bar-shisetsu_icon4.png");
   background-size: contain;
   background-repeat: no-repeat;
+}
+.p-sidebar_btnline {
+  border-radius: 6px;
+}
+@media screen and (max-width: 1024px) {
+  .p-sidebar_btnline {
+    border-radius: 50px;
+  }
+}
+.p-sidebar_btnline2 {
+  border-radius: 6px;
+}
+@media screen and (max-width: 1024px) {
+  .p-sidebar_btnline2 {
+    border-radius: 50px;
+    border: 1px solid #b85d1d;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .p-sidebar_about {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-inline: auto;
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-bottom: 10px;
+    display: block;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .p-sidebar_about li {
+    height: 30px;
+    display: block;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .p-sidebar_care {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .p-sidebar_care li {
+    height: 50px;
+    text-align: center;
+  }
+}
+
+.wp-pagenavi {
+  font-size: 1.6rem;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+@media screen and (max-width: 1024px) {
+  .wp-pagenavi {
+    margin-bottom: 100px;
+  }
+}
+.wp-pagenavi a {
+  margin-inline: 5px;
+  padding: 5px;
+}
+
+.current {
+  background-color: #56772c;
+  color: #ffffff !important;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .p-homeebisu_main {
@@ -1523,8 +2095,13 @@ th {
 .u-pad-pl11 {
   padding-left: 2.75rem;
 }
-.u-pad-pt12 {
+.u-pad-pt12pt0 {
   padding-top: 3rem; /*48px*/
+}
+@media screen and (max-width: 1024px) {
+  .u-pad-pt12pt0 {
+    padding-top: 0;
+  }
 }
 .u-pad-pr12 {
   padding-right: 3rem;
@@ -1790,11 +2367,23 @@ th {
 .u-mar-mb10 {
   margin-bottom: 10px;
 }
+.u-mar-mb25 {
+  margin-bottom: 25px;
+}
 .u-mar-mt15 {
   margin-top: 15px;
 }
+.u-mar-mt20 {
+  margin-top: 20px;
+}
 .u-mar-mt25 {
   margin-top: 25px;
+}
+.u-mar-mt45 {
+  margin-top: 45px;
+}
+.u-mar-mt70 {
+  margin-top: 70px;
 }
 .u-mar-my30 {
   margin-block: 30px;
@@ -1819,12 +2408,37 @@ th {
   margin-top: 15px;
   margin-left: clamp(0rem, -6.8571rem + 6.6964vw, 6rem);
 }
+.u-mar-b21bk10 {
+  margin-bottom: 21px;
+}
+@media screen and (max-width: 1024px) {
+  .u-mar-b21bk10 {
+    margin: 10px 0;
+  }
+}
+.u-mar-b21bk5 {
+  margin-bottom: 21px;
+}
+@media screen and (max-width: 1024px) {
+  .u-mar-b21bk5 {
+    margin: 5px 0;
+  }
+}
+
+/*WordPress自動付与クラス名分スタイル*/
+.wp-block-group__inner-container {
+  margin-right: 0 !important;
+  margin-right: 0 !important;
+}
 
 .u-w_maxpc {
   max-width: 1400px;
 }
 .u-w_56 {
   width: 56px;
+}
+.u-w_500 {
+  width: 500px;
 }
 .u-w_100p {
   width: 100%;
@@ -1837,6 +2451,12 @@ th {
 }
 .u-w_55p {
   width: 55%;
+}
+.u-w_80p {
+  width: 80%;
+}
+.u-w_90p {
+  width: 90%;
 }
 .u-w_30p85p {
   width: 30%;
@@ -1857,6 +2477,30 @@ th {
 @media screen and (max-width: 769px) {
   .u-w_sbar {
     width: 200px;
+  }
+}
+.u-w_sbar2 {
+  width: 72%;
+}
+@media screen and (max-width: 1024px) {
+  .u-w_sbar2 {
+    width: 85%;
+  }
+}
+.u-w_sbar3 {
+  width: 72%;
+}
+@media screen and (max-width: 1024px) {
+  .u-w_sbar3 {
+    width: 45%;
+  }
+}
+.u-w_80p100p {
+  width: 80%;
+}
+@media screen and (max-width: 1024px) {
+  .u-w_80p100p {
+    width: 100%;
   }
 }
 .u-w_100p70p {
@@ -1935,6 +2579,26 @@ th {
 @media screen and (max-width: 769px) {
   .u-disp-flexnone {
     display: none;
+  }
+}
+.u-disp-contents {
+  display: contents;
+}
+@media screen and (max-width: 769px) {
+  .u-disp-blocktab {
+    display: block !important;
+  }
+}
+.u-disp-flexwrap {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+.u-disp-noneblock {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .u-disp-noneblock {
+    display: block;
   }
 }
 

@@ -26,11 +26,23 @@
     &-mb10 {
         margin-bottom: 10px;
     }
+    &-mb25 {
+        margin-bottom: 25px;
+    }
     &-mt15 {
         margin-top: 15px;
     }
+    &-mt20 {
+        margin-top: 20px;
+    }
     &-mt25 {
         margin-top: 25px;
+    }
+    &-mt45 {
+        margin-top: 45px;
+    }
+    &-mt70 {
+        margin-top: 70px;
     }
     &-my30 {
         margin-block: 30px;
@@ -55,4 +67,23 @@
         margin-top: 15px;
         margin-left: clamp(0rem, -6.8571rem + 6.6964vw, 6rem);
     }
+    &-b21bk10 {
+        margin-bottom: 21px;
+        @include mixin.mq(lpc) {
+            margin: 10px 0;
+        }
+    }
+    &-b21bk5 {
+        margin-bottom: 21px;
+        @include mixin.mq(lpc) {
+            margin: 5px 0;
+        }
+    }
+}
+
+
+/*WordPress自動付与クラス名分スタイル*/
+.wp-block-group__inner-container {
+    margin-right: 0 !important;
+    margin-right: 0 !important;
 }

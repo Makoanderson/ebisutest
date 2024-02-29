@@ -27,6 +27,20 @@
         background-size: contain;
     }
 
+    &_sidebar5 {
+        background-color: rgba(255,197,201,1);
+        @include mixin.mq(lpc) {
+            background-color: #ffffff;
+        }
+    }
+
+    &_sidebk {
+        @include mixin.mq(lpc) {
+            background-color: rgb(249,233,234);
+            border-radius: 10px;
+        }
+    }
+
     &_mainbtm {
         background: url('../img/bk-mainbtm.png');
         background-repeat: no-repeat;
@@ -44,5 +58,23 @@
     }
     &_post1 {
         background-color: #ffe9ea;
+    }
+
+    &_title1 {
+        background-color: #8cb267;
+        border-radius: 20px;
+        color: #ffffff;
+    }
+
+    &_title2 {
+        background-color: #f4b0cd;
+        border-radius: 20px;
+        color: #ffffff;
+    }
+
+    &_title3 {
+        background-color: #f4a584;
+        border-radius: 20px;
+        color: #ffffff;
     }
 }

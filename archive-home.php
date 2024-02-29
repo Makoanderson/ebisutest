@@ -8,18 +8,24 @@
                     <picture class="u-posi-rela u-disp-flex u-justify-center">
                         <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_mv.png" media="(min-width: 200px)" >
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_mv.png" class="u-w_tabmv u-h_maxpc u-mar-mt55tab" alt="">
-                        <p class="u-posi-abso c-title_mv">有料老人ホーム<br><span>笑びすについて</span></p>
+                        <p class="u-posi-abso c-title_mv">有料老人ホーム<br><span>笑びすについて</span><br><br>可能な限り希望に沿った対応を・・・</p>
+                        <!--<p>可能な限り希望に沿った対応を・・・</p>-->
                     </picture>
                 </h1>
             </div>
 
-           
+            <!--トップへ戻る追従ボタン-->
+            <a class="c-btn-pagetop u-disp-block" href="/home/#head">
+                <div class="c-btn-pagetop__arrow"></div>
+                <p>Top</p>
+            </a>
+
             <!--コンテンツ-->
             <div class="p-homeebisu_main u-mar-mx1p">
 
                 <div class="p-homeebisu_content u-w_100p70p">
                     <!--ページ内リンク用サブメニュー-->
-                    <nav class="p-nav-wrap u-h_100p">
+                    <nav class="p-nav-wrap1 u-h_100p">
                         <?php wp_nav_menu(array(
                             'theme_location' => 'homeebisu-menu',
                             'menu_class' => 'p-nav-home',
@@ -30,12 +36,12 @@
                     <!--メインコンテンツ-->
                     <section class="u-w_100p85p u-mar-mxa p-homeebisu_post">
                         <?php if( have_posts()) : while( have_posts()) : the_post(); ?>
-                            <article class="c-card_post c-bk_post1 u-mar-my30 u-pad-p40">
-                                <h2 class="c-title_post u-disp-flex">
+                            <article class="c-card_post c-bk_post1none u-mar-my30 u-pad-p40none">
+                                <h2 class="c-title_post u-disp-flex c-bk_title1">
                                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_titleimg1.png" class="u-w_56">
                                     <p class="u-pad-pt3 u-pad-pl3"><?php the_title(); ?></p>
                                 </h2>
-                                <div class="u-disp-flexblocktab">
+                                <div class="u-disp-block">
                                     <?php the_content(); ?>
                                 </div>
                                 
