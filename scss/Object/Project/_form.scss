@@ -1,0 +1,75 @@
+@use "../../Foundation/mixin";
+@use "../../Foundation/variable";
+
+.wpcf7-text {
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding-block: 5px;
+    margin-bottom: 10px;
+}
+
+.wpcf7-textarea {
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding-block: 5px;
+}
+
+button.wpcf7cp-cfm-edit-btn {
+    &-cf7cnf {
+        font-size: 1.6rem;
+        margin-top: 20px;
+        line-height: 26px;
+        width: 120px;
+        text-align: center;
+        padding: 6px 15px;
+        border-radius: 20px;
+        border: 2px solid #8cb267;
+        background-color: #8cb267;
+        color: #fff;
+        margin-bottom: 30px;
+
+        //@include mixin.mq(md) {
+            //width: 100%;
+        //}
+
+        @include mixin.mq(sp) {
+            font-size: 1.4rem;
+        }
+
+        &:hover {
+            //border: 2px solid #8cb267;
+            background-color: #fff;
+            color: #8cb267;
+        }
+    }
+}
+
+button.wpcf7cp-cfm-submit-btn {
+    &-cf7cnf {
+        font-size: 1.6rem;
+        margin-top: 20px;
+        line-height: 26px;
+        width: 120px;
+        text-align: center;
+        padding: 6px 15px;
+        border-radius: 20px;
+        border: 2px solid #8cb267;
+        background-color: #fff;
+        color: #8cb267;
+        margin-bottom: 30px;
+
+        //@include mixin.mq(md) {
+            //width: 100%;
+        //}
+
+        @include mixin.mq(sp) {
+            font-size: 1.4rem;
+        }
+
+        &:hover {
+            //border: 2px solid #8cb267;
+            background-color: #8cb267;
+            color: #fff;
+        }
+    }
+}

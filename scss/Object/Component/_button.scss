@@ -172,6 +172,34 @@
         transform: translateY(75%) translateX(65%) rotate(-45deg);
         
     }
+
+    &-cf7cnf {
+        font-size: 1.6rem;
+        margin-top: 20px;
+        line-height: 26px;
+        width: 120px;
+        text-align: center;
+        padding: 6px 15px;
+        border-radius: 20px;
+        border: 2px solid #8cb267;
+        background-color: #8cb267;
+        color: #fff;
+        margin-bottom: 30px;
+
+        //@include mixin.mq(md) {
+            //width: 100%;
+        //}
+
+        @include mixin.mq(sp) {
+            font-size: 1.4rem;
+        }
+
+        &:hover {
+            //border: 2px solid #8cb267;
+            background-color: #fff;
+            color: #8cb267;
+        }
+    }
 }
 
 .is-active span:nth-of-type(1) {
@@ -187,3 +215,4 @@
     top: -4px;
     transform: translateX(-50%)rotate(-225deg);
 }
+
