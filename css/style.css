@@ -620,7 +620,7 @@ th {
   font-size: 1.6rem;
   margin-top: 20px;
   line-height: 26px;
-  width: 120px;
+  width: 160px;
   text-align: center;
   padding: 6px 15px;
   border-radius: 20px;
@@ -797,6 +797,9 @@ th {
 }
 .c-txt_14 {
   font-size: 1.4rem;
+}
+.c-txt_14a a {
+  font-size: 1.4625rem;
 }
 @media screen and (max-width: 769px) {
   .c-txt_14tab {
@@ -1549,11 +1552,16 @@ th {
   }
 }
 
+.wpcf7-form-control {
+  width: 95%;
+}
+
 .wpcf7-text {
   border: 1px solid #333;
   border-radius: 6px;
   padding-block: 5px;
   margin-bottom: 10px;
+  width: 95%;
 }
 
 .wpcf7-textarea {
@@ -2184,6 +2192,9 @@ button.wpcf7cp-cfm-submit-btn-cf7cnf:hover {
     padding-top: 0;
   }
 }
+.u-pad-pt12 {
+  padding-top: 3rem;
+}
 .u-pad-pr12 {
   padding-right: 3rem;
 }
@@ -2422,6 +2433,9 @@ button.wpcf7cp-cfm-submit-btn-cf7cnf:hover {
     padding-top: 10px;
     padding-bottom: 5px;
   }
+}
+.u-pad-pl5p {
+  padding-left: 5%;
 }
 
 .u-mar-mxa {

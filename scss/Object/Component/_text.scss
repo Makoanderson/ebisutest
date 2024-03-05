@@ -11,6 +11,11 @@
     &_14 {
         font-size: 1.4rem;
     }
+    &_14a {
+        a {
+            font-size: 1.4625rem;
+        }
+    }
     &_14tab {
         @include mixin.mq(md) {
             font-size: 1.4rem;

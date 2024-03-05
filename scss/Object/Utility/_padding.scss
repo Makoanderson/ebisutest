@@ -576,6 +576,9 @@
         padding-top: 0;
       }
   }
+  &-pt12 {
+    padding-top: 3rem;
+  }
   &-pr12 {
     padding-right: 3rem;
   }
@@ -815,6 +818,10 @@
       padding-top: 10px;
       padding-bottom: 5px;
     }
+  }
+
+  &-pl5p {
+    padding-left: 5%;
   }
   
 }

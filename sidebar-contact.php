@@ -1,9 +1,11 @@
 <!--お問合せページ用sidebar-->
-<aside class="sidebar-contact">
-    <div class="sidebar-btn">
-        <p class="info"><a href="<?php echo home_url('/contact#sec1/'); ?>">連絡先</a></p>
-    </div>
-    <div class="sidebar-btn">
-        <p class="form"><a href="<?php echo home_url('/contact#sec2/'); ?>">メールフォーム</a></p>
-    </div>
+<aside class="sidebar-contact u-w_30p85p u-mar-mxa u-pad-pl6none u-pad-pt12pt0 c-bk_sidebknone">
+    <ul class="p-sidebar_care">
+        <li class=" u-w_sbar3 u-mar-b21bk5 p-sidebar_btnline2 c-bk_sidebar5">
+            <p class="info c-btn_barfont3"><a href="/contact/#form">メールフォーム</a></p>
+        </li>
+        <li class="sidebar-btn u-w_sbar3 u-mar-b21bk5 p-sidebar_btnline2 c-bk_sidebar5">
+            <p class="form c-btn_barfont3"><a href="/contact/#info">連絡先</a></p>
+        </li>
+    </ul>
 </aside>

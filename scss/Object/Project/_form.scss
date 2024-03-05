@@ -1,11 +1,16 @@
 @use "../../Foundation/mixin";
 @use "../../Foundation/variable";
 
+.wpcf7-form-control {
+    width: 95%;
+}
+
 .wpcf7-text {
     border: 1px solid #333;
     border-radius: 6px;
     padding-block: 5px;
     margin-bottom: 10px;
+    width: 95%;
 }
 
 .wpcf7-textarea {
@@ -73,3 +78,4 @@ button.wpcf7cp-cfm-submit-btn {
         }
     }
 }
+
