@@ -73,6 +73,12 @@
         a {
             margin: auto;
             font-family: variable.$catch;
+            color: #fff;
+        }
+
+        i {
+            color: #fff;
+            font-weight: 700;
         }
 
         @include mixin.mq(lpc) {
@@ -80,6 +86,13 @@
             //padding-right: clamp(3.3rem, -10.8738rem + 18.4314vw, 8rem);
             padding-block: 13px;
             font-size: 1.6rem;
+            a {
+                color: #000;
+            }
+
+            i {
+                color: #b85d1d;
+            }
         }
 
         @include mixin.mq(md) {

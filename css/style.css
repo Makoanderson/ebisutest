@@ -428,7 +428,7 @@ th {
   background-size: contain;
 }
 .c-bk_sidebar5 {
-  background-color: rgb(255, 197, 201);
+  background-color: #f09289;
 }
 @media screen and (max-width: 1024px) {
   .c-bk_sidebar5 {
@@ -534,11 +534,22 @@ th {
 .c-btn_barfont3 a {
   margin: auto;
   font-family: "Zen Maru Gothic", sans-serif;
+  color: #fff;
+}
+.c-btn_barfont3 i {
+  color: #fff;
+  font-weight: 700;
 }
 @media screen and (max-width: 1024px) {
   .c-btn_barfont3 {
     padding-block: 13px;
     font-size: 1.6rem;
+  }
+  .c-btn_barfont3 a {
+    color: #000;
+  }
+  .c-btn_barfont3 i {
+    color: #b85d1d;
   }
 }
 .c-btn_ham {
@@ -1424,12 +1435,14 @@ th {
   }
 }
 .p-sidebar_btnline2 {
-  border-radius: 6px;
+  border-radius: 100px;
+  box-shadow: 2px 2px 5px 1px #6cb267;
 }
 @media screen and (max-width: 1024px) {
   .p-sidebar_btnline2 {
     border-radius: 50px;
     border: 1px solid #b85d1d;
+    box-shadow: none;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1465,6 +1478,11 @@ th {
     height: 50px;
     text-align: center;
   }
+}
+.p-sidebar_sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
 }
 
 .wp-pagenavi {
