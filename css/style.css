@@ -408,22 +408,22 @@ th {
   background-size: contain;
 }
 .c-bk_sidebar1 {
-  background: url("../img/bar-shisetsu_bk1.png");
+  background: url("../img/bar-shisetsu_bk5-1.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
 .c-bk_sidebar2 {
-  background: url("../img/bar-shisetsu_bk2.png");
+  background: url("../img/bar-shisetsu_bk3-1.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
 .c-bk_sidebar3 {
-  background: url("../img/bar-shisetsu_bk3.png");
+  background: url("../img/bar-shisetsu_bk1.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
 .c-bk_sidebar4 {
-  background: url("../img/bar-shisetsu_bk4.png");
+  background: url("../img/bar-shisetsu_bk4-1.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -557,7 +557,7 @@ th {
   width: inherit;
   height: 90px;
   margin: 0;
-  background: lightblue;
+  background: #f09289;
   cursor: pointer;
   text-align: center;
   padding-top: 10px;
@@ -1172,7 +1172,7 @@ th {
     position: fixed;
     top: 0;
     right: 0;
-    background: #f7931e;
+    background: #f09289;
     opacity: 1;
     transition: 0.6s;
   }
