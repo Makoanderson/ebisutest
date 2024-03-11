@@ -156,8 +156,20 @@
         }
     }
 
-    &_sticky {
+    &_sticky1 {
         position: sticky;
         top: 100px;
+        @include mixin.mq(lpc) {
+            position: relative;
+            top: 0;
+        }
+    }
+
+    &_sticky2 {
+        position: sticky;
+        top: 180px;
+        @include mixin.mq(lpc) {
+            position: unset;
+        }
     }
 }

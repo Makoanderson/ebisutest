@@ -442,8 +442,7 @@ th {
   }
 }
 .c-bk_mainbtm {
-  background: url("../img/bk-mainbtm.png");
-  background-repeat: no-repeat;
+  background: url("../img/bk-mainbtm2.png");
   background-size: contain;
 }
 .c-bk_footer {
@@ -911,7 +910,6 @@ th {
   font-family: "Zen Maru Gothic", sans-serif;
   font-size: 3rem;
   margin-bottom: 15px;
-  position: relative;
   width: 208px;
   border-radius: 22px;
   height: 65px;
@@ -1479,10 +1477,26 @@ th {
     text-align: center;
   }
 }
-.p-sidebar_sticky {
+.p-sidebar_sticky1 {
   position: -webkit-sticky;
   position: sticky;
   top: 100px;
+}
+@media screen and (max-width: 1024px) {
+  .p-sidebar_sticky1 {
+    position: relative;
+    top: 0;
+  }
+}
+.p-sidebar_sticky2 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 180px;
+}
+@media screen and (max-width: 1024px) {
+  .p-sidebar_sticky2 {
+    position: unset;
+  }
 }
 
 .wp-pagenavi {
