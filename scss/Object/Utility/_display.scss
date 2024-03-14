@@ -53,4 +53,9 @@
             display: block;
         }
     }
+    &-nonelpc {
+        @include mixin.mq(lpc) {
+            display: none;
+        }
+    }
 }

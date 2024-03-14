@@ -837,20 +837,23 @@ th {
   font-family: "Zen Maru Gothic", sans-serif;
   font-size: 20px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 6px;
   width: auto;
   padding: 15px 60px;
   color: #656565;
+  left: 36.5%;
 }
 @media screen and (max-width: 1024px) {
   .c-title_mv {
     top: clamp(7rem, 1.8205rem + 17.2652vw, 19.5rem);
+    left: 27.5%;
   }
 }
 @media screen and (max-width: 769px) {
   .c-title_mv {
     font-size: clamp(1rem, 1.3442rem + 0.8529vw, 2rem);
+    padding: 15px 0;
   }
 }
 .c-title_mv span {
@@ -2522,6 +2525,11 @@ button.wpcf7cp-cfm-submit-btn-cf7cnf:hover {
   margin-block: 30px;
 }
 @media screen and (max-width: 769px) {
+  .u-mar-mt0tab {
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 769px) {
   .u-mar-mt25tab {
     margin-top: 25px;
   }
@@ -2656,7 +2664,22 @@ button.wpcf7cp-cfm-submit-btn-cf7cnf:hover {
   width: 130%;
 }
 .u-w_tabmv {
-  width: 100vw;
+  width: 883px;
+}
+@media screen and (max-width: 1024px) {
+  .u-w_tabmv {
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 769px) {
+  .u-w_tabmv {
+    width: 100vw;
+  }
+}
+.u-w_tabmv2 {
+  width: calc((100vw - 883px) / 2);
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .u-posi-stat {
@@ -2732,6 +2755,11 @@ button.wpcf7cp-cfm-submit-btn-cf7cnf:hover {
 @media screen and (max-width: 1024px) {
   .u-disp-noneblock {
     display: block;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .u-disp-nonelpc {
+    display: none;
   }
 }
 

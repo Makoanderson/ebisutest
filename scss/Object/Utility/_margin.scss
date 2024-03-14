@@ -53,6 +53,11 @@
     &-my30 {
         margin-block: 30px;
     }
+    &-mt0tab {
+        @include mixin.mq(md) {
+            margin-top: 0px;
+        }
+    }
     &-mt25tab {
         @include mixin.mq(md) {
             margin-top: 25px;

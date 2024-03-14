@@ -95,7 +95,20 @@
     }
     
     &_tabmv {
-        width: 100vw;
+        width: 883px;
+
+        @include mixin.mq(lpc) {
+            width: 80vw;
+        }
+
+        @include mixin.mq(md) {
+            width: 100vw;
+        }
+    }
+
+    &_tabmv2 {
+        width: calc((100vw - 883px)/2);
+        object-fit: contain;
 
         //@include mixin.mq(pc) {
             //width: 100vw;

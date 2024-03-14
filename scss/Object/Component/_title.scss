@@ -8,21 +8,25 @@
         font-family: variable.$catch;
         font-size: 20px;
         text-align: center;
-        background-color: rgba(255,255,255,0.5);
+        background-color: rgba(255,255,255,0.7);
         border-radius: 6px;
         //width: 250px;
         //width: 390px;
         width: auto;
         padding: 15px 60px;
         color: #656565;
+        left: 36.5%;
 
         @include mixin.mq(lpc) {
             top: clamp(7rem, 1.8205rem + 17.2652vw, 19.5rem);
+            left: 27.5%;
         }
 
         @include mixin.mq(md) {
             //top: clamp(7rem, -0.9957rem + 26.6525vw, 19.5rem);
             font-size: clamp(1rem, 1.3442rem + 0.8529vw, 2rem);
+            //top: 0;
+            padding: 15px 0;
         }
         
         span {
