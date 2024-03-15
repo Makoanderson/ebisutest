@@ -833,7 +833,7 @@ th {
 }
 
 .c-title_mv {
-  top: 195px;
+  top: 210px;
   font-family: "Zen Maru Gothic", sans-serif;
   font-size: 20px;
   text-align: center;
@@ -842,12 +842,10 @@ th {
   width: auto;
   padding: 15px 60px;
   color: #656565;
-  left: 36.5%;
 }
 @media screen and (max-width: 1024px) {
   .c-title_mv {
     top: clamp(7rem, 1.8205rem + 17.2652vw, 19.5rem);
-    left: 27.5%;
   }
 }
 @media screen and (max-width: 769px) {
@@ -873,20 +871,15 @@ th {
   }
 }
 .c-title_mv2 {
-  top: 380px;
+  bottom: 35px;
   font-family: "Zen Maru Gothic", sans-serif;
   font-size: 20px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 6px;
   width: auto;
   padding: 5px 10px;
   color: #656565;
-}
-@media screen and (max-width: 1024px) {
-  .c-title_mv2 {
-    top: clamp(7rem, 1.8205rem + 17.2652vw, 19.5rem);
-  }
 }
 @media screen and (max-width: 769px) {
   .c-title_mv2 {
@@ -2664,7 +2657,7 @@ button.wpcf7cp-cfm-submit-btn-cf7cnf:hover {
   width: 130%;
 }
 .u-w_tabmv {
-  width: 883px;
+  width: 820px;
 }
 @media screen and (max-width: 1024px) {
   .u-w_tabmv {
@@ -2712,6 +2705,14 @@ button.wpcf7cp-cfm-submit-btn-cf7cnf:hover {
 }
 .u-disp-hidden {
   display: none;
+}
+.u-disp-flexblocksp {
+  display: flex;
+}
+@media screen and (max-width: 428px) {
+  .u-disp-flexblocksp {
+    display: block;
+  }
 }
 .u-disp-flexblocktab {
   display: flex;

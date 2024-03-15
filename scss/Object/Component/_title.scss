@@ -4,7 +4,7 @@
 .c-title{
     &_mv {
         //top: 140px;
-        top: 195px;
+        top: 210px;
         font-family: variable.$catch;
         font-size: 20px;
         text-align: center;
@@ -15,11 +15,11 @@
         width: auto;
         padding: 15px 60px;
         color: #656565;
-        left: 36.5%;
+        //left: 36.5%;
 
         @include mixin.mq(lpc) {
             top: clamp(7rem, 1.8205rem + 17.2652vw, 19.5rem);
-            left: 27.5%;
+            //left: 27.5%;
         }
 
         @include mixin.mq(md) {
@@ -50,11 +50,12 @@
     }
     &_mv2 {
         //top: 140px;
-        top: 380px;
+        //top: 380px;
+        bottom: 35px;
         font-family: variable.$catch;
         font-size: 20px;
         text-align: center;
-        background-color: rgba(255,255,255,0.5);
+        background-color: rgba(255,255,255,0.7);
         border-radius: 6px;
         //width: 250px;
         width: auto;
@@ -62,7 +63,7 @@
         color: #656565;
 
         @include mixin.mq(lpc) {
-            top: clamp(7rem, 1.8205rem + 17.2652vw, 19.5rem);
+            //top: clamp(7rem, 1.8205rem + 17.2652vw, 19.5rem);
         }
 
         @include mixin.mq(md) {

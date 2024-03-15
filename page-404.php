@@ -4,55 +4,52 @@
         <div class="inner u-w_maxpc u-mar-mxa">
             <!--メインビジュアル-->
             <div class="max-w[90rem] u-justify-center u-disp-flex u-mar-mxa u-mar-b45">
-            <h1 class="u-disp-flex">
+                <h1 class="u-disp-flex">
                     
                     <picture class="u-posi-rela u-disp-flex u-justify-center">
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icon-ebisu2.png" class="u-w_tabmv2 u-h_maxpcnone u-mar-mt55tab u-disp-nonelpc" alt="">
                         <!--<source srcset="<?php /*echo esc_url(get_template_directory_uri()); */?>/img/page_mv1.png" media="(min-width: 200px)" >-->
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page_mv1.png" class="u-w_tabmv u-h_maxpcnone u-mar-mt0tab" alt="">
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icon-daikoku4.png" class="u-w_tabmv2 u-h_maxpcnone u-mar-mt55tab u-disp-nonelpc" alt="">
-                        <p class="u-posi-abso c-title_mv">デイサービス<br><span>笑びすについて</span><br><br>高齢者と子供たちのふれあいの日常を</p>
-                        
+                        <p class="u-posi-abso c-title_mv"><span>404</span><br><br>エラー</p>
+                        <!--<p>可能な限り希望に沿った対応を・・・</p>-->
                     </picture>
                     
                 </h1>
             </div>
+        
 
             <!--トップへ戻る追従ボタン-->
-            <a class="c-btn-pagetop u-disp-block" href="/dayebisu/#head">
+            <a class="c-btn-pagetop u-disp-block" href="/mitsuwa/#head">
                 <div class="c-btn-pagetop__arrow"></div>
                 <p>Top</p>
             </a>
 
             <!--コンテンツ-->
-            <div class="p-homeebisu_main u-mar-mx1p">
+            <div class="u-disp-flexblocklpc u-mar-mx1p">
+
+                <!--サイドバー-->
+                <?php get_sidebar('about'); ?>
 
                 <div class="p-homeebisu_content u-w_100p70p">
                     <!--ページ内リンク用サブメニュー-->
-                    <nav class="p-nav-wrap1 u-h_100p">
-                        <?php wp_nav_menu(array(
-                            'theme_location' => 'dayebisu-menu',
-                            'menu_class' => 'p-nav-debisu',
+                    <!--<nav class="p-nav-wrap u-h_100p">-->
+                        <?php /*wp_nav_menu(array(
+                            'theme_location' => 'yoroebisu-menu',
+                            'menu_class' => 'p-nav-yoro',
                             'container' => '',
-                            ));?>
+                            ));*/?>
                     </nav>
-
+                    
                     <!--メインコンテンツ-->
                     <section class="u-w_100p85p u-mar-mxa p-homeebisu_post">
                         <?php if( have_posts()) : while( have_posts()) : the_post(); ?>
                             <article class="c-card_post c-bk_post1none u-mar-my30 u-pad-p40none">
-
-                                <?php
-                                $show_post_ids = array(306, 308, 310, 312, 314, 317);
-                                
-                                if (is_archive() && in_array(get_the_ID(), $show_post_ids)) : ?>
-                                    <h2 class="c-title_post u-disp-flex c-bk_title1">
-                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_titleimg1.png" class="u-w_56">
-                                        <p class="u-pad-pt3 u-pad-pl3"><?php the_title(); ?></p>
-                                    </h2>
-                                <?php endif; ?>
-                                
-                                <div class="u-disp-block">
+                                <h2 class="c-title_post u-disp-flex c-bk_title1">
+                                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_titleimg1.png" class="u-w_56">
+                                    <p class="u-pad-pt3 u-pad-pl3"><?php the_title(); ?></p>
+                                </h2>
+                                <div class="u-disp-flexblocktab">
                                     <?php the_content(); ?>
                                 </div>
                                 
@@ -63,8 +60,6 @@
                     </section> 
                 </div>
                 
-                <!--サイドバー-->
-                <?php get_sidebar('shisetsu'); ?>
                 
             </div>
         </div> 

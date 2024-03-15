@@ -4,13 +4,17 @@
         <div class="inner u-w_maxpc u-mar-mxa">
             <!--メインビジュアル-->
             <div class="max-w[90rem] u-justify-center u-disp-flex u-mar-mxa u-mar-b45">
-                <h1>
+            <h1 class="u-disp-flex">
+                    
                     <picture class="u-posi-rela u-disp-flex u-justify-center">
-                        <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_mv.png" media="(min-width: 200px)" >
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_mv.png" class="u-w_tabmv u-h_maxpc u-mar-mt55tab" alt="">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icon-ebisu2.png" class="u-w_tabmv2 u-h_maxpcnone u-mar-mt55tab u-disp-nonelpc" alt="">
+                        <!--<source srcset="<?php /*echo esc_url(get_template_directory_uri()); */?>/img/page_mv1.png" media="(min-width: 200px)" >-->
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page_mv1.png" class="u-w_tabmv u-h_maxpcnone u-mar-mt0tab" alt="">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icon-daikoku4.png" class="u-w_tabmv2 u-h_maxpcnone u-mar-mt55tab u-disp-nonelpc" alt="">
                         <p class="u-posi-abso c-title_mv">宅幼老所<br><span>笑びすについて</span><br><br>気軽に通って泊まれる場所</p>
-                        <!--<p>可能な限り希望に沿った対応を・・・</p>-->
+                        
                     </picture>
+                    
                 </h1>
             </div>
 

@@ -17,6 +17,12 @@
     &-hidden {
         display: none;
     }
+    &-flexblocksp {
+        display: flex;
+        @include mixin.mq(sp) {
+            display: block;
+        }
+    }
     &-flexblocktab {
         display: flex;
         @include mixin.mq(md) {
