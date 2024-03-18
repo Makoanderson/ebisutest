@@ -80,7 +80,7 @@ add_action( 'widgets_init', 'my_theme_widgets_init' );
 add_action( 'init', 'create_post_type' );
 function create_post_type() {
   register_post_type( // カスタム投稿タイプの追加関数
-    'photos', //カスタム投稿タイプ名（半角英数字の小文字）
+    'album', //カスタム投稿タイプ名（半角英数字の小文字）
     array( //オプション（以下）
       'label' => 'アルバム', // 管理画面上の表示（日本語でもOK）
       'public' => true, // 管理画面に表示するかどうかの指定
