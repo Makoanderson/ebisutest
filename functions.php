@@ -95,6 +95,8 @@ function create_post_type() {
       ),
     )
   );
+  register_taxonomy_for_object_type('category', 'album');
+  register_taxonomy_for_object_type('post_tag', 'album');
 
 
   register_post_type( // カスタム投稿タイプの追加関数

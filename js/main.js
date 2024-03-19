@@ -54,3 +54,35 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('DOMContentLoaded', () => {
     scrollToHeading();
   });
+
+  document.querySelectorAll('.wp-block-gallery img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        // モーダルの背景を生成
+        const modalBg = document.createElement('div');
+        modalBg.classList.add('modal-bg');
+
+        // モーダルコンテンツを生成
+        const modalContent = document.createElement('div');
+        modalContent.classList.add('modal-content');
+
+        // 画像を表示する要素を生成
+        const modalImg = document.createElement('img');
+        modalImg.src = this.src;
+
+        // 画像をモーダルコンテンツに追加
+        modalContent.appendChild(modalImg);
+
+        // モーダルコンテンツをモーダル背景に追加
+        modalBg.appendChild(modalContent);
+
+        // モーダル背景をbody要素に追加
+        document.body.appendChild(modalBg);
+
+        // モーダル背景または閉じるボタンをクリックしたときにモーダルを閉じる
+        modalBg.addEventListener('click', function(e) {
+            if (e.target === modalBg || e.target.classList.contains('modal-close')) {
+                modalBg.remove();
+              }
+          });
+      });
+  });
