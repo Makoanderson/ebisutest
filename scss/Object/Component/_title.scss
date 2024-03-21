@@ -51,11 +51,11 @@
     &_mv2 {
         //top: 140px;
         //top: 380px;
-        bottom: 35px;
+        bottom: -3px;
         font-family: variable.$catch;
-        font-size: 20px;
+        font-size: 13px;
         text-align: center;
-        background-color: rgba(255,255,255,0.7);
+        //background-color: rgba(255,255,255,0.7);
         border-radius: 6px;
         //width: 250px;
         width: auto;
@@ -68,11 +68,53 @@
 
         @include mixin.mq(md) {
             //top: clamp(7rem, -0.9957rem + 26.6525vw, 19.5rem);
-            font-size: clamp(1rem, 1.3442rem + 0.8529vw, 2rem);
+            //font-size: clamp(1rem, 1.3442rem + 0.8529vw, 2rem);
+            padding: 0;
+            bottom: 3px;
+        }
+        @include mixin.mq(sp) {
+            left: 9px;
+        }
+    }
+    &_mv3 {
+        //top: 140px;
+        top: 210px;
+        //font-family: "hot-gfkaishokk", sans-serif;
+        font-family: variable.$catch;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 2rem;
+        text-align: center;
+        background-color: rgba(255,255,255,0.7);
+        border-radius: 6px;
+        //width: 250px;
+        //width: 390px;
+        width: auto;
+        padding: 15px 60px 25px;
+        color: #656565;
+        //left: 36.5%;
+
+        @include mixin.mq(lpc) {
+            top: clamp(7rem, 1.8205rem + 17.2652vw, 19.5rem);
+            //left: 27.5%;
+        }
+
+        @include mixin.mq(md) {
+            //top: clamp(7rem, -0.9957rem + 26.6525vw, 19.5rem);
+            //font-size: clamp(1rem, 1.3442rem + 0.8529vw, 2rem);
+            //top: 0;
+            padding: 15px 15px 25px;
+        }
+        @include mixin.mq(sp) {
+            top: clamp(5.8rem, -2.87184rem + 28.9063vw, 9.5rem);
+            font-size: 1.8rem;
         }
         
         span {
             //font-size: 32px;
+            font-family: "ab-taro", sans-serif;
+            font-weight: 400;
+            font-style: normal;
             font-size: 4.8rem;
             //position: relative;
             border-bottom: 1px solid #333;
@@ -86,7 +128,10 @@
             }*/
 
             @include mixin.mq(md) {
-                font-size: clamp(2rem, 1.2325rem + 2.5586vw, 2rem);
+                //font-size: clamp(2rem, 1.2325rem + 2.5586vw, 2rem);
+            }
+            @include mixin.mq(sp) {
+                font-size: 3rem;
             }
         }
     }

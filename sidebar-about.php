@@ -20,7 +20,10 @@
             <p class="form c-btn_barfont3"><a href="#m-family">認知症の人と家族の会</a><i class="fa-regular fa-circle-chevron-down"></i></p>
         </li>
         <li class="sidebar-btn u-w_sbar3 u-mar-b21bk5 p-sidebar_btnline2 c-bk_sidebar5">
-            <p class="form c-btn_barfont3"><a href="#m-link">情報公開</a><i class="fa-regular fa-circle-chevron-down"></i></p>
+            <p class="form c-btn_barfont3"><a href="#m-disclosure">情報公開</a><i class="fa-regular fa-circle-chevron-down"></i></p>
+        </li>
+        <li class="sidebar-btn u-w_sbar3 u-mar-b21bk5 p-sidebar_btnline2 c-bk_sidebar5">
+            <p class="form c-btn_barfont3"><a href="#m-link">外部リンク</a><i class="fa-regular fa-circle-chevron-down"></i></p>
         </li>
     </ul>
 </aside>

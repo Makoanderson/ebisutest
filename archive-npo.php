@@ -97,14 +97,14 @@
                         <h3 class="c-title_16 c-txt_color5">株式会社&nbsp&nbspみつわ</h3>
                         <div class="u-disp-flexblocklpc">
                             <p class="">〒849-2204&nbsp;佐賀県武雄市北方町大字大崎760番地1&nbsp;</p>
-                            <p class="">TEL&FAX:0954-36-4936</p>
+                            <p class="">TEL&FAX:0954-36-3000</p>
                         </div>
                     </address>
                     <address class="u-mar-mt15">
                         <h3 class="c-title_16 c-txt_color5">デイサービス久津具</h3>
                         <div class="u-disp-flexblocklpc">
                             <p class="">〒849-2204&nbsp;佐賀県武雄市北方町大字大崎760番地1&nbsp;</p>
-                            <p class="">TEL&FAX:0954-36-4936</p>
+                            <p class="">TEL&FAX:0954-36-3000</p>
                         </div>
                     </address>
                 </article>

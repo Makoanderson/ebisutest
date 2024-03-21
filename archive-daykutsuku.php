@@ -45,7 +45,7 @@
                                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_titleimg1.png" class="u-w_56">
                                     <p class="u-pad-pt3 u-pad-pl3"><?php the_title(); ?></p>
                                 </h2>
-                                <div class="u-disp-block">
+                                <div class="u-disp-flexblocktab">
                                     <?php the_content(); ?>
                                 </div>
                                 
@@ -98,14 +98,14 @@
                         <h3 class="c-title_16 c-txt_color5">株式会社&nbsp&nbspみつわ</h3>
                         <div class="u-disp-flexblocklpc">
                             <p class="">〒849-2204&nbsp;佐賀県武雄市北方町大字大崎760番地1&nbsp;</p>
-                            <p class="">TEL&FAX:0954-36-4936</p>
+                            <p class="">TEL&FAX:0954-36-3000</p>
                         </div>
                     </address>
                     <address class="u-mar-mt15">
                         <h3 class="c-title_16 c-txt_color5">デイサービス久津具</h3>
                         <div class="u-disp-flexblocklpc">
                             <p class="">〒849-2204&nbsp;佐賀県武雄市北方町大字大崎760番地1&nbsp;</p>
-                            <p class="">TEL&FAX:0954-36-4936</p>
+                            <p class="">TEL&FAX:0954-36-3000</p>
                         </div>
                     </address>
                 </article>

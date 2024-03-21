@@ -677,11 +677,6 @@ th {
     width: 100%;
   }
 }
-@media screen and (max-width: 428px) {
-  .c-card_psec {
-    font-size: 1.4rem;
-  }
-}
 .c-card_psec2 {
   font-size: 1.6rem;
   margin-top: 20px;
@@ -693,21 +688,11 @@ th {
     width: 100%;
   }
 }
-@media screen and (max-width: 428px) {
-  .c-card_psec2 {
-    font-size: 1.4rem;
-  }
-}
 .c-card_psec3 {
   font-size: 1.6rem;
   margin-top: 20px;
   line-height: 26px;
   width: 100%;
-}
-@media screen and (max-width: 428px) {
-  .c-card_psec3 {
-    font-size: 1.4rem;
-  }
 }
 .c-card_psec5 {
   font-size: 1.6rem;
@@ -724,11 +709,6 @@ th {
   }
   .c-card_psec5 strong {
     font-size: 1.6rem;
-  }
-}
-@media screen and (max-width: 428px) {
-  .c-card_psec5 {
-    font-size: 1.4rem;
   }
 }
 .c-card_psec6 {
@@ -748,11 +728,6 @@ th {
     font-size: 1.6rem;
   }
 }
-@media screen and (max-width: 428px) {
-  .c-card_psec6 {
-    font-size: 1.4rem;
-  }
-}
 .c-card_psec7 {
   font-size: 1.6rem;
   margin-top: 20px;
@@ -762,11 +737,6 @@ th {
 @media screen and (max-width: 769px) {
   .c-card_psec7 {
     width: 100%;
-  }
-}
-@media screen and (max-width: 428px) {
-  .c-card_psec7 {
-    font-size: 1.4rem;
   }
 }
 .c-card_table th {
@@ -831,6 +801,16 @@ th {
 .c-txt_color5 {
   color: #b85d1d;
 }
+.c-txt_emiya {
+  font-family: "ab-taro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.c-txt_kissa {
+  font-family: "hot-gfkaishokk", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
 
 .c-title_mv {
   top: 210px;
@@ -871,11 +851,10 @@ th {
   }
 }
 .c-title_mv2 {
-  bottom: 35px;
+  bottom: -3px;
   font-family: "Zen Maru Gothic", sans-serif;
-  font-size: 20px;
+  font-size: 13px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 6px;
   width: auto;
   padding: 5px 10px;
@@ -883,10 +862,48 @@ th {
 }
 @media screen and (max-width: 769px) {
   .c-title_mv2 {
-    font-size: clamp(1rem, 1.3442rem + 0.8529vw, 2rem);
+    padding: 0;
+    bottom: 3px;
   }
 }
-.c-title_mv2 span {
+@media screen and (max-width: 428px) {
+  .c-title_mv2 {
+    left: 9px;
+  }
+}
+.c-title_mv3 {
+  top: 210px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+  width: auto;
+  padding: 15px 60px 25px;
+  color: #656565;
+}
+@media screen and (max-width: 1024px) {
+  .c-title_mv3 {
+    top: clamp(7rem, 1.8205rem + 17.2652vw, 19.5rem);
+  }
+}
+@media screen and (max-width: 769px) {
+  .c-title_mv3 {
+    padding: 15px 15px 25px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .c-title_mv3 {
+    top: clamp(5.8rem, -2.87184rem + 28.9063vw, 9.5rem);
+    font-size: 1.8rem;
+  }
+}
+.c-title_mv3 span {
+  font-family: "ab-taro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 4.8rem;
   border-bottom: 1px solid #333;
   /*&::after {
@@ -897,9 +914,9 @@ th {
       bottom: 0;
   }*/
 }
-@media screen and (max-width: 769px) {
-  .c-title_mv2 span {
-    font-size: clamp(2rem, 1.2325rem + 2.5586vw, 2rem);
+@media screen and (max-width: 428px) {
+  .c-title_mv3 span {
+    font-size: 3rem;
   }
 }
 .c-title_sidebar {

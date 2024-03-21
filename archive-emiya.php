@@ -10,13 +10,16 @@
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icon-ebisu2.png" class="u-w_tabmv2 u-h_maxpcnone u-mar-mt55tab u-disp-nonelpc" alt="">
                         <!--<source srcset="<?php /*echo esc_url(get_template_directory_uri()); */?>/img/page_mv1.png" media="(min-width: 200px)" >-->
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page_mv1.png" class="u-w_tabmv u-h_maxpcnone u-mar-mt0tab" alt="">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icon-daikoku4.png" class="u-w_tabmv2 u-h_maxpcnone u-mar-mt55tab u-disp-nonelpc" alt="">
-                        <div class="u-posi-abso c-title_mv">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icon-benten1.png" class="u-w_tabmv2 u-h_maxpcnone u-mar-mt55tab u-disp-nonelpc" alt="">
+                        <div class="u-posi-abso c-title_mv3">
+                            地域共生カフェ
                             <br>
-                            <span>喫茶えみや</span>
+                            喫茶
+                            <br>
+                            <span>えみや</span>
                             <br>
                             <br>
-                            <div class="u-posi-abso u-disp-flexblocksp c-title_mv2">
+                            <div class="u-posi-abso u-disp-block c-title_mv2">
                                 <p>営業時間&nbsp;:&nbsp;10:00～17:00</p>
                                 <p>定休日&nbsp;:&nbsp;水曜日</p>
                                 <p>(不定期で日曜日が休み)</p>
@@ -119,14 +122,14 @@
                         <h3 class="c-title_16 c-txt_color5">株式会社&nbsp&nbspみつわ</h3>
                         <div class="u-disp-flexblocklpc">
                             <p class="">〒849-2204&nbsp;佐賀県武雄市北方町大字大崎760番地1&nbsp;</p>
-                            <p class="">TEL&FAX:0954-36-4936</p>
+                            <p class="">TEL&FAX:0954-36-3000</p>
                         </div>
                     </address>
                     <address class="u-mar-mt15">
                         <h3 class="c-title_16 c-txt_color5">デイサービス久津具</h3>
                         <div class="u-disp-flexblocklpc">
                             <p class="">〒849-2204&nbsp;佐賀県武雄市北方町大字大崎760番地1&nbsp;</p>
-                            <p class="">TEL&FAX:0954-36-4936</p>
+                            <p class="">TEL&FAX:0954-36-3000</p>
                         </div>
                     </address>
                 </article>
