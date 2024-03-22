@@ -11,7 +11,7 @@
                         <!--<source srcset="<?php /*echo esc_url(get_template_directory_uri()); */?>/img/page_mv1.png" media="(min-width: 200px)" >-->
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page_mv1.png" class="u-w_tabmv u-h_maxpcnone u-mar-mt0tab" alt="">
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icon-daikoku4.png" class="u-w_tabmv2 u-h_maxpcnone u-mar-mt55tab u-disp-nonelpc" alt="">
-                        <p class="u-posi-abso c-title_mv"><span>NPO活動</span><br><br>NPO法人みつわの取り組み</p>
+                        <p class="u-posi-abso c-title_mv">NPO法人<br><span>みつわの活動</span><br><br>NPO法人みつわの取り組み</p>
                     </picture>
                     
                 </h1>

@@ -1,6 +1,6 @@
 <!--笑びすaboutページ用sidebar-->
 <aside class="sidebar-about u-w_30p85p u-mar-mxa u-pad-pl6nne u-pad-pt12pt0 c-bk_sidebknone">
-    <ul class="p-sidebar_care p-sidebar_sticky">
+    <ul class="p-sidebar_care p-sidebar_sticky1">
         <li class="sidebar-btn u-w_sbar3 u-mar-b21bk5 p-sidebar_btnline2 c-bk_sidebar5">
             <p class="info c-btn_barfont3"><a href="#m-concept">理念</a><i class="fa-regular fa-circle-chevron-down"></i></p>
         </li>

@@ -527,7 +527,7 @@ th {
   margin: auto;
   text-align: center;
   height: 100%;
-  padding-block: clamp(3.3rem, 1.5163rem + 1.7418vw, 5rem);
+  padding-block: 2rem;
   font-family: "Zen Maru Gothic", sans-serif;
 }
 .c-btn_barfont3 a {

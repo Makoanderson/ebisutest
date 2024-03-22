@@ -292,13 +292,13 @@ function create_post_type() {
     )
   );
 
-  function sortpost_rand($query) {
+  /*function sortpost_rand($query) {
     if(is_admin() || !$query->is_main_query()){
         return;
     }
     $query->set('orderby', 'menu_order');
   }
-  add_action('pre_get_posts', 'sortpost_rand');
+  add_action('pre_get_posts', 'sortpost_rand');*/
 
   /**
    * Font Awesome Kit Setup

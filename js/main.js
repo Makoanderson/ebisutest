@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
     scrollToHeading();
   });
 
+/*写真のポップアップアニメーション*/  
   document.querySelectorAll('.wp-block-gallery img').forEach(function(img) {
     img.addEventListener('click', function() {
         // モーダルの背景を生成

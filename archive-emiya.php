@@ -60,7 +60,7 @@
                             <article class="c-card_post c-bk_post1none u-mar-my30 u-pad-p40none">
 
                             <?php
-                            $show_post_ids = array(716, 718, 720, 722, 724);
+                            $show_post_ids = array(716, 718, 720, 722, 724, 1102);
                                 
                             if (is_archive() && in_array(get_the_ID(), $show_post_ids)) : ?>
                                 <h2 class="c-title_post u-disp-flex c-bk_title2">
