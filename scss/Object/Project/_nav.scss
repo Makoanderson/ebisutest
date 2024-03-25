@@ -207,3 +207,38 @@
         }
     }
 }
+
+.sub-menu {
+    display: none;
+}
+
+/*wpで自動付与されたクラスのスタイル*/
+.show {
+    position: absolute;
+    width: 500px;
+    left: -35px;
+    top: 30px;
+    padding: 30px 12px;
+    box-sizing: border-box;
+    display: flex;
+    background-color: lemonchiffon;
+    border: 1px solid rgb(86, 119, 44);
+    transition: all .2s ease;
+
+    @include mixin.mq(lpc) {
+        position: static;
+        padding: 15px;
+        width: 100%;
+        background-color: lemonchiffon;
+        display: block;
+        border: unset;
+        transition: all .6s ease;
+    }
+}
+
+.menu-item-1113,
+.menu-item-1114,
+.menu-item-1115,
+.menu-item-1116 {
+    padding: 0 10px;
+}

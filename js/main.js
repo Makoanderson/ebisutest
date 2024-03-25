@@ -87,3 +87,20 @@ document.addEventListener('DOMContentLoaded', function () {
           });
       });
   });
+
+/*PC版メガメニューを表示させるアニメーション*/
+document.addEventListener('DOMContentLoaded', function() {
+  const mainNavItems = document.querySelectorAll('.l-header_nav > .menu-item-28');
+
+  mainNavItems.forEach(function(item) {
+      item.addEventListener('mouseenter', function() {
+          const megaMenu = this.querySelector('.sub-menu');
+          megaMenu.classList.add('show');
+      });
+
+      item.addEventListener('mouseleave', function() {
+          const megaMenu = this.querySelector('.sub-menu');
+          megaMenu.classList.remove('show');
+      });
+  });
+});
