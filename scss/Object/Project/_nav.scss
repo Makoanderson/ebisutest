@@ -223,6 +223,7 @@
     display: flex;
     background-color: lemonchiffon;
     border: 1px solid rgb(86, 119, 44);
+    border-radius: 20px;
     transition: all .2s ease;
 
     @include mixin.mq(lpc) {

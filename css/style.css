@@ -1380,6 +1380,7 @@ th {
   display: flex;
   background-color: lemonchiffon;
   border: 1px solid rgb(86, 119, 44);
+  border-radius: 20px;
   transition: all 0.2s ease;
 }
 @media screen and (max-width: 1024px) {
