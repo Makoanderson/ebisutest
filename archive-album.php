@@ -93,7 +93,7 @@
                                     }
                                 }
                         ?>
-                        <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                        <li class="c-card_psec2"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
                         <?php endif; endforeach;  endwhile; ?>
                     </ul>            
                     <?php endif; ?>

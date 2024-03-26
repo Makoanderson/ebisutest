@@ -1189,63 +1189,6 @@ th {
   }
 }
 
-.p-nav {
-  /*&-home {        //老人ホーム笑びすnavメニュー
-      display:flex;
-      justify-content: space-between;
-      //width: 70%;
-      align-items: center;
-      font-size: 1.6rem;
-      font-family: variable.$catch;
-      font-weight: 700;
-
-      @include mixin.mq(pc) {
-         font-size: 1.4rem;
-        }
-
-      @include mixin.mq(lpc) {
-          //font-size: 1.2rem;
-          font-size: 1.6rem;
-          font-weight: bold;
-          //display: flex;
-          //flex-wrap: wrap;
-          margin-inline: auto;
-          padding-top: 10px;
-          padding-left: 10%;
-          padding-bottom: 10px;
-          //justify-content: flex-start;
-          //list-style-type: "▼";
-          display: block;
-      }
-
-      li {
-          //padding: 25px 5px;
-          //border: 1px solid #333;
-          border-radius: 6px;
-          width: 120px;
-          display: flex;
-          justify-content: center;
-          height: 65px;
-          align-items: center;
-          background-color: rgba(255,197,201,1);
-
-          @include mixin.mq(lpc) {
-              border: initial;
-              border-radius: 50px;
-              background-color: #ffffff;
-              //height: 45px;
-              height: 30px;
-              width: 85%;
-              height: 30px;
-              display: block;
-              //justify-content: initial;
-              text-align: center;
-              margin: 10px 0;
-
-          }
-      }
-  }*/
-}
 @media screen and (max-width: 1024px) {
   .p-nav-wrap {
     width: 85%;
@@ -1365,11 +1308,6 @@ th {
   }
 }
 
-.sub-menu {
-  display: none;
-}
-
-/*wpで自動付与されたクラスのスタイル*/
 .show {
   position: absolute;
   width: 500px;
@@ -1393,6 +1331,12 @@ th {
     border: unset;
     transition: all 0.6s ease;
   }
+}
+
+/*wpで自動付与されたクラスのスタイル*/
+/*施設紹介のメガメニュー部分(ヘッダーナビゲーションメニュー内)*/
+.sub-menu {
+  display: none;
 }
 
 .menu-item-1113,
@@ -1549,6 +1493,7 @@ th {
   }
 }
 
+/*wpで自動付与されたクラスのスタイル*/
 .wp-pagenavi {
   font-size: 1.6rem;
   line-height: 26px;
