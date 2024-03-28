@@ -471,6 +471,31 @@ th {
   border-radius: 20px;
   color: #ffffff;
 }
+.c-bk_frt-shisetsu {
+  background: url(../img/top-shisetsubk.png);
+  height: 50rem;
+}
+.c-bk_frt-lable1 {
+  background: url(../img/top-shisetsu_lable3.png);
+}
+.c-bk_frt-lable2 {
+  background: url(../img/top-shisetsu_lable2.png);
+}
+.c-bk_frt-lable3 {
+  background: url(../img/top-shisetsu_lable1.png);
+}
+.c-bk_frt-lable4 {
+  background: url(../img/top-shisetsu_lable4.png);
+}
+.c-bk_frt-lablecom {
+  position: absolute;
+  left: 9px;
+  bottom: 10px;
+  width: 95%;
+  height: 100px;
+  text-align: center;
+  padding-top: 30px;
+}
 
 .c-btn_barfont {
   font-size: 1.6rem;
@@ -648,6 +673,12 @@ th {
   background-color: #fff;
   color: #8cb267;
 }
+.c-btn-frt {
+  background-color: #f09289;
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: #fff;
+}
 
 .is-active span:nth-of-type(1) {
   top: 0;
@@ -759,6 +790,9 @@ th {
     line-height: 36px;
   }
 }
+.c-card_top {
+  top: 30px;
+}
 
 /*WordPress自動付与クラス名分スタイル*/
 /*老人ホームコンテンツ, みつわについてコンテンツ*/
@@ -786,6 +820,9 @@ th {
     font-size: 1.4rem;
   }
 }
+.c-txt_26 {
+  font-size: 2.6rem;
+}
 .c-txt_color1 {
   color: #b3c1a0;
 }
@@ -793,7 +830,7 @@ th {
   color: #E7977e;
 }
 .c-txt_color3 {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .c-txt_color4 {
   color: #56772c;
@@ -810,6 +847,25 @@ th {
   font-family: "hot-gfkaishokk", sans-serif;
   font-weight: 800;
   font-style: normal;
+}
+.c-txt_frt-shisetsu {
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: "Zen Maru Gothic", sans-serif;
+  color: #ffffff;
+}
+.c-txt_frt-shisetsu2 {
+  font-size: 1.6rem;
+  font-family: "Zen Maru Gothic", sans-serif;
+  color: #333;
+}
+.c-txt_frt-lablefont {
+  position: absolute;
+  top: 52px;
+  margin-inline: calc((100% - 286px) / 2);
+  color: #b85d1d;
+  font-size: 2.6rem;
+  font-weight: normal;
 }
 
 .c-title_mv {
@@ -2542,6 +2598,9 @@ button.wpcf7cp-cfm-submit-btn-cf7cnf:hover {
 .u-mar-mb10 {
   margin-bottom: 10px;
 }
+.u-mar-mb15 {
+  margin-bottom: 15px;
+}
 .u-mar-mb25 {
   margin-bottom: 25px;
 }
@@ -2556,6 +2615,9 @@ button.wpcf7cp-cfm-submit-btn-cf7cnf:hover {
 }
 .u-mar-mt25 {
   margin-top: 25px;
+}
+.u-mar-mr40 {
+  margin-right: 40px;
 }
 .u-mar-mt45 {
   margin-top: 45px;
@@ -2625,6 +2687,9 @@ button.wpcf7cp-cfm-submit-btn-cf7cnf:hover {
 }
 .u-w_100p {
   width: 100%;
+}
+.u-w_100vw {
+  width: 100vw !important;
 }
 .u-w_70p {
   width: 70%;

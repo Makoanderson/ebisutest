@@ -213,6 +213,13 @@
             color: #8cb267;
         }
     }
+
+    &-frt {
+        background-color: #f09289;
+        padding: 10px 30px;
+        border-radius: 10px;
+        color: #fff;
+    }
 }
 
 .is-active span:nth-of-type(1) {

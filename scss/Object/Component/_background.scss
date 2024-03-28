@@ -78,4 +78,29 @@
         border-radius: 20px;
         color: #ffffff;
     }
+    &_frt-shisetsu {
+        background: url(../img/top-shisetsubk.png);
+        height: 50rem;        
+    }
+    &_frt-lable1 {
+        background: url(../img/top-shisetsu_lable3.png);
+    }
+    &_frt-lable2 {
+        background: url(../img/top-shisetsu_lable2.png);
+    }
+    &_frt-lable3 {
+        background: url(../img/top-shisetsu_lable1.png);
+    }
+    &_frt-lable4 {
+        background: url(../img/top-shisetsu_lable4.png);
+    }
+    &_frt-lablecom {
+        position: absolute;
+        left: 9px;
+        bottom: 10px;
+        width: 95%;
+        height: 100px;
+        text-align: center;
+        padding-top: 30px;
+    }
 }

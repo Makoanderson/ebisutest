@@ -19,35 +19,86 @@
             </figure>
 
             <!--施設紹介セクション-->
-            <div>
-                <p>築100年の古民家で家庭的な日々を、フットケアで健康を、地域・ボランティアの方と楽しいひと時が笑びすにはあります</p>
-                <button type="button" onclick="location.href='URL'">施設紹介</button>
-                <ul>
-                    <li>
-                        <a href="#">宅幼老所笑びす</a>
+            <div class="c-bk_frt-shisetsu u-pad-pt32">
+                <div class="c-txt_frt-shisetsu2 u-disp-flexblocktab u-justify-center u-mar-mb15">
+                    <p class="u-mar-mr40 u-pad-py4">築100年の古民家で家庭的な日々を、フットケアで健康を、地域・ボランティアの方と楽しいひと時が笑びすにはあります</p>
+                    <button type="button" onclick="location.href='URL'" class="c-btn-frt">施設紹介</button>
+                </div>
+                
+                <ul class="c-txt_frt-shisetsu u-disp-flex u-justify-center">
+                    <li class="u-posi-rela">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_contentimg3.png" alt="宅幼老所笑びすボタン">
+                        <lable class="c-bk_frt-lable1 c-bk_frt-lablecom">
+                            <a href="#" class="c-txt_26">宅幼老所笑びす</a>
+                        </lable>
                     </li>
-                    <li>
-                        <a href="#">有料老人ホーム</a>
+                    <li class="u-posi-rela c-card_top">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_contentimg3.png" alt="有料老人ホーム笑びすボタン">
+                        <lable class="c-bk_frt-lable2 c-bk_frt-lablecom">
+                            <a href="#" class="c-txt_26">有料老人ホーム笑びす</a>
+                        </lable>
+                        
                     </li>
-                    <li>
-                        <a href="#">デイサービス笑びす</a>
+                    <li class="u-posi-rela">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_contentimg3.png" alt="デイサービス笑びすボタン">
+                        <lable class="c-bk_frt-lable3 c-bk_frt-lablecom">
+                            <a href="#" class="c-txt_26">デイサービス笑びす</a>
+                        </lable>
+                        
                     </li>
-                    <li>
-                        <a href="#">デイサービス久津具</a>
+                    <li class="u-posi-rela c-card_top">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-about_contentimg3.png" alt="デイサービス久津具ボタン">
+                        <lable class="c-bk_frt-lable4 c-bk_frt-lablecom">
+                            <a href="#" class="c-txt_26">デイサービス久津具</a>
+                        </lable>
+                    
                     </li>
                 </ul>
             </div>
 
             <!--お知らせセクション-->
-            <section>
-                <h3>
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/front-lable.png" alt="アクセス(タイトル)" class="">
-                    <p><span>お知らせや行事予定など</span></p>
+            <section class="u-mar-mt70">
+                <h3 class="u-posi-rela c-txt_frt-shisetsu">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/front-lable.png" alt="アクセス(タイトル)" class="u-posi-abso u-w_100p">
+                    <p class="c-txt_frt-lablefont"><span>お知らせや行事予定など</span></p>
                 </h3>
-                <div>
-                    <div>
-                        お知らせアーカイブが入ります
-                    </div>
+                <div class="u-pad-pt72">
+                <ul class="">
+                    <?php
+                    $args = array(
+                    'post_type' => 'news', 
+                    'posts_per_page' => 5, 
+                    );
+                    $the_query = new WP_Query( $args );
+                    if ( $the_query->have_posts() ) :
+                    while ( $the_query->have_posts() ) : $the_query->the_post();
+                    ?>
+                    <li class="u-disp-flexblocklpc">
+                        <!--<div class="flex gap-[20px] pc:block">-->
+                            <!-- <span class="bg-color9 text-color1 rounded-tr-xl px-[10px] py-[3px]">
+                                <?php 
+                                //$categories = get_the_category();
+                                //$category_names = array();
+                                //foreach($categories as $category){
+                                //    $category_names[] = $category->cat_name;
+                                //}
+                                //echo implode(', ', $category_names); 
+                                ?>
+                            </span> -->
+                            <!--<time class="pc:hidden text-color3 text-[15px] whitespace-nowrap"><?php //echo get_the_date(); ?></time>-->
+                        <!--</div>-->
+                        <time class=""><?php echo get_the_date(); ?></time>
+                        <div class="">
+                            <h2 class=""><?php the_title(); ?></h2>
+                            <p><?php the_content(); ?></p>
+                        </div>
+                    </li>
+                    <?php
+                    endwhile;
+                    endif;
+                    wp_reset_postdata();
+                    ?>
+                    </ul>
                     <button type="button" onclick="location.href='URL'">
                         <p>その他の情報</p>
                         <img>
@@ -56,10 +107,10 @@
             </section>
 
             <!--facebookセクション-->
-            <section>
-                <h3>
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/front-lable.png" alt="アクセス(タイトル)" class="">
-                    <p><span>Facebook, フォトアルバム</span>日々の様子をお届けします</p>
+            <section class="u-mar-mt70">
+                <h3 class="u-posi-rela c-txt_frt-shisetsu">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/front-lable.png" alt="アクセス(タイトル)" class="u-posi-abso u-w_100p">
+                    <p class="c-txt_frt-lablefont"><span>Facebook, フォトアルバム</span>日々の様子をお届けします</p>
                 </h3>
                 <div>
                     <div>
@@ -75,7 +126,7 @@
             </section>
 
             <!--バナーセクション-->
-            <article>
+            <article class="u-mar-mt70">
                 <ul>
                     <li>
                         <img>
@@ -127,12 +178,12 @@
         </div>
 
         <!--フッター上部会社情報-->
-        <div class="l-main-btm p-homeebisu_btminfo c-bk_mainbtm">
-            <figure>
-                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/front-bar_access.png" alt="アクセス(タイトル)" class="">
-                <p>アクセス</p>
+        <div class="l-main-btm p-homeebisu_btminfo c-bk_mainbtm u-mar-mt70">
+            <figure class="u-posi-rela c-txt_frt-shisetsu">
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/front-bar_access.png" alt="アクセス(タイトル)" class="u-posi-abso u-w_100vw">
+                <p class="c-txt_frt-lablefont c-txt_color3">アクセス</p>
             </figure>
-            <div class="l-main_info p-com_fontfam c-txt_12 u-disp-flexblocktab">
+            <div class="l-main_info p-com_fontfam c-txt_12 u-disp-flexblocktab u-pad-pt72">
                 <article class="l-main-info1 u-pad-px20p0tab u-text-c">
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icon-ebisu1.png" alt="えびす様アイコン">
                     <address class="u-mar-mt15">

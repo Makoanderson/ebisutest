@@ -21,6 +21,9 @@
             font-size: 1.4rem;
         }
     }
+    &_26 {
+        font-size: 2.6rem;
+    }
 
 
     &_color1 {
@@ -30,7 +33,7 @@
         color: #E7977e;
     }
     &_color3 {
-        color: #ffffff;
+        color: #ffffff !important;
     }
     &_color4 {
         color: #56772c;
@@ -50,4 +53,23 @@
         font-style: normal;
     }
 
+    &_frt-shisetsu {
+        font-size: 1.6rem;
+        font-weight: bold;
+        font-family: variable.$catch;
+        color: #ffffff;
+    }
+    &_frt-shisetsu2 {
+        font-size: 1.6rem;
+        font-family: variable.$catch;
+        color: #333;
+    }
+    &_frt-lablefont {
+        position: absolute;
+        top: 52px;
+        margin-inline: calc((100% - 286px) / 2);
+        color: #b85d1d;
+        font-size: 2.6rem;
+        font-weight: normal;
+    }
 }
